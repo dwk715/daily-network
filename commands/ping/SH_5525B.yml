@@ -1,0 +1,11 @@
+ip: 172.16.230.136
+device_name: SH_5525B
+device_type: ASA
+commands: [
+  terminal pager 0,
+  ping CNTC 114.114.114.114 repeat 1000,
+  ping 202.14.67.4 repeat 1000,
+  terminal pager 25
+]
+
+

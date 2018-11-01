@@ -1,0 +1,8 @@
+ip: 172.16.230.131
+device_name: SH_3750
+commands: [
+  terminal length 0,
+  show process cpu | in utilization,
+  show process memory | in Total,
+  terminal length 25
+]
