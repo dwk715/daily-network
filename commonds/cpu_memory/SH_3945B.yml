@@ -1,5 +1,5 @@
-ip: 172.16.230.131
-device_name: SH_3750
+ip: 172.16.230.129
+device_name: SH_3945B
 commands: [
   terminal length 0,
   show process cpu | in utilization,

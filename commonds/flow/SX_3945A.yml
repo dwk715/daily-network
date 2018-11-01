@@ -1,0 +1,9 @@
+ip: 172.16.230.130
+device_name: SX_3945A
+device_type: Switch
+commands: [
+  terminal length 0,
+  show int g 0/1 | in 5 minute,
+  show int f 0/3/0 | in 5 minute,
+  terminal length 25
+]
