@@ -1,0 +1,10 @@
+ip: 172.16.232.137
+device_name: ASA5525-1
+device_type: ASA
+commands: [
+  terminal pager 0,
+  ping 202.14.67.4 repeat 1000,
+  terminal pager 25
+]
+
+
