@@ -1,0 +1,7 @@
+ip: 172.16.230.141
+device_name: SH_2960_Mgnt2
+commands: [
+  terminal length 0,
+  show ip int br | ex up,
+  terminal length 25
+]

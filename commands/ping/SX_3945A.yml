@@ -1,0 +1,9 @@
+ip: 172.16.230.130
+device_name: SX_3945A
+device_type: Switch
+commands: [
+  terminal length 0,
+  ping 172.17.1.66 repeat 100,
+  ping 172.17.1.73 repeat 100,
+  terminal length 25
+]
