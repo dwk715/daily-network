@@ -1,5 +1,5 @@
-ip: 172.16.230.131
-device_name: SH_3750
+ip: 172.16.230.190
+device_name: SH_TG_RSW02
 device_type: Switch
 commands: [
   terminal length 0,

@@ -1,5 +1,6 @@
 ip: 172.16.230.130
 device_name: SH_3945A
+device_type: Switch
 commands: [
   terminal length 0,
   show process cpu | in utilization,

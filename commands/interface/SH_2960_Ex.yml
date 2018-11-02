@@ -1,5 +1,6 @@
 ip: 172.16.230.137
 device_name: SH_2960_Ex
+device_type: Switch
 commands: [
   terminal length 0,
   show ip int br | ex up,

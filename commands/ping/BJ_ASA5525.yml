@@ -3,6 +3,6 @@ device_name: BJ_ASA5525
 device_type: ASA
 commands: [
   terminal pager 0,
-  ping CNUC 202.99.166.4 repeat 1000,
+  ping 202.99.166.4 repeat 1000,
   terminal pager 25
 ]
