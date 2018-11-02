@@ -13,8 +13,8 @@ class logmode(object):
         self.logger = logging.getLogger(logger)
         self.logger.setLevel(logging.DEBUG)
         #创建一个handler，用于写入日志文件
-        self.log_filename = log_file
-        self.log_dir = sys.path[0] 
+        self.log_filename = log_file 
+        self.log_dir = sys.path[0] + '/log'
         self.log_name = os.path.join(self.log_dir, self.log_filename)
 
         fh = logging.handlers.TimedRotatingFileHandler(self.log_name, when='D', interval=1, backupCount=0)
