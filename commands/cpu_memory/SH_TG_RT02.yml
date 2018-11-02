@@ -1,0 +1,9 @@
+ip: 172.16.230.188
+device_name: SH_TG_RT02
+device_type: Router
+commands: [
+  terminal length 0,
+  show process cpu | in utilization,
+  show platform resources | in DRAM,
+  terminal length 25
+]
