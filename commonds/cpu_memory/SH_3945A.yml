@@ -1,8 +1,0 @@
-ip: 172.16.230.130
-device_name: SH_3945A
-commands: [
-  terminal length 0,
-  show process cpu | in utilization,
-  show process memory | in Total,
-  terminal length 25
-]

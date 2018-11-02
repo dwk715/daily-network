@@ -1,9 +1,0 @@
-ip: 172.16.230.135
-device_name: SH_5525A
-device_type: ASA
-commands: [
-  terminal pager 0,
-  show cpu usage,
-  show memory,
-  terminal pager 25
-]

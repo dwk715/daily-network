@@ -1,9 +1,0 @@
-ip: 172.16.230.129
-device_name: SX_3945B
-device_type: Switch
-commands: [
-  terminal length 0,
-  show int f 0/1/1 | in 5 minute,
-  show int f 0/3/1 | in 5 minute,
-  terminal length 25
-]
