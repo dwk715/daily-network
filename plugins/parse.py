@@ -90,11 +90,11 @@ def flow(flow_raw):
         for k, v in linebits.items():
             if 'bytes' in flow_result:
                 v = format(
-                    float(re.findall("\d+", v)[0]) * 8 / (1024 * 1024), "0.1f")
+                    float(re.findall("\d+", v)[0]) * 8 / (1024 * 1024), "0.3f")
                 result[k] = v
             if 'bit' in flow_result:
                 v = format(
-                    float(re.findall("\d+", v)[0]) / (1024 * 1024), "0.1f")
+                    float(re.findall("\d+", v)[0]) / (1024 * 1024), "0.3f")
                 result[k] = v
         results.append(result)
     #save_flow(device,results)
