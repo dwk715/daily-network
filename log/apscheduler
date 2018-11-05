@@ -1,438 +1,281 @@
-[2018-11-02 11:20:21,292] Adding job tentatively -- it will be properly scheduled when the scheduler starts
-[2018-11-02 11:20:21,292] Added job "job" to job store "default"
-[2018-11-02 11:20:21,293] Scheduler started
-[2018-11-02 11:29:02,522] Adding job tentatively -- it will be properly scheduled when the scheduler starts
-[2018-11-02 11:29:02,523] Added job "job" to job store "default"
-[2018-11-02 11:29:02,523] Scheduler started
-[2018-11-02 11:29:02,523] Looking for jobs to run
-[2018-11-02 11:29:02,523] Next wakeup is due at 2018-11-02 11:30:02.522303+08:00 (in 59.998527 seconds)
-[2018-11-02 11:30:02,522] Looking for jobs to run
-[2018-11-02 11:30:02,524] Running job "job (trigger: interval[0:01:00], next run at: 2018-11-02 11:30:02 CST)" (scheduled at 2018-11-02 11:30:02.522303+08:00)
-[2018-11-02 11:30:02,524] Next wakeup is due at 2018-11-02 11:31:02.522303+08:00 (in 59.999273 seconds)
-[2018-11-02 11:30:02,530] starting thread (client mode): 0xc0513f28
-[2018-11-02 11:30:02,530] Local version/idstring: SSH-2.0-paramiko_2.4.2
-[2018-11-02 11:30:02,530] Remote version/idstring: SSH-1.99-Cisco-1.25
-[2018-11-02 11:30:02,530] Connected (version 1.99, client Cisco-1.25)
-[2018-11-02 11:30:02,532] kex algos:['diffie-hellman-group1-sha1'] server key:['ssh-rsa'] client encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr'] server encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr'] client mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] server mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] client compress:['none'] server compress:['none'] client lang:[''] server lang:[''] kex follows?False
-[2018-11-02 11:30:02,532] Kex agreed: diffie-hellman-group1-sha1
-[2018-11-02 11:30:02,532] HostKey agreed: ssh-rsa
-[2018-11-02 11:30:02,532] Cipher agreed: aes128-ctr
-[2018-11-02 11:30:02,532] MAC agreed: hmac-sha1
-[2018-11-02 11:30:02,532] Compression agreed: none
-[2018-11-02 11:30:02,618] kex engine KexGroup1 specified hash_algo <built-in function openssl_sha1>
-[2018-11-02 11:30:02,618] Switch to new keys ...
-[2018-11-02 11:30:02,619] Adding ssh-rsa host key for 172.16.230.136: b'11fbfd6b8690cd70e41463467600b185'
-[2018-11-02 11:30:02,620] userauth is OK
-[2018-11-02 11:30:02,621] Authentication (password) successful!
-[2018-11-02 11:30:02,622] [chan 0] Max packet in: 32768 bytes
-[2018-11-02 11:30:02,623] [chan 0] Max packet out: 4096 bytes
-[2018-11-02 11:30:02,623] Secsh channel 0 opened.
-[2018-11-02 11:30:02,624] [chan 0] Sesch channel 0 request ok
-[2018-11-02 11:30:02,625] [chan 0] Sesch channel 0 request ok
-[2018-11-02 11:30:03,727] read_channel: Type help or '?' for a list of available commands.
+[2018-11-04 22:20:00,004] Looking for jobs to run
+[2018-11-04 22:20:00,007] Next wakeup is due at 2018-11-05 08:00:00+08:00 (in 34799.993889 seconds)
+[2018-11-04 22:20:00,007] Running job "job_flow (trigger: cron[day_of_week='0-6', hour='22', minute='20'], next run at: 2018-11-05 22:20:00 CST)" (scheduled at 2018-11-04 22:20:00+08:00)
+[2018-11-04 22:20:00,012] starting thread (client mode): 0x88acbcf8
+[2018-11-04 22:20:00,012] Local version/idstring: SSH-2.0-paramiko_2.4.2
+[2018-11-04 22:20:00,012] Remote version/idstring: SSH-1.99-Cisco-1.25
+[2018-11-04 22:20:00,013] Connected (version 1.99, client Cisco-1.25)
+[2018-11-04 22:20:00,014] kex algos:['diffie-hellman-group1-sha1'] server key:['ssh-rsa'] client encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr'] server encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr'] client mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] server mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] client compress:['none'] server compress:['none'] client lang:[''] server lang:[''] kex follows?False
+[2018-11-04 22:20:00,014] Kex agreed: diffie-hellman-group1-sha1
+[2018-11-04 22:20:00,014] HostKey agreed: ssh-rsa
+[2018-11-04 22:20:00,014] Cipher agreed: aes128-ctr
+[2018-11-04 22:20:00,014] MAC agreed: hmac-sha1
+[2018-11-04 22:20:00,014] Compression agreed: none
+[2018-11-04 22:20:00,049] kex engine KexGroup1 specified hash_algo <built-in function openssl_sha1>
+[2018-11-04 22:20:00,049] Switch to new keys ...
+[2018-11-04 22:20:00,050] Adding ssh-rsa host key for 172.16.230.136: b'11fbfd6b8690cd70e41463467600b185'
+[2018-11-04 22:20:00,051] userauth is OK
+[2018-11-04 22:20:00,052] Authentication (password) successful!
+[2018-11-04 22:20:00,052] [chan 0] Max packet in: 32768 bytes
+[2018-11-04 22:20:00,053] [chan 0] Max packet out: 4096 bytes
+[2018-11-04 22:20:00,053] Secsh channel 0 opened.
+[2018-11-04 22:20:00,054] [chan 0] Sesch channel 0 request ok
+[2018-11-04 22:20:00,055] [chan 0] Sesch channel 0 request ok
+[2018-11-04 22:20:01,157] read_channel: Type help or '?' for a list of available commands.
 SX-ASA> 
-[2018-11-02 11:30:03,827] read_channel: 
-[2018-11-02 11:30:05,830] read_channel: 
-[2018-11-02 11:30:05,830] read_channel: 
-[2018-11-02 11:30:05,830] write_channel: b'\n'
-[2018-11-02 11:30:05,931] read_channel: 
+[2018-11-04 22:20:01,258] read_channel: 
+[2018-11-04 22:20:03,260] read_channel: 
+[2018-11-04 22:20:03,261] read_channel: 
+[2018-11-04 22:20:03,261] write_channel: b'\n'
+[2018-11-04 22:20:03,361] read_channel: 
 SX-ASA> 
-[2018-11-02 11:30:06,032] read_channel: 
-[2018-11-02 11:30:06,033] write_channel: b'\n'
-[2018-11-02 11:30:06,033] Pattern is: SX\-ASA
-[2018-11-02 11:30:06,034] _read_channel_expect read_data: 
+[2018-11-04 22:20:03,462] read_channel: 
+[2018-11-04 22:20:03,463] write_channel: b'\n'
+[2018-11-04 22:20:03,463] Pattern is: SX\-ASA
+[2018-11-04 22:20:03,464] _read_channel_expect read_data: 
 
-[2018-11-02 11:30:06,135] _read_channel_expect read_data: SX-ASA> 
-[2018-11-02 11:30:06,135] Pattern found: SX\-ASA 
+[2018-11-04 22:20:03,565] _read_channel_expect read_data: SX-ASA> 
+[2018-11-04 22:20:03,565] Pattern found: SX\-ASA 
 SX-ASA> 
-[2018-11-02 11:30:06,136] write_channel: b'enable\n'
-[2018-11-02 11:30:06,136] Pattern is: (SX\-ASA|ssword)
-[2018-11-02 11:30:06,136] _read_channel_expect read_data: e
-[2018-11-02 11:30:06,237] _read_channel_expect read_data: nable
+[2018-11-04 22:20:03,565] write_channel: b'enable\n'
+[2018-11-04 22:20:03,566] Pattern is: (SX\-ASA|ssword)
+[2018-11-04 22:20:03,566] _read_channel_expect read_data: e
+[2018-11-04 22:20:03,667] _read_channel_expect read_data: nable
 Password: 
-[2018-11-02 11:30:06,238] Pattern found: (SX\-ASA|ssword) enable
+[2018-11-04 22:20:03,667] Pattern found: (SX\-ASA|ssword) enable
 Password: 
-[2018-11-02 11:30:06,238] write_channel: b'esunnytrunk\n'
-[2018-11-02 11:30:06,238] Pattern is: SX\-ASA
-[2018-11-02 11:30:06,240] _read_channel_expect read_data: **
-[2018-11-02 11:30:06,340] _read_channel_expect read_data: *********
+[2018-11-04 22:20:03,668] write_channel: b'esunnytrunk\n'
+[2018-11-04 22:20:03,668] Pattern is: SX\-ASA
+[2018-11-04 22:20:03,668] _read_channel_expect read_data: *
+[2018-11-04 22:20:03,769] _read_channel_expect read_data: **********
 SX-ASA# 
-[2018-11-02 11:30:06,341] Pattern found: SX\-ASA ***********
+[2018-11-04 22:20:03,770] Pattern found: SX\-ASA ***********
 SX-ASA# 
-[2018-11-02 11:30:06,341] write_channel: b'\n'
-[2018-11-02 11:30:06,341] Pattern is: SX\-ASA
-[2018-11-02 11:30:06,342] _read_channel_expect read_data: 
+[2018-11-04 22:20:03,770] write_channel: b'\n'
+[2018-11-04 22:20:03,770] Pattern is: SX\-ASA
+[2018-11-04 22:20:03,771] _read_channel_expect read_data: 
 
-[2018-11-02 11:30:06,443] _read_channel_expect read_data: SX-ASA# 
-[2018-11-02 11:30:06,444] Pattern found: SX\-ASA 
+[2018-11-04 22:20:03,871] _read_channel_expect read_data: SX-ASA# 
+[2018-11-04 22:20:03,872] Pattern found: SX\-ASA 
 SX-ASA# 
-[2018-11-02 11:30:06,544] read_channel: 
-[2018-11-02 11:30:06,544] In disable_paging
-[2018-11-02 11:30:06,544] Command: terminal pager 0
+[2018-11-04 22:20:03,972] read_channel: 
+[2018-11-04 22:20:03,972] In disable_paging
+[2018-11-04 22:20:03,972] Command: terminal pager 0
 
-[2018-11-02 11:30:06,545] write_channel: b'terminal pager 0\n'
-[2018-11-02 11:30:06,545] Pattern is: SX\-ASA
-[2018-11-02 11:30:06,546] _read_channel_expect read_data: t
-[2018-11-02 11:30:06,646] _read_channel_expect read_data: erminal pager 0
+[2018-11-04 22:20:03,973] write_channel: b'terminal pager 0\n'
+[2018-11-04 22:20:03,973] Pattern is: SX\-ASA
+[2018-11-04 22:20:03,974] _read_channel_expect read_data: t
+[2018-11-04 22:20:04,074] _read_channel_expect read_data: erminal pager 0
 SX-ASA# 
-[2018-11-02 11:30:06,646] Pattern found: SX\-ASA terminal pager 0
+[2018-11-04 22:20:04,075] Pattern found: SX\-ASA terminal pager 0
 SX-ASA# 
-[2018-11-02 11:30:06,647] terminal pager 0
+[2018-11-04 22:20:04,075] terminal pager 0
 SX-ASA# 
-[2018-11-02 11:30:06,647] Exiting disable_paging
-[2018-11-02 11:30:06,647] write_channel: b'terminal width 511\n'
-[2018-11-02 11:30:06,647] Pattern is: SX\-ASA
-[2018-11-02 11:30:06,648] _read_channel_expect read_data: te
-[2018-11-02 11:30:06,749] _read_channel_expect read_data: rminal width 511
+[2018-11-04 22:20:04,075] Exiting disable_paging
+[2018-11-04 22:20:04,075] write_channel: b'terminal width 511\n'
+[2018-11-04 22:20:04,075] Pattern is: SX\-ASA
+[2018-11-04 22:20:04,076] _read_channel_expect read_data: t
+[2018-11-04 22:20:04,177] _read_channel_expect read_data: erminal width 511
                  ^
 ERROR: % Invalid input detected at '^' marker.
 SX-ASA# 
-[2018-11-02 11:30:06,749] Pattern found: SX\-ASA terminal width 511
+[2018-11-04 22:20:04,177] Pattern found: SX\-ASA terminal width 511
                  ^
 ERROR: % Invalid input detected at '^' marker.
 SX-ASA# 
-[2018-11-02 11:30:07,050] read_channel: 
-[2018-11-02 11:30:07,050] write_channel: b'\n'
-[2018-11-02 11:30:07,050] Pattern is: SX\-ASA
-[2018-11-02 11:30:07,051] _read_channel_expect read_data: 
+[2018-11-04 22:20:04,478] read_channel: 
+[2018-11-04 22:20:04,478] write_channel: b'\n'
+[2018-11-04 22:20:04,479] Pattern is: SX\-ASA
+[2018-11-04 22:20:04,479] _read_channel_expect read_data: 
 
-[2018-11-02 11:30:07,152] _read_channel_expect read_data: SX-ASA# 
-[2018-11-02 11:30:07,152] Pattern found: SX\-ASA 
+[2018-11-04 22:20:04,580] _read_channel_expect read_data: SX-ASA# 
+[2018-11-04 22:20:04,580] Pattern found: SX\-ASA 
 SX-ASA# 
-[2018-11-02 11:30:07,152] read_channel: 
-[2018-11-02 11:30:07,152] write_channel: b'\n'
-[2018-11-02 11:30:07,253] read_channel: 
+[2018-11-04 22:20:04,580] read_channel: 
+[2018-11-04 22:20:04,581] write_channel: b'\n'
+[2018-11-04 22:20:04,681] read_channel: 
 SX-ASA# 
-[2018-11-02 11:30:07,354] read_channel: 
-[2018-11-02 11:30:07,555] read_channel: 
-[2018-11-02 11:30:07,555] write_channel: b'terminal pager 0\n'
-[2018-11-02 11:30:07,555] read_channel: 
-[2018-11-02 11:30:07,756] read_channel: terminal pager 0
+[2018-11-04 22:20:04,782] read_channel: 
+[2018-11-04 22:20:04,982] read_channel: 
+[2018-11-04 22:20:04,983] write_channel: b'terminal pager 0\n'
+[2018-11-04 22:20:04,983] read_channel: 
+[2018-11-04 22:20:05,183] read_channel: terminal pager 0
 SX-ASA# 
-[2018-11-02 11:30:07,757] read_channel: 
-[2018-11-02 11:30:07,757] write_channel: b'\n'
-[2018-11-02 11:30:07,857] read_channel: 
+[2018-11-04 22:20:05,184] read_channel: 
+[2018-11-04 22:20:05,184] write_channel: b'\n'
+[2018-11-04 22:20:05,285] read_channel: 
 SX-ASA# 
-[2018-11-02 11:30:07,958] read_channel: 
-[2018-11-02 11:30:08,159] read_channel: 
-[2018-11-02 11:30:08,159] write_channel: b'ping CNTC 114.114.114.114 repeat 1000\n'
-[2018-11-02 11:30:08,159] read_channel: 
-[2018-11-02 11:30:08,360] read_channel: ping CNTC 114.114.114.114 repeat 1000
-Type escape sequence to abort.
-Sending 1000, 100-byte ICMP Echos to 114.114.114.114, timeout is 2 seconds:
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:08,560] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:08,766] read_channel: !!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:08,966] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:09,167] read_channel: !!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:09,368] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:09,568] read_channel: !!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:09,769] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:09,969] read_channel: !!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:10,170] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:10,371] read_channel: !!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:10,572] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:10,773] read_channel: !!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:10,974] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:11,174] read_channel: !!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:11,375] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:11,576] read_channel: !!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:11,777] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:11,978] read_channel: !!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:12,178] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:12,379] read_channel: !!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:12,580] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:12,780] read_channel: !!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:12,981] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:13,182] read_channel: !!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:13,382] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:13,583] read_channel: !!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!
-[2018-11-02 11:30:13,784] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:13,985] read_channel: !!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!
-[2018-11-02 11:30:14,185] read_channel: !!!!!!!
-Success rate is 100 percent (1000/1000), round-trip min/avg/max = 1/6/10 ms
+[2018-11-04 22:20:05,385] read_channel: 
+[2018-11-04 22:20:05,586] read_channel: 
+[2018-11-04 22:20:05,587] write_channel: b'show int g 0/2 | in 1 minute\n'
+[2018-11-04 22:20:05,587] read_channel: 
+[2018-11-04 22:20:05,788] read_channel: show int g 0/2 | in 1 minute
+      1 minute input rate 462 pkts/sec,  35489 bytes/sec
+      1 minute output rate 475 pkts/sec,  282692 bytes/sec
+      1 minute drop rate, 0 pkts/sec
 SX-ASA# 
-[2018-11-02 11:30:14,186] read_channel: 
-[2018-11-02 11:30:14,186] write_channel: b'\n'
-[2018-11-02 11:30:14,287] read_channel: 
+[2018-11-04 22:20:05,788] read_channel: 
+[2018-11-04 22:20:05,788] write_channel: b'\n'
+[2018-11-04 22:20:05,889] read_channel: 
 SX-ASA# 
-[2018-11-02 11:30:14,388] read_channel: 
-[2018-11-02 11:30:14,589] read_channel: 
-[2018-11-02 11:30:14,589] write_channel: b'ping CNUC 221.6.4.66 repeat 1000\n'
-[2018-11-02 11:30:14,590] read_channel: 
-[2018-11-02 11:30:14,790] read_channel: ping CNUC 221.6.4.66 repeat 1000
-Type escape sequence to abort.
-Sending 1000, 100-byte ICMP Echos to 221.6.4.66, timeout is 2 seconds:
-!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:14,991] read_channel: !!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:15,192] read_channel: !!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:15,393] read_channel: !!!!!!!!!!!!!
-!!!!!!
-[2018-11-02 11:30:15,594] read_channel: !!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:15,794] read_channel: !!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:15,995] read_channel: !!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:16,196] read_channel: !!!!!
-!!!!!!!!!!!!!!
-[2018-11-02 11:30:16,396] read_channel: !!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:16,597] read_channel: !!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:16,798] read_channel: !!!!!!!!!!!!!!!!!
-!!!
-[2018-11-02 11:30:16,999] read_channel: !!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:17,200] read_channel: !!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:17,400] read_channel: !!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:17,602] read_channel: !!!!!!!!!
-!!!!!!!!!!
-[2018-11-02 11:30:17,803] read_channel: !!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:18,003] read_channel: !!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:18,204] read_channel: !!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:18,405] read_channel: !!
-!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:18,606] read_channel: !!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:18,806] read_channel: !!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:19,007] read_channel: !!!!!!!!!!!!!!
-!!!!!!
-[2018-11-02 11:30:19,208] read_channel: !!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:19,408] read_channel: !!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:19,609] read_channel: !!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:19,810] read_channel: !!!!!!
-!!!!!!!!!!!!!
-[2018-11-02 11:30:20,010] read_channel: !!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:20,211] read_channel: !!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:20,412] read_channel: !!!!!!!!!!!!!!!!!!!
-!
-[2018-11-02 11:30:20,613] read_channel: !!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:20,814] read_channel: !!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:21,014] read_channel: !!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:21,215] read_channel: !!!!!!!!!!!
-!!!!!!!!
-[2018-11-02 11:30:21,416] read_channel: !!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:21,617] read_channel: !!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:21,817] read_channel: !!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:22,018] read_channel: !!!!
-!!!!!!!!!!!!!!!
-[2018-11-02 11:30:22,219] read_channel: !!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:22,420] read_channel: !!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:22,620] read_channel: !!!!!!!!!!!!!!!!
-!!!!
-[2018-11-02 11:30:22,821] read_channel: !!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:23,022] read_channel: !!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:23,222] read_channel: !!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:23,423] read_channel: !!!!!!!!
-!!!!!!!!!!!
-[2018-11-02 11:30:23,624] read_channel: !!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:23,824] read_channel: !!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:24,025] read_channel: !!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:24,226] read_channel: !
-!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:24,426] read_channel: !!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:24,627] read_channel: !!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:30:24,828] read_channel: !!!!!!!!!!!!
-!!!!!!!
-[2018-11-02 11:30:25,029] read_channel: !!!!!!!!!!!!!
-Success rate is 100 percent (1000/1000), round-trip min/avg/max = 1/10/20 ms
+[2018-11-04 22:20:05,990] read_channel: 
+[2018-11-04 22:20:06,191] read_channel: 
+[2018-11-04 22:20:06,191] write_channel: b'show int g 0/3 | in 1 minute\n'
+[2018-11-04 22:20:06,192] read_channel: 
+[2018-11-04 22:20:06,392] read_channel: show int g 0/3 | in 1 minute
+      1 minute input rate 122 pkts/sec,  7644 bytes/sec
+      1 minute output rate 125 pkts/sec,  60592 bytes/sec
+      1 minute drop rate, 0 pkts/sec
 SX-ASA# 
-[2018-11-02 11:30:25,029] read_channel: 
-[2018-11-02 11:30:25,029] write_channel: b'\n'
-[2018-11-02 11:30:25,130] read_channel: 
+[2018-11-04 22:20:06,392] read_channel: 
+[2018-11-04 22:20:06,393] write_channel: b'\n'
+[2018-11-04 22:20:06,493] read_channel: 
 SX-ASA# 
-[2018-11-02 11:30:25,230] read_channel: 
-[2018-11-02 11:30:25,431] read_channel: 
-[2018-11-02 11:30:25,432] write_channel: b'terminal pager 25\n'
-[2018-11-02 11:30:25,432] read_channel: 
-[2018-11-02 11:30:25,633] read_channel: terminal pager 25
+[2018-11-04 22:20:06,594] read_channel: 
+[2018-11-04 22:20:06,795] read_channel: 
+[2018-11-04 22:20:06,795] write_channel: b'terminal pager 25\n'
+[2018-11-04 22:20:06,796] read_channel: 
+[2018-11-04 22:20:06,996] read_channel: terminal pager 25
 SX-ASA# 
-[2018-11-02 11:30:25,633] write_channel: b'\n'
-[2018-11-02 11:30:25,734] read_channel: 
+[2018-11-04 22:20:06,996] write_channel: b'\n'
+[2018-11-04 22:20:07,097] read_channel: 
 SX-ASA# 
-[2018-11-02 11:30:25,834] read_channel: 
-[2018-11-02 11:30:27,836] read_channel: 
-[2018-11-02 11:30:27,836] exit_config_mode: 
-[2018-11-02 11:30:27,837] write_channel: b'exit\n'
-[2018-11-02 11:30:27,838] EOF in transport thread
-[2018-11-02 11:30:27,846] starting thread (client mode): 0xbdaa1cf8
-[2018-11-02 11:30:27,847] Local version/idstring: SSH-2.0-paramiko_2.4.2
-[2018-11-02 11:30:27,847] Remote version/idstring: SSH-1.99-Cisco-1.25
-[2018-11-02 11:30:27,848] Connected (version 1.99, client Cisco-1.25)
-[2018-11-02 11:30:27,849] kex algos:['diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa'] client encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc'] server encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc'] client mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] server mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] client compress:['none'] server compress:['none'] client lang:[''] server lang:[''] kex follows?False
-[2018-11-02 11:30:27,849] Kex agreed: diffie-hellman-group-exchange-sha1
-[2018-11-02 11:30:27,849] HostKey agreed: ssh-rsa
-[2018-11-02 11:30:27,849] Cipher agreed: aes128-cbc
-[2018-11-02 11:30:27,849] MAC agreed: hmac-sha1
-[2018-11-02 11:30:27,850] Compression agreed: none
-[2018-11-02 11:30:28,046] Got server p (2048 bits)
-[2018-11-02 11:30:28,189] kex engine KexGex specified hash_algo <built-in function openssl_sha1>
-[2018-11-02 11:30:28,190] Switch to new keys ...
-[2018-11-02 11:30:28,190] Adding ssh-rsa host key for 172.16.230.129: b'7a7ce7076b6d2a036995e4bd8b6114aa'
-[2018-11-02 11:30:28,386] userauth is OK
-[2018-11-02 11:30:28,389] Authentication (password) successful!
-[2018-11-02 11:30:28,390] [chan 0] Max packet in: 32768 bytes
-[2018-11-02 11:30:28,390] [chan 0] Max packet out: 4096 bytes
-[2018-11-02 11:30:28,391] Secsh channel 0 opened.
-[2018-11-02 11:30:28,392] [chan 0] Sesch channel 0 request ok
-[2018-11-02 11:30:28,392] [chan 0] Sesch channel 0 request ok
-[2018-11-02 11:30:29,494] read_channel: SX_RB>
-[2018-11-02 11:30:29,595] read_channel: 
-[2018-11-02 11:30:31,597] read_channel: 
-[2018-11-02 11:30:31,598] read_channel: 
-[2018-11-02 11:30:31,599] write_channel: b'\n'
-[2018-11-02 11:30:31,700] read_channel: 
+[2018-11-04 22:20:07,197] read_channel: 
+[2018-11-04 22:20:09,198] read_channel: 
+[2018-11-04 22:20:09,198] exit_config_mode: 
+[2018-11-04 22:20:09,199] write_channel: b'exit\n'
+[2018-11-04 22:20:09,200] EOF in transport thread
+[2018-11-04 22:20:09,328] starting thread (client mode): 0x88b4a160
+[2018-11-04 22:20:09,329] Local version/idstring: SSH-2.0-paramiko_2.4.2
+[2018-11-04 22:20:09,329] Remote version/idstring: SSH-1.99-Cisco-1.25
+[2018-11-04 22:20:09,329] Connected (version 1.99, client Cisco-1.25)
+[2018-11-04 22:20:09,330] kex algos:['diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa'] client encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc'] server encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc'] client mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] server mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] client compress:['none'] server compress:['none'] client lang:[''] server lang:[''] kex follows?False
+[2018-11-04 22:20:09,330] Kex agreed: diffie-hellman-group-exchange-sha1
+[2018-11-04 22:20:09,330] HostKey agreed: ssh-rsa
+[2018-11-04 22:20:09,330] Cipher agreed: aes128-cbc
+[2018-11-04 22:20:09,330] MAC agreed: hmac-sha1
+[2018-11-04 22:20:09,330] Compression agreed: none
+[2018-11-04 22:20:09,530] Got server p (2048 bits)
+[2018-11-04 22:20:09,667] kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+[2018-11-04 22:20:09,668] Switch to new keys ...
+[2018-11-04 22:20:09,669] Adding ssh-rsa host key for 172.16.230.129: b'7a7ce7076b6d2a036995e4bd8b6114aa'
+[2018-11-04 22:20:09,866] userauth is OK
+[2018-11-04 22:20:09,869] Authentication (password) successful!
+[2018-11-04 22:20:09,870] [chan 0] Max packet in: 32768 bytes
+[2018-11-04 22:20:09,871] [chan 0] Max packet out: 4096 bytes
+[2018-11-04 22:20:09,871] Secsh channel 0 opened.
+[2018-11-04 22:20:09,872] [chan 0] Sesch channel 0 request ok
+[2018-11-04 22:20:09,873] [chan 0] Sesch channel 0 request ok
+[2018-11-04 22:20:10,975] read_channel: SX_RB>
+[2018-11-04 22:20:11,075] read_channel: 
+[2018-11-04 22:20:13,078] read_channel: 
+[2018-11-04 22:20:13,078] read_channel: 
+[2018-11-04 22:20:13,079] write_channel: b'\n'
+[2018-11-04 22:20:13,179] read_channel: 
 SX_RB>
-[2018-11-02 11:30:31,802] read_channel: 
-[2018-11-02 11:30:31,903] read_channel: 
-[2018-11-02 11:30:31,903] In disable_paging
-[2018-11-02 11:30:31,904] Command: terminal length 0
+[2018-11-04 22:20:13,280] read_channel: 
+[2018-11-04 22:20:13,380] read_channel: 
+[2018-11-04 22:20:13,380] In disable_paging
+[2018-11-04 22:20:13,381] Command: terminal length 0
 
-[2018-11-02 11:30:31,904] write_channel: b'terminal length 0\n'
-[2018-11-02 11:30:31,904] Pattern is: SX_RB
-[2018-11-02 11:30:31,908] _read_channel_expect read_data: ter
-[2018-11-02 11:30:32,009] _read_channel_expect read_data: minal length 0
+[2018-11-04 22:20:13,381] write_channel: b'terminal length 0\n'
+[2018-11-04 22:20:13,381] Pattern is: SX_RB
+[2018-11-04 22:20:13,382] _read_channel_expect read_data: t
+[2018-11-04 22:20:13,482] _read_channel_expect read_data: erminal length 0
 SX_RB>
-[2018-11-02 11:30:32,009] Pattern found: SX_RB terminal length 0
+[2018-11-04 22:20:13,482] Pattern found: SX_RB terminal length 0
 SX_RB>
-[2018-11-02 11:30:32,009] terminal length 0
+[2018-11-04 22:20:13,483] terminal length 0
 SX_RB>
-[2018-11-02 11:30:32,009] Exiting disable_paging
-[2018-11-02 11:30:32,010] write_channel: b'terminal width 511\n'
-[2018-11-02 11:30:32,010] Pattern is: SX_RB
-[2018-11-02 11:30:32,010] _read_channel_expect read_data: t
-[2018-11-02 11:30:32,111] _read_channel_expect read_data: erminal width 511
+[2018-11-04 22:20:13,483] Exiting disable_paging
+[2018-11-04 22:20:13,483] write_channel: b'terminal width 511\n'
+[2018-11-04 22:20:13,483] Pattern is: SX_RB
+[2018-11-04 22:20:13,484] _read_channel_expect read_data: t
+[2018-11-04 22:20:13,585] _read_channel_expect read_data: erminal width 511
 SX_RB>
-[2018-11-02 11:30:32,112] Pattern found: SX_RB terminal width 511
+[2018-11-04 22:20:13,585] Pattern found: SX_RB terminal width 511
 SX_RB>
-[2018-11-02 11:30:32,412] read_channel: 
-[2018-11-02 11:30:32,413] write_channel: b'\n'
-[2018-11-02 11:30:32,414] Pattern is: SX_RB
-[2018-11-02 11:30:32,416] _read_channel_expect read_data: 
+[2018-11-04 22:20:13,886] read_channel: 
+[2018-11-04 22:20:13,886] write_channel: b'\n'
+[2018-11-04 22:20:13,886] Pattern is: SX_RB
+[2018-11-04 22:20:13,887] _read_channel_expect read_data: 
 
-[2018-11-02 11:30:32,517] _read_channel_expect read_data: SX_RB>
-[2018-11-02 11:30:32,518] Pattern found: SX_RB 
+[2018-11-04 22:20:13,988] _read_channel_expect read_data: SX_RB>
+[2018-11-04 22:20:13,988] Pattern found: SX_RB 
 SX_RB>
-[2018-11-02 11:30:32,518] write_channel: b'enable\n'
-[2018-11-02 11:30:32,518] Pattern is: (SX_RB|ssword)
-[2018-11-02 11:30:32,519] _read_channel_expect read_data: e
-[2018-11-02 11:30:32,620] _read_channel_expect read_data: nable
+[2018-11-04 22:20:13,988] write_channel: b'enable\n'
+[2018-11-04 22:20:13,988] Pattern is: (SX_RB|ssword)
+[2018-11-04 22:20:13,989] _read_channel_expect read_data: e
+[2018-11-04 22:20:14,090] _read_channel_expect read_data: nable
 Password: 
-[2018-11-02 11:30:32,620] Pattern found: (SX_RB|ssword) enable
+[2018-11-04 22:20:14,090] Pattern found: (SX_RB|ssword) enable
 Password: 
-[2018-11-02 11:30:32,621] write_channel: b'esunnytrunk\n'
-[2018-11-02 11:30:32,621] Pattern is: SX_RB
-[2018-11-02 11:30:32,624] _read_channel_expect read_data: 
+[2018-11-04 22:20:14,090] write_channel: b'esunnytrunk\n'
+[2018-11-04 22:20:14,091] Pattern is: SX_RB
+[2018-11-04 22:20:14,093] _read_channel_expect read_data: 
 SX_RB#
-[2018-11-02 11:30:32,625] Pattern found: SX_RB 
+[2018-11-04 22:20:14,094] Pattern found: SX_RB 
 SX_RB#
-[2018-11-02 11:30:32,625] write_channel: b'\n'
-[2018-11-02 11:30:32,625] Pattern is: SX_RB
-[2018-11-02 11:30:32,626] _read_channel_expect read_data: 
+[2018-11-04 22:20:14,094] write_channel: b'\n'
+[2018-11-04 22:20:14,094] Pattern is: SX_RB
+[2018-11-04 22:20:14,095] _read_channel_expect read_data: 
 
-[2018-11-02 11:30:32,727] _read_channel_expect read_data: SX_RB#
-[2018-11-02 11:30:32,728] Pattern found: SX_RB 
+[2018-11-04 22:20:14,196] _read_channel_expect read_data: SX_RB#
+[2018-11-04 22:20:14,196] Pattern found: SX_RB 
 SX_RB#
-[2018-11-02 11:30:32,728] read_channel: 
-[2018-11-02 11:30:32,730] write_channel: b'\n'
-[2018-11-02 11:30:32,830] read_channel: 
+[2018-11-04 22:20:14,196] read_channel: 
+[2018-11-04 22:20:14,196] write_channel: b'\n'
+[2018-11-04 22:20:14,297] read_channel: 
 SX_RB#
-[2018-11-02 11:30:32,931] read_channel: 
-[2018-11-02 11:30:33,132] read_channel: 
-[2018-11-02 11:30:33,132] write_channel: b'terminal length 0\n'
-[2018-11-02 11:30:33,132] read_channel: 
-[2018-11-02 11:30:33,333] read_channel: terminal length 0
+[2018-11-04 22:20:14,397] read_channel: 
+[2018-11-04 22:20:14,599] read_channel: 
+[2018-11-04 22:20:14,599] write_channel: b'terminal length 0\n'
+[2018-11-04 22:20:14,600] read_channel: 
+[2018-11-04 22:20:14,800] read_channel: terminal length 0
 SX_RB#
-[2018-11-02 11:30:33,334] read_channel: 
-[2018-11-02 11:30:33,334] write_channel: b'\n'
-[2018-11-02 11:30:33,436] read_channel: 
+[2018-11-04 22:20:14,800] read_channel: 
+[2018-11-04 22:20:14,801] write_channel: b'\n'
+[2018-11-04 22:20:14,901] read_channel: 
 SX_RB#
-[2018-11-02 11:30:33,538] read_channel: 
-[2018-11-02 11:30:33,739] read_channel: 
-[2018-11-02 11:30:33,739] write_channel: b'ping 172.17.1.34 repeat 100\n'
-[2018-11-02 11:30:33,739] read_channel: 
-[2018-11-02 11:30:33,941] read_channel: ping 172.17.1.34 repeat 100
-Type escape sequence to abort.
-Sending 100, 100-byte ICMP Echos to 172.17.1.34, timeout is 2 seconds:
-!!!!!!
-[2018-11-02 11:30:34,142] read_channel: !!!!!!
-[2018-11-02 11:30:34,342] read_channel: !!!!!!
-[2018-11-02 11:30:34,543] read_channel: !!!!!!
-[2018-11-02 11:30:34,744] read_channel: !!!!!!!
-[2018-11-02 11:30:34,945] read_channel: !!!!!!
-[2018-11-02 11:30:35,145] read_channel: !!!!!!
-[2018-11-02 11:30:35,346] read_channel: !!!!!!!
-[2018-11-02 11:30:35,547] read_channel: !!!!!!
-[2018-11-02 11:30:35,748] read_channel: !!!!!!
-[2018-11-02 11:30:35,948] read_channel: !!!!!!!
-[2018-11-02 11:30:36,149] read_channel: !
-!!!!!
-[2018-11-02 11:30:36,349] read_channel: !!!!!!
-[2018-11-02 11:30:36,550] read_channel: !!!!!!
-[2018-11-02 11:30:36,751] read_channel: !!!!!!!
-[2018-11-02 11:30:36,951] read_channel: !!!!!!
-Success rate is 100 percent (100/100), round-trip min/avg/max = 28/31/36 ms
+[2018-11-04 22:20:15,002] read_channel: 
+[2018-11-04 22:20:15,203] read_channel: 
+[2018-11-04 22:20:15,203] write_channel: b'show int f 0/1/1 | in 5 minute\n'
+[2018-11-04 22:20:15,204] read_channel: 
+[2018-11-04 22:20:15,405] read_channel: show int f 0/1/1 | in 5 minute
+  5 minute input rate 1543000 bits/sec, 797 packets/sec
+  5 minute output rate 646000 bits/sec, 719 packets/sec
 SX_RB#
-[2018-11-02 11:30:36,952] read_channel: 
-[2018-11-02 11:30:36,952] write_channel: b'\n'
-[2018-11-02 11:30:37,053] read_channel: 
+[2018-11-04 22:20:15,405] read_channel: 
+[2018-11-04 22:20:15,405] write_channel: b'\n'
+[2018-11-04 22:20:15,506] read_channel: 
 SX_RB#
-[2018-11-02 11:30:37,153] read_channel: 
-[2018-11-02 11:30:37,354] read_channel: 
-[2018-11-02 11:30:37,355] write_channel: b'ping 172.17.1.42 repeat 100\n'
-[2018-11-02 11:30:37,356] read_channel: 
-[2018-11-02 11:30:37,556] read_channel: ping 172.17.1.42 repeat 100
-Type escape sequence to abort.
-Sending 100, 100-byte ICMP Echos to 172.17.1.42, timeout is 2 seconds:
-!!!!!
-[2018-11-02 11:30:37,757] read_channel: !!!!!
-[2018-11-02 11:30:37,958] read_channel: !!!!!
-[2018-11-02 11:30:38,158] read_channel: !!!!!!
-[2018-11-02 11:30:38,359] read_channel: !!!!!
-[2018-11-02 11:30:38,560] read_channel: !!!!!!
-[2018-11-02 11:30:38,760] read_channel: !!!!!
-[2018-11-02 11:30:38,961] read_channel: !!!!!
-[2018-11-02 11:30:39,162] read_channel: !!!!!!
-[2018-11-02 11:30:39,362] read_channel: !!!!!
-[2018-11-02 11:30:39,563] read_channel: !!!!!
-[2018-11-02 11:30:39,764] read_channel: !!!!!!
-[2018-11-02 11:30:39,965] read_channel: !!!!!
-[2018-11-02 11:30:40,166] read_channel: !
-!!!!!
-[2018-11-02 11:30:40,366] read_channel: !!!!!
-[2018-11-02 11:30:40,567] read_channel: !!!!!
-[2018-11-02 11:30:40,768] read_channel: !!!!!!
-[2018-11-02 11:30:40,968] read_channel: !!!!!
-[2018-11-02 11:30:41,169] read_channel: !!!!
-Success rate is 100 percent (100/100), round-trip min/avg/max = 36/37/40 ms
+[2018-11-04 22:20:15,606] read_channel: 
+[2018-11-04 22:20:15,807] read_channel: 
+[2018-11-04 22:20:15,808] write_channel: b'show int f 0/3/1 | in 5 minute\n'
+[2018-11-04 22:20:15,808] read_channel: 
+[2018-11-04 22:20:16,009] read_channel: show int f 0/3/1 | in 5 minute
+  5 minute input rate 2000 bits/sec, 3 packets/sec
+  5 minute output rate 1000 bits/sec, 2 packets/sec
 SX_RB#
-[2018-11-02 11:30:41,169] read_channel: 
-[2018-11-02 11:30:41,170] write_channel: b'\n'
-[2018-11-02 11:30:41,270] read_channel: 
+[2018-11-04 22:20:16,009] read_channel: 
+[2018-11-04 22:20:16,009] write_channel: b'\n'
+[2018-11-04 22:20:16,110] read_channel: 
 SX_RB#
-[2018-11-02 11:30:41,371] read_channel: 
-[2018-11-02 11:30:41,572] read_channel: 
-[2018-11-02 11:30:41,572] write_channel: b'terminal length 25\n'
-[2018-11-02 11:30:41,572] read_channel: 
-[2018-11-02 11:30:41,773] read_channel: terminal length 25
+[2018-11-04 22:20:16,210] read_channel: 
+[2018-11-04 22:20:16,411] read_channel: 
+[2018-11-04 22:20:16,412] write_channel: b'terminal length 25\n'
+[2018-11-04 22:20:16,412] read_channel: 
+[2018-11-04 22:20:16,613] read_channel: terminal length 25
 SX_RB#
-[2018-11-02 11:30:41,774] write_channel: b'\n'
-[2018-11-02 11:30:41,875] read_channel: 
+[2018-11-04 22:20:16,613] write_channel: b'\n'
+[2018-11-04 22:20:16,714] read_channel: 
 SX_RB#
-[2018-11-02 11:30:41,975] read_channel: 
-[2018-11-02 11:30:43,977] read_channel: 
-[2018-11-02 11:30:43,978] exit_config_mode: 
-[2018-11-02 11:30:43,978] write_channel: b'exit\n'
-[2018-11-02 11:30:43,979] EOF in transport thread
-[2018-11-02 11:30:44,987] read_channel: C
+[2018-11-04 22:20:16,814] read_channel: 
+[2018-11-04 22:20:18,815] read_channel: 
+[2018-11-04 22:20:18,815] exit_config_mode: 
+[2018-11-04 22:20:18,816] write_channel: b'exit\n'
+[2018-11-04 22:20:18,816] EOF in transport thread
+[2018-11-04 22:20:19,924] read_channel: C
 ******************************************
 *  ZCE
 *  Hostname: SH-TG-RT01
@@ -441,582 +284,387 @@ SX_RB#
 *  Any Unauthorized Login is Illegal !!! 
 ******************************************
 
+
 User Access Verification
 
 Username: 
-[2018-11-02 11:30:44,988] write_channel: b'cisco\r\n'
-[2018-11-02 11:30:45,989] read_channel: cisco
+[2018-11-04 22:20:19,925] write_channel: b'cisco\r\n'
+[2018-11-04 22:20:20,927] read_channel: cisco
 Password: 
-[2018-11-02 11:30:45,990] write_channel: b'cisco\r\n'
-[2018-11-02 11:30:46,491] read_channel: 
+[2018-11-04 22:20:20,927] write_channel: b'cisco\r\n'
+[2018-11-04 22:20:21,428] read_channel: 
 SH-TG-RT01>
-[2018-11-02 11:30:47,594] read_channel: 
-[2018-11-02 11:30:49,596] read_channel: 
-[2018-11-02 11:30:49,597] write_channel: b'\n'
-[2018-11-02 11:30:49,808] read_channel: 
+[2018-11-04 22:20:22,530] read_channel: 
+[2018-11-04 22:20:24,532] read_channel: 
+[2018-11-04 22:20:24,533] write_channel: b'\n'
+[2018-11-04 22:20:24,743] read_channel: 
 SH-TG-RT01>
-[2018-11-02 11:30:49,909] read_channel: 
-[2018-11-02 11:30:51,911] read_channel: 
-[2018-11-02 11:30:51,912] read_channel: 
-[2018-11-02 11:30:51,912] write_channel: b'\n'
-[2018-11-02 11:30:52,013] read_channel: 
+[2018-11-04 22:20:24,844] read_channel: 
+[2018-11-04 22:20:26,846] read_channel: 
+[2018-11-04 22:20:26,847] read_channel: 
+[2018-11-04 22:20:26,847] write_channel: b'\n'
+[2018-11-04 22:20:26,948] read_channel: 
 SH-TG-RT01>
-[2018-11-02 11:30:52,114] read_channel: 
-[2018-11-02 11:30:52,214] read_channel: 
-[2018-11-02 11:30:52,215] In disable_paging
-[2018-11-02 11:30:52,215] Command: terminal length 0
+[2018-11-04 22:20:27,048] read_channel: 
+[2018-11-04 22:20:27,149] read_channel: 
+[2018-11-04 22:20:27,149] In disable_paging
+[2018-11-04 22:20:27,149] Command: terminal length 0
 
-[2018-11-02 11:30:52,215] write_channel: b'terminal length 0\n'
-[2018-11-02 11:30:52,215] Pattern is: SH\-TG\-RT01
-[2018-11-02 11:30:52,215] read_channel: 
-[2018-11-02 11:30:52,316] read_channel: terminal length 0
+[2018-11-04 22:20:27,149] write_channel: b'terminal length 0\n'
+[2018-11-04 22:20:27,149] Pattern is: SH\-TG\-RT01
+[2018-11-04 22:20:27,150] read_channel: t
+[2018-11-04 22:20:27,250] read_channel: erminal length 0
 SH-TG-RT01>
-[2018-11-02 11:30:52,316] Pattern found: SH\-TG\-RT01 terminal length 0
+[2018-11-04 22:20:27,251] Pattern found: SH\-TG\-RT01 terminal length 0
 SH-TG-RT01>
-[2018-11-02 11:30:52,316] terminal length 0
+[2018-11-04 22:20:27,251] terminal length 0
 SH-TG-RT01>
-[2018-11-02 11:30:52,317] Exiting disable_paging
-[2018-11-02 11:30:52,317] write_channel: b'terminal width 511\n'
-[2018-11-02 11:30:52,317] Pattern is: SH\-TG\-RT01
-[2018-11-02 11:30:52,317] read_channel: 
-[2018-11-02 11:30:52,418] read_channel: terminal width 511
+[2018-11-04 22:20:27,251] Exiting disable_paging
+[2018-11-04 22:20:27,252] write_channel: b'terminal width 511\n'
+[2018-11-04 22:20:27,252] Pattern is: SH\-TG\-RT01
+[2018-11-04 22:20:27,252] read_channel: 
+[2018-11-04 22:20:27,353] read_channel: terminal width 511
 SH-TG-RT01>
-[2018-11-02 11:30:52,418] Pattern found: SH\-TG\-RT01 terminal width 511
+[2018-11-04 22:20:27,353] Pattern found: SH\-TG\-RT01 terminal width 511
 SH-TG-RT01>
-[2018-11-02 11:30:52,719] read_channel: 
-[2018-11-02 11:30:52,719] write_channel: b'\n'
-[2018-11-02 11:30:52,719] Pattern is: SH\-TG\-RT01
-[2018-11-02 11:30:52,720] read_channel: 
+[2018-11-04 22:20:27,654] read_channel: 
+[2018-11-04 22:20:27,654] write_channel: b'\n'
+[2018-11-04 22:20:27,655] Pattern is: SH\-TG\-RT01
+[2018-11-04 22:20:27,655] read_channel: 
 SH-TG-RT01>
-[2018-11-02 11:30:52,720] Pattern found: SH\-TG\-RT01 
+[2018-11-04 22:20:27,655] Pattern found: SH\-TG\-RT01 
 SH-TG-RT01>
-[2018-11-02 11:30:52,720] write_channel: b'enable\n'
-[2018-11-02 11:30:52,720] Pattern is: (SH\-TG\-RT01|ssword)
-[2018-11-02 11:30:52,721] read_channel: e
-[2018-11-02 11:30:52,822] read_channel: nable
+[2018-11-04 22:20:27,656] write_channel: b'enable\n'
+[2018-11-04 22:20:27,656] Pattern is: (SH\-TG\-RT01|ssword)
+[2018-11-04 22:20:27,656] read_channel: e
+[2018-11-04 22:20:27,756] read_channel: nable
 Password: 
-[2018-11-02 11:30:52,822] Pattern found: (SH\-TG\-RT01|ssword) enable
+[2018-11-04 22:20:27,757] Pattern found: (SH\-TG\-RT01|ssword) enable
 Password: 
-[2018-11-02 11:30:52,822] write_channel: b'cisco\n'
-[2018-11-02 11:30:52,822] Pattern is: SH\-TG\-RT01
-[2018-11-02 11:30:52,823] read_channel: 
-[2018-11-02 11:30:52,923] read_channel: 
+[2018-11-04 22:20:27,757] write_channel: b'cisco\n'
+[2018-11-04 22:20:27,757] Pattern is: SH\-TG\-RT01
+[2018-11-04 22:20:27,757] read_channel: 
+[2018-11-04 22:20:27,858] read_channel: 
 SH-TG-RT01#
-[2018-11-02 11:30:52,924] Pattern found: SH\-TG\-RT01 
+[2018-11-04 22:20:27,858] Pattern found: SH\-TG\-RT01 
 SH-TG-RT01#
-[2018-11-02 11:30:52,924] write_channel: b'\n'
-[2018-11-02 11:30:52,924] Pattern is: SH\-TG\-RT01
-[2018-11-02 11:30:52,925] read_channel: 
+[2018-11-04 22:20:27,858] write_channel: b'\n'
+[2018-11-04 22:20:27,858] Pattern is: SH\-TG\-RT01
+[2018-11-04 22:20:27,858] read_channel: 
+[2018-11-04 22:20:27,959] read_channel: 
 SH-TG-RT01#
-[2018-11-02 11:30:52,925] Pattern found: SH\-TG\-RT01 
+[2018-11-04 22:20:27,960] Pattern found: SH\-TG\-RT01 
 SH-TG-RT01#
-[2018-11-02 11:30:52,925] read_channel: 
-[2018-11-02 11:30:52,925] write_channel: b'\n'
-[2018-11-02 11:30:53,026] read_channel: 
+[2018-11-04 22:20:27,960] read_channel: 
+[2018-11-04 22:20:27,960] write_channel: b'\n'
+[2018-11-04 22:20:28,061] read_channel: 
 SH-TG-RT01#
-[2018-11-02 11:30:53,127] read_channel: 
-[2018-11-02 11:30:53,327] read_channel: 
-[2018-11-02 11:30:53,328] write_channel: b'terminal length 0\n'
-[2018-11-02 11:30:53,328] read_channel: 
-[2018-11-02 11:30:53,528] read_channel: terminal length 0
+[2018-11-04 22:20:28,161] read_channel: 
+[2018-11-04 22:20:28,362] read_channel: 
+[2018-11-04 22:20:28,362] write_channel: b'terminal length 0\n'
+[2018-11-04 22:20:28,362] read_channel: 
+[2018-11-04 22:20:28,563] read_channel: terminal length 0
 SH-TG-RT01#
-[2018-11-02 11:30:53,529] read_channel: 
-[2018-11-02 11:30:53,529] write_channel: b'\n'
-[2018-11-02 11:30:53,630] read_channel: 
+[2018-11-04 22:20:28,563] read_channel: 
+[2018-11-04 22:20:28,564] write_channel: b'\n'
+[2018-11-04 22:20:28,664] read_channel: 
 SH-TG-RT01#
-[2018-11-02 11:30:53,730] read_channel: 
-[2018-11-02 11:30:53,931] read_channel: 
-[2018-11-02 11:30:53,931] write_channel: b'ping 10.18.0.1 repeat 100\n'
-[2018-11-02 11:30:53,931] read_channel: 
-[2018-11-02 11:30:54,133] read_channel: ping 10.18.0.1 repeat 100
-Type escape sequence to abort.
-Sending 100, 100-byte ICMP Echos to 10.18.0.1, timeout is 2 seconds:
-!!!!!!!!!
-[2018-11-02 11:30:54,334] read_channel: !!!!!!!!!!!
-[2018-11-02 11:30:54,534] read_channel: !!!!!!!!!!!
-[2018-11-02 11:30:54,735] read_channel: !!!!!!!!!!!
-[2018-11-02 11:30:54,936] read_channel: !!!!!!!!!!!
-[2018-11-02 11:30:55,136] read_channel: !!!!!!!!!!!!
-[2018-11-02 11:30:55,337] read_channel: !!!!!
-!!!!!!
-[2018-11-02 11:30:55,538] read_channel: !!!!!!!!!!!
-[2018-11-02 11:30:55,739] read_channel: !!!!!!!!!!!!
-[2018-11-02 11:30:55,940] read_channel: !
-Success rate is 100 percent (100/100), round-trip min/avg/max = 17/17/26 ms
+[2018-11-04 22:20:28,765] read_channel: 
+[2018-11-04 22:20:28,965] read_channel: 
+[2018-11-04 22:20:28,965] write_channel: b'show int g 0/0/0 | in 5 minute\n'
+[2018-11-04 22:20:28,966] read_channel: 
+[2018-11-04 22:20:29,167] read_channel: show int g 0/0/0 | in 5 minute
+  5 minute input rate 4000 bits/sec, 8 packets/sec
+  5 minute output rate 4000 bits/sec, 8 packets/sec
 SH-TG-RT01#
-[2018-11-02 11:30:55,940] read_channel: 
-[2018-11-02 11:30:55,940] write_channel: b'\n'
-[2018-11-02 11:30:56,041] read_channel: 
+[2018-11-04 22:20:29,167] read_channel: 
+[2018-11-04 22:20:29,167] write_channel: b'\n'
+[2018-11-04 22:20:29,268] read_channel: 
 SH-TG-RT01#
-[2018-11-02 11:30:56,142] read_channel: 
-[2018-11-02 11:30:56,342] read_channel: 
-[2018-11-02 11:30:56,343] write_channel: b'ping 10.98.0.1 repeat 100\n'
-[2018-11-02 11:30:56,344] read_channel: 
-[2018-11-02 11:30:56,545] read_channel: ping 10.98.0.1 repeat 100
-Type escape sequence to abort.
-Sending 100, 100-byte ICMP Echos to 10.98.0.1, timeout is 2 seconds:
-!!!!!!
-[2018-11-02 11:30:56,745] read_channel: !!!!!!!!
-[2018-11-02 11:30:56,946] read_channel: !!!!!!!!!
-[2018-11-02 11:30:57,147] read_channel: !!!!!!!!
-[2018-11-02 11:30:57,348] read_channel: !!!!!!!!!
-[2018-11-02 11:30:57,549] read_channel: !!!!!!!!
-[2018-11-02 11:30:57,750] read_channel: !!!!!!!!
-[2018-11-02 11:30:57,951] read_channel: !!!!!!!!!
-[2018-11-02 11:30:58,152] read_channel: !!!!!
-!!!
-[2018-11-02 11:30:58,353] read_channel: !!!!!!!!!
-[2018-11-02 11:30:58,553] read_channel: !!!!!!!!
-[2018-11-02 11:30:58,754] read_channel: !!!!!!!!
-[2018-11-02 11:30:58,956] read_channel: !!
-Success rate is 100 percent (100/100), round-trip min/avg/max = 23/23/32 ms
+[2018-11-04 22:20:29,368] read_channel: 
+[2018-11-04 22:20:29,569] read_channel: 
+[2018-11-04 22:20:29,569] write_channel: b'show int g 0/0/1 | in 5 minute\n'
+[2018-11-04 22:20:29,570] read_channel: s
+[2018-11-04 22:20:29,771] read_channel: how int g 0/0/1 | in 5 minute
+  5 minute input rate 3000 bits/sec, 6 packets/sec
+  5 minute output rate 2000 bits/sec, 6 packets/sec
 SH-TG-RT01#
-[2018-11-02 11:30:58,957] read_channel: 
-[2018-11-02 11:30:58,958] write_channel: b'\n'
-[2018-11-02 11:30:59,059] read_channel: 
+[2018-11-04 22:20:29,772] read_channel: 
+[2018-11-04 22:20:29,772] write_channel: b'\n'
+[2018-11-04 22:20:29,873] read_channel: 
 SH-TG-RT01#
-[2018-11-02 11:30:59,160] read_channel: 
-[2018-11-02 11:30:59,361] read_channel: 
-[2018-11-02 11:30:59,361] write_channel: b'terminal length 25\n'
-[2018-11-02 11:30:59,362] read_channel: 
-[2018-11-02 11:30:59,563] read_channel: terminal length 25
+[2018-11-04 22:20:29,973] read_channel: 
+[2018-11-04 22:20:30,174] read_channel: 
+[2018-11-04 22:20:30,174] write_channel: b'terminal length 25\n'
+[2018-11-04 22:20:30,175] read_channel: 
+[2018-11-04 22:20:30,375] read_channel: terminal length 25
 SH-TG-RT01#
-[2018-11-02 11:30:59,564] write_channel: b'\n'
-[2018-11-02 11:30:59,664] read_channel: 
+[2018-11-04 22:20:30,376] write_channel: b'\n'
+[2018-11-04 22:20:30,476] read_channel: 
 SH-TG-RT01#
-[2018-11-02 11:30:59,765] read_channel: 
-[2018-11-02 11:31:01,767] read_channel: 
-[2018-11-02 11:31:01,768] exit_config_mode: 
-[2018-11-02 11:31:01,768] write_channel: b'exit\n'
-[2018-11-02 11:31:01,773] starting thread (client mode): 0xbdabbc50
-[2018-11-02 11:31:01,773] Local version/idstring: SSH-2.0-paramiko_2.4.2
-[2018-11-02 11:31:01,773] Remote version/idstring: SSH-1.99-Cisco-1.25
-[2018-11-02 11:31:01,773] Connected (version 1.99, client Cisco-1.25)
-[2018-11-02 11:31:01,774] kex algos:['diffie-hellman-group1-sha1'] server key:['ssh-rsa'] client encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr'] server encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr'] client mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] server mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] client compress:['none'] server compress:['none'] client lang:[''] server lang:[''] kex follows?False
-[2018-11-02 11:31:01,774] Kex agreed: diffie-hellman-group1-sha1
-[2018-11-02 11:31:01,774] HostKey agreed: ssh-rsa
-[2018-11-02 11:31:01,774] Cipher agreed: aes128-ctr
-[2018-11-02 11:31:01,775] MAC agreed: hmac-sha1
-[2018-11-02 11:31:01,775] Compression agreed: none
-[2018-11-02 11:31:01,808] kex engine KexGroup1 specified hash_algo <built-in function openssl_sha1>
-[2018-11-02 11:31:01,809] Switch to new keys ...
-[2018-11-02 11:31:01,810] Adding ssh-rsa host key for 172.16.230.136: b'11fbfd6b8690cd70e41463467600b185'
-[2018-11-02 11:31:01,811] userauth is OK
-[2018-11-02 11:31:01,812] Authentication (password) successful!
-[2018-11-02 11:31:01,813] [chan 0] Max packet in: 32768 bytes
-[2018-11-02 11:31:01,813] [chan 0] Max packet out: 4096 bytes
-[2018-11-02 11:31:01,814] Secsh channel 0 opened.
-[2018-11-02 11:31:01,814] [chan 0] Sesch channel 0 request ok
-[2018-11-02 11:31:01,815] [chan 0] Sesch channel 0 request ok
-[2018-11-02 11:31:02,524] Looking for jobs to run
-[2018-11-02 11:31:02,525] Execution of job "job (trigger: interval[0:01:00], next run at: 2018-11-02 11:31:02 CST)" skipped: maximum number of running instances reached (1)
-[2018-11-02 11:31:02,525] Next wakeup is due at 2018-11-02 11:32:02.522303+08:00 (in 59.997168 seconds)
-[2018-11-02 11:31:02,917] read_channel: Type help or '?' for a list of available commands.
+[2018-11-04 22:20:30,577] read_channel: 
+[2018-11-04 22:20:32,580] read_channel: 
+[2018-11-04 22:20:32,580] exit_config_mode: 
+[2018-11-04 22:20:32,580] write_channel: b'exit\n'
+[2018-11-04 22:20:32,685] starting thread (client mode): 0x8abed9b0
+[2018-11-04 22:20:32,686] Local version/idstring: SSH-2.0-paramiko_2.4.2
+[2018-11-04 22:20:32,686] Remote version/idstring: SSH-1.99-Cisco-1.25
+[2018-11-04 22:20:32,686] Connected (version 1.99, client Cisco-1.25)
+[2018-11-04 22:20:32,687] kex algos:['diffie-hellman-group1-sha1'] server key:['ssh-rsa'] client encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr'] server encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr'] client mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] server mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] client compress:['none'] server compress:['none'] client lang:[''] server lang:[''] kex follows?False
+[2018-11-04 22:20:32,687] Kex agreed: diffie-hellman-group1-sha1
+[2018-11-04 22:20:32,687] HostKey agreed: ssh-rsa
+[2018-11-04 22:20:32,687] Cipher agreed: aes128-ctr
+[2018-11-04 22:20:32,687] MAC agreed: hmac-sha1
+[2018-11-04 22:20:32,687] Compression agreed: none
+[2018-11-04 22:20:32,721] kex engine KexGroup1 specified hash_algo <built-in function openssl_sha1>
+[2018-11-04 22:20:32,721] Switch to new keys ...
+[2018-11-04 22:20:32,722] Adding ssh-rsa host key for 172.16.230.136: b'11fbfd6b8690cd70e41463467600b185'
+[2018-11-04 22:20:32,723] userauth is OK
+[2018-11-04 22:20:32,724] Authentication (password) successful!
+[2018-11-04 22:20:32,724] [chan 0] Max packet in: 32768 bytes
+[2018-11-04 22:20:32,725] [chan 0] Max packet out: 4096 bytes
+[2018-11-04 22:20:32,725] Secsh channel 0 opened.
+[2018-11-04 22:20:32,726] [chan 0] Sesch channel 0 request ok
+[2018-11-04 22:20:32,727] [chan 0] Sesch channel 0 request ok
+[2018-11-04 22:20:33,829] read_channel: Type help or '?' for a list of available commands.
 SX-ASA> 
-[2018-11-02 11:31:03,018] read_channel: 
-[2018-11-02 11:31:05,021] read_channel: 
-[2018-11-02 11:31:05,021] read_channel: 
-[2018-11-02 11:31:05,021] write_channel: b'\n'
-[2018-11-02 11:31:05,122] read_channel: 
+[2018-11-04 22:20:33,929] read_channel: 
+[2018-11-04 22:20:35,932] read_channel: 
+[2018-11-04 22:20:35,932] read_channel: 
+[2018-11-04 22:20:35,932] write_channel: b'\n'
+[2018-11-04 22:20:36,033] read_channel: 
 SX-ASA> 
-[2018-11-02 11:31:05,222] read_channel: 
-[2018-11-02 11:31:05,223] write_channel: b'\n'
-[2018-11-02 11:31:05,224] Pattern is: SX\-ASA
-[2018-11-02 11:31:05,224] _read_channel_expect read_data: 
+[2018-11-04 22:20:36,133] read_channel: 
+[2018-11-04 22:20:36,134] write_channel: b'\n'
+[2018-11-04 22:20:36,134] Pattern is: SX\-ASA
+[2018-11-04 22:20:36,135] _read_channel_expect read_data: 
 
-[2018-11-02 11:31:05,325] _read_channel_expect read_data: SX-ASA> 
-[2018-11-02 11:31:05,325] Pattern found: SX\-ASA 
+[2018-11-04 22:20:36,236] _read_channel_expect read_data: SX-ASA> 
+[2018-11-04 22:20:36,236] Pattern found: SX\-ASA 
 SX-ASA> 
-[2018-11-02 11:31:05,326] write_channel: b'enable\n'
-[2018-11-02 11:31:05,326] Pattern is: (SX\-ASA|ssword)
-[2018-11-02 11:31:05,327] _read_channel_expect read_data: e
-[2018-11-02 11:31:05,427] _read_channel_expect read_data: nable
+[2018-11-04 22:20:36,236] write_channel: b'enable\n'
+[2018-11-04 22:20:36,237] Pattern is: (SX\-ASA|ssword)
+[2018-11-04 22:20:36,238] _read_channel_expect read_data: en
+[2018-11-04 22:20:36,338] _read_channel_expect read_data: able
 Password: 
-[2018-11-02 11:31:05,428] Pattern found: (SX\-ASA|ssword) enable
+[2018-11-04 22:20:36,338] Pattern found: (SX\-ASA|ssword) enable
 Password: 
-[2018-11-02 11:31:05,428] write_channel: b'esunnytrunk\n'
-[2018-11-02 11:31:05,429] Pattern is: SX\-ASA
-[2018-11-02 11:31:05,429] _read_channel_expect read_data: *
-[2018-11-02 11:31:05,530] _read_channel_expect read_data: **********
+[2018-11-04 22:20:36,339] write_channel: b'esunnytrunk\n'
+[2018-11-04 22:20:36,339] Pattern is: SX\-ASA
+[2018-11-04 22:20:36,340] _read_channel_expect read_data: *
+[2018-11-04 22:20:36,441] _read_channel_expect read_data: **********
 SX-ASA# 
-[2018-11-02 11:31:05,530] Pattern found: SX\-ASA ***********
+[2018-11-04 22:20:36,441] Pattern found: SX\-ASA ***********
 SX-ASA# 
-[2018-11-02 11:31:05,530] write_channel: b'\n'
-[2018-11-02 11:31:05,531] Pattern is: SX\-ASA
-[2018-11-02 11:31:05,532] _read_channel_expect read_data: 
+[2018-11-04 22:20:36,441] write_channel: b'\n'
+[2018-11-04 22:20:36,442] Pattern is: SX\-ASA
+[2018-11-04 22:20:36,442] _read_channel_expect read_data: 
 
-[2018-11-02 11:31:05,632] _read_channel_expect read_data: SX-ASA# 
-[2018-11-02 11:31:05,633] Pattern found: SX\-ASA 
+[2018-11-04 22:20:36,543] _read_channel_expect read_data: SX-ASA# 
+[2018-11-04 22:20:36,543] Pattern found: SX\-ASA 
 SX-ASA# 
-[2018-11-02 11:31:05,733] read_channel: 
-[2018-11-02 11:31:05,733] In disable_paging
-[2018-11-02 11:31:05,733] Command: terminal pager 0
+[2018-11-04 22:20:36,644] read_channel: 
+[2018-11-04 22:20:36,644] In disable_paging
+[2018-11-04 22:20:36,644] Command: terminal pager 0
 
-[2018-11-02 11:31:05,734] write_channel: b'terminal pager 0\n'
-[2018-11-02 11:31:05,734] Pattern is: SX\-ASA
-[2018-11-02 11:31:05,735] _read_channel_expect read_data: t
-[2018-11-02 11:31:05,836] _read_channel_expect read_data: erminal pager 0
+[2018-11-04 22:20:36,645] write_channel: b'terminal pager 0\n'
+[2018-11-04 22:20:36,645] Pattern is: SX\-ASA
+[2018-11-04 22:20:36,646] _read_channel_expect read_data: t
+[2018-11-04 22:20:36,747] _read_channel_expect read_data: erminal pager 0
 SX-ASA# 
-[2018-11-02 11:31:05,836] Pattern found: SX\-ASA terminal pager 0
+[2018-11-04 22:20:36,747] Pattern found: SX\-ASA terminal pager 0
 SX-ASA# 
-[2018-11-02 11:31:05,836] terminal pager 0
+[2018-11-04 22:20:36,747] terminal pager 0
 SX-ASA# 
-[2018-11-02 11:31:05,836] Exiting disable_paging
-[2018-11-02 11:31:05,837] write_channel: b'terminal width 511\n'
-[2018-11-02 11:31:05,837] Pattern is: SX\-ASA
-[2018-11-02 11:31:05,838] _read_channel_expect read_data: t
-[2018-11-02 11:31:05,939] _read_channel_expect read_data: erminal width 511
+[2018-11-04 22:20:36,747] Exiting disable_paging
+[2018-11-04 22:20:36,748] write_channel: b'terminal width 511\n'
+[2018-11-04 22:20:36,748] Pattern is: SX\-ASA
+[2018-11-04 22:20:36,749] _read_channel_expect read_data: t
+[2018-11-04 22:20:36,849] _read_channel_expect read_data: erminal width 511
                  ^
 ERROR: % Invalid input detected at '^' marker.
 SX-ASA# 
-[2018-11-02 11:31:05,939] Pattern found: SX\-ASA terminal width 511
+[2018-11-04 22:20:36,849] Pattern found: SX\-ASA terminal width 511
                  ^
 ERROR: % Invalid input detected at '^' marker.
 SX-ASA# 
-[2018-11-02 11:31:06,240] read_channel: 
-[2018-11-02 11:31:06,240] write_channel: b'\n'
-[2018-11-02 11:31:06,241] Pattern is: SX\-ASA
-[2018-11-02 11:31:06,241] _read_channel_expect read_data: 
+[2018-11-04 22:20:37,150] read_channel: 
+[2018-11-04 22:20:37,150] write_channel: b'\n'
+[2018-11-04 22:20:37,151] Pattern is: SX\-ASA
+[2018-11-04 22:20:37,151] _read_channel_expect read_data: 
 
-[2018-11-02 11:31:06,342] _read_channel_expect read_data: SX-ASA# 
-[2018-11-02 11:31:06,343] Pattern found: SX\-ASA 
+[2018-11-04 22:20:37,252] _read_channel_expect read_data: SX-ASA# 
+[2018-11-04 22:20:37,252] Pattern found: SX\-ASA 
 SX-ASA# 
-[2018-11-02 11:31:06,343] read_channel: 
-[2018-11-02 11:31:06,343] write_channel: b'\n'
-[2018-11-02 11:31:06,444] read_channel: 
+[2018-11-04 22:20:37,252] read_channel: 
+[2018-11-04 22:20:37,253] write_channel: b'\n'
+[2018-11-04 22:20:37,353] read_channel: 
 SX-ASA# 
-[2018-11-02 11:31:06,544] read_channel: 
-[2018-11-02 11:31:06,745] read_channel: 
-[2018-11-02 11:31:06,745] write_channel: b'terminal pager 0\n'
-[2018-11-02 11:31:06,746] read_channel: 
-[2018-11-02 11:31:06,946] read_channel: terminal pager 0
+[2018-11-04 22:20:37,454] read_channel: 
+[2018-11-04 22:20:37,655] read_channel: 
+[2018-11-04 22:20:37,656] write_channel: b'terminal pager 0\n'
+[2018-11-04 22:20:37,656] read_channel: 
+[2018-11-04 22:20:37,856] read_channel: terminal pager 0
 SX-ASA# 
-[2018-11-02 11:31:06,947] read_channel: 
-[2018-11-02 11:31:06,948] write_channel: b'\n'
-[2018-11-02 11:31:07,048] read_channel: 
+[2018-11-04 22:20:37,857] read_channel: 
+[2018-11-04 22:20:37,857] write_channel: b'\n'
+[2018-11-04 22:20:37,957] read_channel: 
 SX-ASA# 
-[2018-11-02 11:31:07,149] read_channel: 
-[2018-11-02 11:31:07,349] read_channel: 
-[2018-11-02 11:31:07,350] write_channel: b'ping 202.99.166.4 repeat 1000\n'
-[2018-11-02 11:31:07,350] read_channel: 
-[2018-11-02 11:31:07,551] read_channel: ping 202.99.166.4 repeat 1000
-Type escape sequence to abort.
-Sending 1000, 100-byte ICMP Echos to 202.99.166.4, timeout is 2 seconds:
-!!!!!!!!
-[2018-11-02 11:31:07,751] read_channel: !!!!!!!!!
-[2018-11-02 11:31:07,952] read_channel: !!!!!!!!
-[2018-11-02 11:31:08,152] read_channel: !!!!!!!!!
-[2018-11-02 11:31:08,353] read_channel: !!!!!!!!
-[2018-11-02 11:31:08,554] read_channel: !!!!!!!!!
-[2018-11-02 11:31:08,755] read_channel: !!!!!!!!
-[2018-11-02 11:31:08,956] read_channel: !!!!!!!!!
-[2018-11-02 11:31:09,157] read_channel: !!
-!!!!!!!
-[2018-11-02 11:31:09,357] read_channel: !!!!!!!!
-[2018-11-02 11:31:09,558] read_channel: !!!!!!!!!
-[2018-11-02 11:31:09,759] read_channel: !!!!!!!!
-[2018-11-02 11:31:09,960] read_channel: !!!!!!!!!
-[2018-11-02 11:31:10,161] read_channel: !!!!!!!!!
-[2018-11-02 11:31:10,362] read_channel: !!!!!!!!
-[2018-11-02 11:31:10,562] read_channel: !!!!!!!!!
-[2018-11-02 11:31:10,763] read_channel: !!!
-!!!!!!
-[2018-11-02 11:31:10,963] read_channel: !!!!!!!!
-[2018-11-02 11:31:11,164] read_channel: !!!!!!!!!
-[2018-11-02 11:31:11,365] read_channel: !!!!!!!!
-[2018-11-02 11:31:11,566] read_channel: !!!!!!!!!
-[2018-11-02 11:31:11,767] read_channel: !!!!!!!!
-[2018-11-02 11:31:11,968] read_channel: !!!!!!!!!
-[2018-11-02 11:31:12,168] read_channel: !!!!!!!!!
-[2018-11-02 11:31:12,369] read_channel: !!!!
-!!!!
-[2018-11-02 11:31:12,570] read_channel: !!!!!!!!!
-[2018-11-02 11:31:12,771] read_channel: !!!!!!!!
-[2018-11-02 11:31:12,971] read_channel: !!!!!!!!!
-[2018-11-02 11:31:13,172] read_channel: !!!!!!!!
-[2018-11-02 11:31:13,373] read_channel: !!!!!!!!!
-[2018-11-02 11:31:13,573] read_channel: !!!!!!!!!
-[2018-11-02 11:31:13,774] read_channel: !!!!!!!!
-[2018-11-02 11:31:13,975] read_channel: !!!!!!
-!!!
-[2018-11-02 11:31:14,175] read_channel: !!!!!!!!
-[2018-11-02 11:31:14,376] read_channel: !!!!!!!!!
-[2018-11-02 11:31:14,577] read_channel: !!!!!!!!!
-[2018-11-02 11:31:14,777] read_channel: !!!!!!!!
-[2018-11-02 11:31:14,978] read_channel: !!!!!!!!!
-[2018-11-02 11:31:15,179] read_channel: !!!!!!!!
-[2018-11-02 11:31:15,379] read_channel: !!!!!!!!!
-[2018-11-02 11:31:15,580] read_channel: !!!!!!!
-!!
-[2018-11-02 11:31:15,781] read_channel: !!!!!!!!
-[2018-11-02 11:31:15,983] read_channel: !!!!!!!!!
-[2018-11-02 11:31:16,184] read_channel: !!!!!!!!
-[2018-11-02 11:31:16,385] read_channel: !!!!!!!!!
-[2018-11-02 11:31:16,586] read_channel: !!!!!!!!!
-[2018-11-02 11:31:16,787] read_channel: !!!!!!!!
-[2018-11-02 11:31:16,988] read_channel: !!!!!!!!!
-[2018-11-02 11:31:17,188] read_channel: !!!!!!!!
+[2018-11-04 22:20:38,058] read_channel: 
+[2018-11-04 22:20:38,259] read_channel: 
+[2018-11-04 22:20:38,259] write_channel: b'show int g 0/0 | in 1 minute\n'
+[2018-11-04 22:20:38,259] read_channel: 
+[2018-11-04 22:20:38,460] read_channel: show int g 0/0 | in 1 minute
+SX-ASA# 
+[2018-11-04 22:20:38,460] read_channel: 
+[2018-11-04 22:20:38,461] write_channel: b'\n'
+[2018-11-04 22:20:38,561] read_channel: 
+SX-ASA# 
+[2018-11-04 22:20:38,662] read_channel: 
+[2018-11-04 22:20:38,863] read_channel: 
+[2018-11-04 22:20:38,864] write_channel: b'terminal pager 25\n'
+[2018-11-04 22:20:38,864] read_channel: 
+[2018-11-04 22:20:39,065] read_channel: terminal pager 25
+SX-ASA# 
+[2018-11-04 22:20:39,065] write_channel: b'\n'
+[2018-11-04 22:20:39,166] read_channel: 
+SX-ASA# 
+[2018-11-04 22:20:39,267] read_channel: 
+[2018-11-04 22:20:41,269] read_channel: 
+[2018-11-04 22:20:41,269] exit_config_mode: 
+[2018-11-04 22:20:41,270] write_channel: b'exit\n'
+[2018-11-04 22:20:41,270] EOF in transport thread
+[2018-11-04 22:20:41,376] starting thread (client mode): 0x8ad0dbe0
+[2018-11-04 22:20:41,377] Local version/idstring: SSH-2.0-paramiko_2.4.2
+[2018-11-04 22:20:41,377] Remote version/idstring: SSH-2.0-Cisco-1.25
+[2018-11-04 22:20:41,377] Connected (version 2.0, client Cisco-1.25)
+[2018-11-04 22:20:41,378] kex algos:['diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa'] client encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc'] server encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc'] client mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] server mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] client compress:['none'] server compress:['none'] client lang:[''] server lang:[''] kex follows?False
+[2018-11-04 22:20:41,378] Kex agreed: diffie-hellman-group-exchange-sha1
+[2018-11-04 22:20:41,378] HostKey agreed: ssh-rsa
+[2018-11-04 22:20:41,378] Cipher agreed: aes128-cbc
+[2018-11-04 22:20:41,378] MAC agreed: hmac-sha1
+[2018-11-04 22:20:41,378] Compression agreed: none
+[2018-11-04 22:20:41,579] Got server p (2048 bits)
+[2018-11-04 22:20:41,717] kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+[2018-11-04 22:20:41,718] Switch to new keys ...
+[2018-11-04 22:20:41,719] Adding ssh-rsa host key for 172.16.230.130: b'7a0d6137d4242b7a8e4b5a22cc29e02c'
+[2018-11-04 22:20:41,915] userauth is OK
+[2018-11-04 22:20:41,917] Authentication (password) successful!
+[2018-11-04 22:20:41,918] [chan 0] Max packet in: 32768 bytes
+[2018-11-04 22:20:41,919] [chan 0] Max packet out: 4096 bytes
+[2018-11-04 22:20:41,919] Secsh channel 0 opened.
+[2018-11-04 22:20:41,921] [chan 0] Sesch channel 0 request ok
+[2018-11-04 22:20:41,922] [chan 0] Sesch channel 0 request ok
+[2018-11-04 22:20:43,023] read_channel: SX_RA>
+[2018-11-04 22:20:43,124] read_channel: 
+[2018-11-04 22:20:45,126] read_channel: 
+[2018-11-04 22:20:45,127] read_channel: 
+[2018-11-04 22:20:45,128] write_channel: b'\n'
+[2018-11-04 22:20:45,228] read_channel: 
+SX_RA>
+[2018-11-04 22:20:45,329] read_channel: 
+[2018-11-04 22:20:45,429] read_channel: 
+[2018-11-04 22:20:45,429] In disable_paging
+[2018-11-04 22:20:45,430] Command: terminal length 0
 
-[2018-11-02 11:31:17,389] read_channel: !!!!!!!!!
-[2018-11-02 11:31:17,590] read_channel: !!!!!!!!!
-[2018-11-02 11:31:17,791] read_channel: !!!!!!!!
-[2018-11-02 11:31:17,991] read_channel: !!!!!!!!!
-[2018-11-02 11:31:18,192] read_channel: !!!!!!!!!
-[2018-11-02 11:31:18,393] read_channel: !!!!!!!!
-[2018-11-02 11:31:18,593] read_channel: !!!!!!!!!
-[2018-11-02 11:31:18,794] read_channel: !!!!!!!!
-[2018-11-02 11:31:18,995] read_channel: !
-!!!!!!!!
-[2018-11-02 11:31:19,196] read_channel: !!!!!!!!!
-[2018-11-02 11:31:19,397] read_channel: !!!!!!!!
-[2018-11-02 11:31:19,598] read_channel: !!!!!!!!!
-[2018-11-02 11:31:19,798] read_channel: !!!!!!!!!
-[2018-11-02 11:31:19,999] read_channel: !!!!!!!!
-[2018-11-02 11:31:20,200] read_channel: !!!!!!!!!
-[2018-11-02 11:31:20,401] read_channel: !!!!!!!!
-[2018-11-02 11:31:20,601] read_channel: !!
-!!!!!!!
-[2018-11-02 11:31:20,803] read_channel: !!!!!!!!
-[2018-11-02 11:31:21,003] read_channel: !!!!!!!!!
-[2018-11-02 11:31:21,204] read_channel: !!!!!!!!!
-[2018-11-02 11:31:21,405] read_channel: !!!!!!!!
-[2018-11-02 11:31:21,605] read_channel: !!!!!!!!!
-[2018-11-02 11:31:21,806] read_channel: !!!!!!!!
-[2018-11-02 11:31:22,007] read_channel: !!!!!!!!!
-[2018-11-02 11:31:22,208] read_channel: !!!
-!!!!!!
-[2018-11-02 11:31:22,408] read_channel: !!!!!!!!
-[2018-11-02 11:31:22,609] read_channel: !!!!!!!!!
-[2018-11-02 11:31:22,810] read_channel: !!!!!!!!
-[2018-11-02 11:31:23,011] read_channel: !!!!!!!!!
-[2018-11-02 11:31:23,212] read_channel: !!!!!!!!
-[2018-11-02 11:31:23,412] read_channel: !!!!!!!!!
-[2018-11-02 11:31:23,613] read_channel: !!!!!!!!!
-[2018-11-02 11:31:23,814] read_channel: !!!!
-!!!!
-[2018-11-02 11:31:24,015] read_channel: !!!!!!!!!
-[2018-11-02 11:31:24,216] read_channel: !!!!!!!!
-[2018-11-02 11:31:24,417] read_channel: !!!!!!!!!
-[2018-11-02 11:31:24,617] read_channel: !!!!!!!!!
-[2018-11-02 11:31:24,818] read_channel: !!!!!!!!
-[2018-11-02 11:31:25,019] read_channel: !!!!!!!!!
-[2018-11-02 11:31:25,219] read_channel: !!!!!!!!
-[2018-11-02 11:31:25,420] read_channel: !!!!!!
-!!!
-[2018-11-02 11:31:25,621] read_channel: !!!!!!!!
-[2018-11-02 11:31:25,821] read_channel: !!!!!!!!!
-[2018-11-02 11:31:26,022] read_channel: !!!!!!!!!
-[2018-11-02 11:31:26,223] read_channel: !!!!!!!!
-[2018-11-02 11:31:26,423] read_channel: !!!!!!!!!
-[2018-11-02 11:31:26,624] read_channel: !!!!!!!!
-[2018-11-02 11:31:26,824] read_channel: !!!!!!!!!
-[2018-11-02 11:31:27,025] read_channel: !!!!!!!
-!
-[2018-11-02 11:31:27,226] read_channel: !!!!!!!!!
-[2018-11-02 11:31:27,426] read_channel: !!!!!!!!!
-[2018-11-02 11:31:27,627] read_channel: !!!!!!!!
-[2018-11-02 11:31:27,828] read_channel: !!!!!!!!!
-[2018-11-02 11:31:28,028] read_channel: !!!!!!!!
-[2018-11-02 11:31:28,229] read_channel: !!!!!!!!!
-[2018-11-02 11:31:28,430] read_channel: !!!!!!!!!
-[2018-11-02 11:31:28,631] read_channel: !!!!!!!!
+[2018-11-04 22:20:45,430] write_channel: b'terminal length 0\n'
+[2018-11-04 22:20:45,430] Pattern is: SX_RA
+[2018-11-04 22:20:45,431] _read_channel_expect read_data: t
+[2018-11-04 22:20:45,532] _read_channel_expect read_data: erminal length 0
+SX_RA>
+[2018-11-04 22:20:45,532] Pattern found: SX_RA terminal length 0
+SX_RA>
+[2018-11-04 22:20:45,532] terminal length 0
+SX_RA>
+[2018-11-04 22:20:45,532] Exiting disable_paging
+[2018-11-04 22:20:45,533] write_channel: b'terminal width 511\n'
+[2018-11-04 22:20:45,533] Pattern is: SX_RA
+[2018-11-04 22:20:45,533] _read_channel_expect read_data: t
+[2018-11-04 22:20:45,634] _read_channel_expect read_data: erminal width 511
+SX_RA>
+[2018-11-04 22:20:45,634] Pattern found: SX_RA terminal width 511
+SX_RA>
+[2018-11-04 22:20:45,935] read_channel: 
+[2018-11-04 22:20:45,935] write_channel: b'\n'
+[2018-11-04 22:20:45,936] Pattern is: SX_RA
+[2018-11-04 22:20:45,937] _read_channel_expect read_data: 
 
-[2018-11-02 11:31:28,831] read_channel: !!!!!!!!!
-[2018-11-02 11:31:29,032] read_channel: !!!!!!!!
-[2018-11-02 11:31:29,233] read_channel: !!!!!!!!!
-[2018-11-02 11:31:29,433] read_channel: !!!!!!!!!
-[2018-11-02 11:31:29,634] read_channel: !!!!!!!!
-[2018-11-02 11:31:29,835] read_channel: !!!!!!!!!
-[2018-11-02 11:31:30,036] read_channel: !!!!!!!!
-[2018-11-02 11:31:30,237] read_channel: !!!!!!!!!
-[2018-11-02 11:31:30,437] read_channel: !
-!!!!!!!!
-[2018-11-02 11:31:30,638] read_channel: !!!!!!!!
-[2018-11-02 11:31:30,839] read_channel: !!!!
-Success rate is 100 percent (1000/1000), round-trip min/avg/max = 20/23/30 ms
-SX-ASA# 
-[2018-11-02 11:31:30,839] read_channel: 
-[2018-11-02 11:31:30,840] write_channel: b'\n'
-[2018-11-02 11:31:30,940] read_channel: 
-SX-ASA# 
-[2018-11-02 11:31:31,041] read_channel: 
-[2018-11-02 11:31:31,242] read_channel: 
-[2018-11-02 11:31:31,243] write_channel: b'terminal pager 25\n'
-[2018-11-02 11:31:31,243] read_channel: 
-[2018-11-02 11:31:31,444] read_channel: terminal pager 25
-SX-ASA# 
-[2018-11-02 11:31:31,445] write_channel: b'\n'
-[2018-11-02 11:31:31,545] read_channel: 
-SX-ASA# 
-[2018-11-02 11:31:31,646] read_channel: 
-[2018-11-02 11:31:33,648] read_channel: 
-[2018-11-02 11:31:33,648] exit_config_mode: 
-[2018-11-02 11:31:33,649] write_channel: b'exit\n'
-[2018-11-02 11:31:33,650] EOF in transport thread
-[2018-11-02 11:31:33,654] starting thread (client mode): 0xbdabb320
-[2018-11-02 11:31:33,654] Local version/idstring: SSH-2.0-paramiko_2.4.2
-[2018-11-02 11:31:33,654] Remote version/idstring: SSH-2.0-Cisco-1.25
-[2018-11-02 11:31:33,655] Connected (version 2.0, client Cisco-1.25)
-[2018-11-02 11:31:33,655] kex algos:['diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa'] client encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc'] server encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc'] client mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] server mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] client compress:['none'] server compress:['none'] client lang:[''] server lang:[''] kex follows?False
-[2018-11-02 11:31:33,655] Kex agreed: diffie-hellman-group-exchange-sha1
-[2018-11-02 11:31:33,655] HostKey agreed: ssh-rsa
-[2018-11-02 11:31:33,655] Cipher agreed: aes128-cbc
-[2018-11-02 11:31:33,655] MAC agreed: hmac-sha1
-[2018-11-02 11:31:33,656] Compression agreed: none
-[2018-11-02 11:31:33,854] Got server p (2048 bits)
-[2018-11-02 11:31:33,999] kex engine KexGex specified hash_algo <built-in function openssl_sha1>
-[2018-11-02 11:31:34,000] Switch to new keys ...
-[2018-11-02 11:31:34,000] Adding ssh-rsa host key for 172.16.230.130: b'7a0d6137d4242b7a8e4b5a22cc29e02c'
-[2018-11-02 11:31:34,199] userauth is OK
-[2018-11-02 11:31:34,201] Authentication (password) successful!
-[2018-11-02 11:31:34,202] [chan 0] Max packet in: 32768 bytes
-[2018-11-02 11:31:34,203] [chan 0] Max packet out: 4096 bytes
-[2018-11-02 11:31:34,204] Secsh channel 0 opened.
-[2018-11-02 11:31:34,205] [chan 0] Sesch channel 0 request ok
-[2018-11-02 11:31:34,205] [chan 0] Sesch channel 0 request ok
-[2018-11-02 11:31:35,307] read_channel: SX_RA>
-[2018-11-02 11:31:35,408] read_channel: 
-[2018-11-02 11:31:37,409] read_channel: 
-[2018-11-02 11:31:37,409] read_channel: 
-[2018-11-02 11:31:37,410] write_channel: b'\n'
-[2018-11-02 11:31:37,511] read_channel: 
+[2018-11-04 22:20:46,037] _read_channel_expect read_data: SX_RA>
+[2018-11-04 22:20:46,038] Pattern found: SX_RA 
 SX_RA>
-[2018-11-02 11:31:37,612] read_channel: 
-[2018-11-02 11:31:37,712] read_channel: 
-[2018-11-02 11:31:37,712] In disable_paging
-[2018-11-02 11:31:37,713] Command: terminal length 0
-
-[2018-11-02 11:31:37,713] write_channel: b'terminal length 0\n'
-[2018-11-02 11:31:37,713] Pattern is: SX_RA
-[2018-11-02 11:31:37,716] _read_channel_expect read_data: terminal length 0
-SX_RA>
-[2018-11-02 11:31:37,717] Pattern found: SX_RA terminal length 0
-SX_RA>
-[2018-11-02 11:31:37,717] terminal length 0
-SX_RA>
-[2018-11-02 11:31:37,717] Exiting disable_paging
-[2018-11-02 11:31:37,717] write_channel: b'terminal width 511\n'
-[2018-11-02 11:31:37,717] Pattern is: SX_RA
-[2018-11-02 11:31:37,719] _read_channel_expect read_data: terminal 
-[2018-11-02 11:31:37,820] _read_channel_expect read_data: width 511
-SX_RA>
-[2018-11-02 11:31:37,820] Pattern found: SX_RA terminal width 511
-SX_RA>
-[2018-11-02 11:31:38,121] read_channel: 
-[2018-11-02 11:31:38,122] write_channel: b'\n'
-[2018-11-02 11:31:38,122] Pattern is: SX_RA
-[2018-11-02 11:31:38,122] _read_channel_expect read_data: 
-
-[2018-11-02 11:31:38,224] _read_channel_expect read_data: SX_RA>
-[2018-11-02 11:31:38,224] Pattern found: SX_RA 
-SX_RA>
-[2018-11-02 11:31:38,224] write_channel: b'enable\n'
-[2018-11-02 11:31:38,225] Pattern is: (SX_RA|ssword)
-[2018-11-02 11:31:38,225] _read_channel_expect read_data: e
-[2018-11-02 11:31:38,327] _read_channel_expect read_data: nable
+[2018-11-04 22:20:46,038] write_channel: b'enable\n'
+[2018-11-04 22:20:46,038] Pattern is: (SX_RA|ssword)
+[2018-11-04 22:20:46,039] _read_channel_expect read_data: e
+[2018-11-04 22:20:46,139] _read_channel_expect read_data: nable
 Password: 
-[2018-11-02 11:31:38,327] Pattern found: (SX_RA|ssword) enable
+[2018-11-04 22:20:46,140] Pattern found: (SX_RA|ssword) enable
 Password: 
-[2018-11-02 11:31:38,327] write_channel: b'esunnytrunk\n'
-[2018-11-02 11:31:38,328] Pattern is: SX_RA
-[2018-11-02 11:31:38,330] _read_channel_expect read_data: 
+[2018-11-04 22:20:46,140] write_channel: b'esunnytrunk\n'
+[2018-11-04 22:20:46,140] Pattern is: SX_RA
+[2018-11-04 22:20:46,143] _read_channel_expect read_data: 
 SX_RA#
-[2018-11-02 11:31:38,331] Pattern found: SX_RA 
+[2018-11-04 22:20:46,143] Pattern found: SX_RA 
 SX_RA#
-[2018-11-02 11:31:38,331] write_channel: b'\n'
-[2018-11-02 11:31:38,331] Pattern is: SX_RA
-[2018-11-02 11:31:38,332] _read_channel_expect read_data: 
+[2018-11-04 22:20:46,144] write_channel: b'\n'
+[2018-11-04 22:20:46,144] Pattern is: SX_RA
+[2018-11-04 22:20:46,145] _read_channel_expect read_data: 
 
-[2018-11-02 11:31:38,432] _read_channel_expect read_data: SX_RA#
-[2018-11-02 11:31:38,433] Pattern found: SX_RA 
+[2018-11-04 22:20:46,246] _read_channel_expect read_data: SX_RA#
+[2018-11-04 22:20:46,246] Pattern found: SX_RA 
 SX_RA#
-[2018-11-02 11:31:38,433] read_channel: 
-[2018-11-02 11:31:38,433] write_channel: b'\n'
-[2018-11-02 11:31:38,534] read_channel: 
+[2018-11-04 22:20:46,246] read_channel: 
+[2018-11-04 22:20:46,246] write_channel: b'\n'
+[2018-11-04 22:20:46,347] read_channel: 
 SX_RA#
-[2018-11-02 11:31:38,635] read_channel: 
-[2018-11-02 11:31:38,835] read_channel: 
-[2018-11-02 11:31:38,836] write_channel: b'terminal length 0\n'
-[2018-11-02 11:31:38,836] read_channel: 
-[2018-11-02 11:31:39,037] read_channel: terminal length 0
+[2018-11-04 22:20:46,448] read_channel: 
+[2018-11-04 22:20:46,648] read_channel: 
+[2018-11-04 22:20:46,649] write_channel: b'terminal length 0\n'
+[2018-11-04 22:20:46,649] read_channel: 
+[2018-11-04 22:20:46,850] read_channel: terminal length 0
 SX_RA#
-[2018-11-02 11:31:39,037] read_channel: 
-[2018-11-02 11:31:39,038] write_channel: b'\n'
-[2018-11-02 11:31:39,139] read_channel: 
+[2018-11-04 22:20:46,850] read_channel: 
+[2018-11-04 22:20:46,850] write_channel: b'\n'
+[2018-11-04 22:20:46,951] read_channel: 
 SX_RA#
-[2018-11-02 11:31:39,239] read_channel: 
-[2018-11-02 11:31:39,440] read_channel: 
-[2018-11-02 11:31:39,441] write_channel: b'ping 172.17.1.66 repeat 100\n'
-[2018-11-02 11:31:39,441] read_channel: 
-[2018-11-02 11:31:39,648] read_channel: ping 172.17.1.66 repeat 100
-Type escape sequence to abort.
-Sending 100, 100-byte ICMP Echos to 172.17.1.66, timeout is 2 seconds:
-!!!!!!
-[2018-11-02 11:31:39,848] read_channel: !!!!!!
-[2018-11-02 11:31:40,049] read_channel: !!!!!!!
-[2018-11-02 11:31:40,250] read_channel: !!!!!!
-[2018-11-02 11:31:40,451] read_channel: !!!!!!!
-[2018-11-02 11:31:40,652] read_channel: !!!!!!
-[2018-11-02 11:31:40,852] read_channel: !!!!!!!
-[2018-11-02 11:31:41,053] read_channel: !!!!!!
-[2018-11-02 11:31:41,254] read_channel: !!!!!!
-[2018-11-02 11:31:41,454] read_channel: !!!!!!!
-[2018-11-02 11:31:41,655] read_channel: !!!!!!
-
-[2018-11-02 11:31:41,856] read_channel: !!!!!!!
-[2018-11-02 11:31:42,056] read_channel: !!!!!!
-[2018-11-02 11:31:42,257] read_channel: !!!!!!!
-[2018-11-02 11:31:42,458] read_channel: !!!!!!
-[2018-11-02 11:31:42,658] read_channel: !!!!
-Success rate is 100 percent (100/100), round-trip min/avg/max = 28/31/32 ms
+[2018-11-04 22:20:47,051] read_channel: 
+[2018-11-04 22:20:47,252] read_channel: 
+[2018-11-04 22:20:47,252] write_channel: b'show int g 0/1 | in 5 minute\n'
+[2018-11-04 22:20:47,253] read_channel: 
+[2018-11-04 22:20:47,454] read_channel: show int g 0/1 | in 5 minute
+  5 minute input rate 10000 bits/sec, 12 packets/sec
+  5 minute output rate 10000 bits/sec, 12 packets/sec
 SX_RA#
-[2018-11-02 11:31:42,659] read_channel: 
-[2018-11-02 11:31:42,659] write_channel: b'\n'
-[2018-11-02 11:31:42,760] read_channel: 
+[2018-11-04 22:20:47,454] read_channel: 
+[2018-11-04 22:20:47,454] write_channel: b'\n'
+[2018-11-04 22:20:47,555] read_channel: 
 SX_RA#
-[2018-11-02 11:31:42,860] read_channel: 
-[2018-11-02 11:31:43,061] read_channel: 
-[2018-11-02 11:31:43,062] write_channel: b'ping 172.17.1.73 repeat 100\n'
-[2018-11-02 11:31:43,062] read_channel: 
-[2018-11-02 11:31:43,262] read_channel: ping 172.17.1.73 repeat 100
-Type escape sequence to abort.
-Sending 100, 100-byte ICMP Echos to 172.17.1.73, timeout is 2 seconds:
-!!!!!!!
-[2018-11-02 11:31:43,463] read_channel: !!!!!!!
-[2018-11-02 11:31:43,664] read_channel: !!!!!!!
-[2018-11-02 11:31:43,864] read_channel: !!!!!!!
-[2018-11-02 11:31:44,065] read_channel: !!!!!!!!
-[2018-11-02 11:31:44,266] read_channel: !!!!!!!
-[2018-11-02 11:31:44,466] read_channel: !!!!!!!
-[2018-11-02 11:31:44,667] read_channel: !!!!!!!
-[2018-11-02 11:31:44,868] read_channel: !!!!!!!!
-[2018-11-02 11:31:45,069] read_channel: !!!!!
-!!
-[2018-11-02 11:31:45,269] read_channel: !!!!!!!
-[2018-11-02 11:31:45,470] read_channel: !!!!!!!
-[2018-11-02 11:31:45,671] read_channel: !!!!!!!!
-[2018-11-02 11:31:45,871] read_channel: !!!!!!
-Success rate is 100 percent (100/100), round-trip min/avg/max = 24/27/32 ms
+[2018-11-04 22:20:47,656] read_channel: 
+[2018-11-04 22:20:47,857] read_channel: 
+[2018-11-04 22:20:47,857] write_channel: b'show int f 0/3/0 | in 5 minute\n'
+[2018-11-04 22:20:47,858] read_channel: 
+[2018-11-04 22:20:48,058] read_channel: show int f 0/3/0 | in 5 minute
+  5 minute input rate 15000 bits/sec, 16 packets/sec
+  5 minute output rate 12000 bits/sec, 17 packets/sec
 SX_RA#
-[2018-11-02 11:31:45,872] read_channel: 
-[2018-11-02 11:31:45,872] write_channel: b'\n'
-[2018-11-02 11:31:45,973] read_channel: 
+[2018-11-04 22:20:48,058] read_channel: 
+[2018-11-04 22:20:48,059] write_channel: b'\n'
+[2018-11-04 22:20:48,159] read_channel: 
 SX_RA#
-[2018-11-02 11:31:46,074] read_channel: 
-[2018-11-02 11:31:46,275] read_channel: 
-[2018-11-02 11:31:46,275] write_channel: b'terminal length 25\n'
-[2018-11-02 11:31:46,276] read_channel: 
-[2018-11-02 11:31:46,476] read_channel: terminal length 25
+[2018-11-04 22:20:48,260] read_channel: 
+[2018-11-04 22:20:48,461] read_channel: 
+[2018-11-04 22:20:48,462] write_channel: b'terminal length 25\n'
+[2018-11-04 22:20:48,462] read_channel: 
+[2018-11-04 22:20:48,663] read_channel: terminal length 25
 SX_RA#
-[2018-11-02 11:31:46,477] write_channel: b'\n'
-[2018-11-02 11:31:46,577] read_channel: 
+[2018-11-04 22:20:48,663] write_channel: b'\n'
+[2018-11-04 22:20:48,763] read_channel: 
 SX_RA#
-[2018-11-02 11:31:46,678] read_channel: 
-[2018-11-02 11:31:48,679] read_channel: 
-[2018-11-02 11:31:48,679] exit_config_mode: 
-[2018-11-02 11:31:48,680] write_channel: b'exit\n'
-[2018-11-02 11:31:48,681] EOF in transport thread
-[2018-11-02 11:31:49,687] read_channel: C
+[2018-11-04 22:20:48,864] read_channel: 
+[2018-11-04 22:20:50,867] read_channel: 
+[2018-11-04 22:20:50,867] exit_config_mode: 
+[2018-11-04 22:20:50,868] write_channel: b'exit\n'
+[2018-11-04 22:20:50,869] EOF in transport thread
+[2018-11-04 22:20:51,974] read_channel: C
 ******************************************
 *  ZCE
 *  Hostname: SH-TG-RT02
@@ -1025,498 +673,2009 @@ SX_RA#
 *  Any Unauthorized Login is Illegal !!! 
 ******************************************
 
+
 User Access Verification
 
 Username: 
-[2018-11-02 11:31:49,688] write_channel: b'cisco\r\n'
-[2018-11-02 11:31:50,689] read_channel: cisco
+[2018-11-04 22:20:51,975] write_channel: b'cisco\r\n'
+[2018-11-04 22:20:52,976] read_channel: cisco
 Password: 
-[2018-11-02 11:31:50,690] write_channel: b'cisco\r\n'
-[2018-11-02 11:31:51,191] read_channel: 
+[2018-11-04 22:20:52,976] write_channel: b'cisco\r\n'
+[2018-11-04 22:20:53,477] read_channel: 
 SH-TG-RT02>
-[2018-11-02 11:31:52,293] read_channel: 
-[2018-11-02 11:31:54,295] read_channel: 
-[2018-11-02 11:31:54,296] write_channel: b'\n'
-[2018-11-02 11:31:54,507] read_channel: 
+[2018-11-04 22:20:54,579] read_channel: 
+[2018-11-04 22:20:56,582] read_channel: 
+[2018-11-04 22:20:56,582] write_channel: b'\n'
+[2018-11-04 22:20:56,793] read_channel: 
 SH-TG-RT02>
-[2018-11-02 11:31:54,608] read_channel: 
-[2018-11-02 11:31:56,610] read_channel: 
-[2018-11-02 11:31:56,611] read_channel: 
-[2018-11-02 11:31:56,611] write_channel: b'\n'
-[2018-11-02 11:31:56,712] read_channel: 
+[2018-11-04 22:20:56,893] read_channel: 
+[2018-11-04 22:20:58,896] read_channel: 
+[2018-11-04 22:20:58,896] read_channel: 
+[2018-11-04 22:20:58,897] write_channel: b'\n'
+[2018-11-04 22:20:58,997] read_channel: 
 SH-TG-RT02>
-[2018-11-02 11:31:56,813] read_channel: 
-[2018-11-02 11:31:56,913] read_channel: 
-[2018-11-02 11:31:56,913] In disable_paging
-[2018-11-02 11:31:56,914] Command: terminal length 0
+[2018-11-04 22:20:59,098] read_channel: 
+[2018-11-04 22:20:59,198] read_channel: 
+[2018-11-04 22:20:59,198] In disable_paging
+[2018-11-04 22:20:59,198] Command: terminal length 0
 
-[2018-11-02 11:31:56,914] write_channel: b'terminal length 0\n'
-[2018-11-02 11:31:56,914] Pattern is: SH\-TG\-RT02
-[2018-11-02 11:31:56,914] read_channel: 
-[2018-11-02 11:31:57,015] read_channel: terminal length 0
+[2018-11-04 22:20:59,199] write_channel: b'terminal length 0\n'
+[2018-11-04 22:20:59,199] Pattern is: SH\-TG\-RT02
+[2018-11-04 22:20:59,199] read_channel: 
+[2018-11-04 22:20:59,300] read_channel: terminal length 0
 SH-TG-RT02>
-[2018-11-02 11:31:57,015] Pattern found: SH\-TG\-RT02 terminal length 0
+[2018-11-04 22:20:59,300] Pattern found: SH\-TG\-RT02 terminal length 0
 SH-TG-RT02>
-[2018-11-02 11:31:57,016] terminal length 0
+[2018-11-04 22:20:59,300] terminal length 0
 SH-TG-RT02>
-[2018-11-02 11:31:57,016] Exiting disable_paging
-[2018-11-02 11:31:57,016] write_channel: b'terminal width 511\n'
-[2018-11-02 11:31:57,016] Pattern is: SH\-TG\-RT02
-[2018-11-02 11:31:57,017] read_channel: 
-[2018-11-02 11:31:57,117] read_channel: terminal width 511
+[2018-11-04 22:20:59,300] Exiting disable_paging
+[2018-11-04 22:20:59,301] write_channel: b'terminal width 511\n'
+[2018-11-04 22:20:59,301] Pattern is: SH\-TG\-RT02
+[2018-11-04 22:20:59,301] read_channel: 
+[2018-11-04 22:20:59,402] read_channel: terminal width 511
 SH-TG-RT02>
-[2018-11-02 11:31:57,117] Pattern found: SH\-TG\-RT02 terminal width 511
+[2018-11-04 22:20:59,402] Pattern found: SH\-TG\-RT02 terminal width 511
 SH-TG-RT02>
-[2018-11-02 11:31:57,418] read_channel: 
-[2018-11-02 11:31:57,418] write_channel: b'\n'
-[2018-11-02 11:31:57,419] Pattern is: SH\-TG\-RT02
-[2018-11-02 11:31:57,419] read_channel: 
-[2018-11-02 11:31:57,519] read_channel: 
+[2018-11-04 22:20:59,703] read_channel: 
+[2018-11-04 22:20:59,703] write_channel: b'\n'
+[2018-11-04 22:20:59,703] Pattern is: SH\-TG\-RT02
+[2018-11-04 22:20:59,704] read_channel: 
 SH-TG-RT02>
-[2018-11-02 11:31:57,519] Pattern found: SH\-TG\-RT02 
+[2018-11-04 22:20:59,704] Pattern found: SH\-TG\-RT02 
 SH-TG-RT02>
-[2018-11-02 11:31:57,520] write_channel: b'enable\n'
-[2018-11-02 11:31:57,520] Pattern is: (SH\-TG\-RT02|ssword)
-[2018-11-02 11:31:57,520] read_channel: 
-[2018-11-02 11:31:57,621] read_channel: enable
+[2018-11-04 22:20:59,704] write_channel: b'enable\n'
+[2018-11-04 22:20:59,704] Pattern is: (SH\-TG\-RT02|ssword)
+[2018-11-04 22:20:59,705] read_channel: e
+[2018-11-04 22:20:59,805] read_channel: nable
 Password: 
-[2018-11-02 11:31:57,621] Pattern found: (SH\-TG\-RT02|ssword) enable
+[2018-11-04 22:20:59,806] Pattern found: (SH\-TG\-RT02|ssword) enable
 Password: 
-[2018-11-02 11:31:57,621] write_channel: b'cisco\n'
-[2018-11-02 11:31:57,622] Pattern is: SH\-TG\-RT02
-[2018-11-02 11:31:57,622] read_channel: 
-[2018-11-02 11:31:57,723] read_channel: 
+[2018-11-04 22:20:59,806] write_channel: b'cisco\n'
+[2018-11-04 22:20:59,806] Pattern is: SH\-TG\-RT02
+[2018-11-04 22:20:59,806] read_channel: 
+[2018-11-04 22:20:59,907] read_channel: 
 SH-TG-RT02#
-[2018-11-02 11:31:57,723] Pattern found: SH\-TG\-RT02 
+[2018-11-04 22:20:59,908] Pattern found: SH\-TG\-RT02 
 SH-TG-RT02#
-[2018-11-02 11:31:57,724] write_channel: b'\n'
-[2018-11-02 11:31:57,724] Pattern is: SH\-TG\-RT02
-[2018-11-02 11:31:57,724] read_channel: 
+[2018-11-04 22:20:59,908] write_channel: b'\n'
+[2018-11-04 22:20:59,908] Pattern is: SH\-TG\-RT02
+[2018-11-04 22:20:59,909] read_channel: 
 SH-TG-RT02#
-[2018-11-02 11:31:57,724] Pattern found: SH\-TG\-RT02 
+[2018-11-04 22:20:59,909] Pattern found: SH\-TG\-RT02 
 SH-TG-RT02#
-[2018-11-02 11:31:57,724] read_channel: 
-[2018-11-02 11:31:57,725] write_channel: b'\n'
-[2018-11-02 11:31:57,826] read_channel: 
+[2018-11-04 22:20:59,909] read_channel: 
+[2018-11-04 22:20:59,909] write_channel: b'\n'
+[2018-11-04 22:21:00,010] read_channel: 
 SH-TG-RT02#
-[2018-11-02 11:31:57,926] read_channel: 
-[2018-11-02 11:31:58,127] read_channel: 
-[2018-11-02 11:31:58,127] write_channel: b'terminal length 0\n'
-[2018-11-02 11:31:58,127] read_channel: 
-[2018-11-02 11:31:58,329] read_channel: terminal length 0
+[2018-11-04 22:21:00,111] read_channel: 
+[2018-11-04 22:21:00,311] read_channel: 
+[2018-11-04 22:21:00,312] write_channel: b'terminal length 0\n'
+[2018-11-04 22:21:00,312] read_channel: 
+[2018-11-04 22:21:00,513] read_channel: terminal length 0
 SH-TG-RT02#
-[2018-11-02 11:31:58,329] read_channel: 
-[2018-11-02 11:31:58,329] write_channel: b'\n'
-[2018-11-02 11:31:58,430] read_channel: 
+[2018-11-04 22:21:00,514] read_channel: 
+[2018-11-04 22:21:00,514] write_channel: b'\n'
+[2018-11-04 22:21:00,614] read_channel: 
 SH-TG-RT02#
-[2018-11-02 11:31:58,531] read_channel: 
-[2018-11-02 11:31:58,731] read_channel: 
-[2018-11-02 11:31:58,732] write_channel: b'ping 10.18.0.5 repeat 100\n'
-[2018-11-02 11:31:58,732] read_channel: 
-[2018-11-02 11:31:58,933] read_channel: ping 10.18.0.5 repeat 100
-Type escape sequence to abort.
-Sending 100, 100-byte ICMP Echos to 10.18.0.5, timeout is 2 seconds:
-!!!!!!
-[2018-11-02 11:31:59,134] read_channel: !!!!!!!!!
-[2018-11-02 11:31:59,335] read_channel: !!!!!!!!
-[2018-11-02 11:31:59,536] read_channel: !!!!!!!!!
-[2018-11-02 11:31:59,736] read_channel: !!!!!!!!
-[2018-11-02 11:31:59,937] read_channel: !!!!!!!!!
-[2018-11-02 11:32:00,138] read_channel: !!!!!!!!
-[2018-11-02 11:32:00,340] read_channel: !!!!!!!!!
-[2018-11-02 11:32:00,540] read_channel: !!!!
-!!!!
-[2018-11-02 11:32:00,741] read_channel: !!!!!!!!
-[2018-11-02 11:32:00,942] read_channel: !!!!!!!!!
-[2018-11-02 11:32:01,143] read_channel: !!!!!!!!
-[2018-11-02 11:32:01,343] read_channel: !
-Success rate is 100 percent (100/100), round-trip min/avg/max = 23/23/30 ms
+[2018-11-04 22:21:00,715] read_channel: 
+[2018-11-04 22:21:00,915] read_channel: 
+[2018-11-04 22:21:00,916] write_channel: b'show int g 0/0/0 | in 5 minute\n'
+[2018-11-04 22:21:00,916] read_channel: 
+[2018-11-04 22:21:01,117] read_channel: show int g 0/0/0 | in 5 minute
+  5 minute input rate 3000 bits/sec, 6 packets/sec
+  5 minute output rate 2000 bits/sec, 6 packets/sec
 SH-TG-RT02#
-[2018-11-02 11:32:01,344] read_channel: 
-[2018-11-02 11:32:01,344] write_channel: b'\n'
-[2018-11-02 11:32:01,445] read_channel: 
+[2018-11-04 22:21:01,117] read_channel: 
+[2018-11-04 22:21:01,117] write_channel: b'\n'
+[2018-11-04 22:21:01,218] read_channel: 
 SH-TG-RT02#
-[2018-11-02 11:32:01,545] read_channel: 
-[2018-11-02 11:32:01,746] read_channel: 
-[2018-11-02 11:32:01,746] write_channel: b'ping 10.98.0.5 repeat 100\n'
-[2018-11-02 11:32:01,747] read_channel: 
-[2018-11-02 11:32:01,947] read_channel: ping 10.98.0.5 repeat 100
-Type escape sequence to abort.
-Sending 100, 100-byte ICMP Echos to 10.98.0.5, timeout is 2 seconds:
-!!!!!!!!!
-[2018-11-02 11:32:02,148] read_channel: !!!!!!!!!!!
-[2018-11-02 11:32:02,349] read_channel: !!!!!!!!!!!
-[2018-11-02 11:32:02,523] Looking for jobs to run
-[2018-11-02 11:32:02,524] Execution of job "job (trigger: interval[0:01:00], next run at: 2018-11-02 11:32:02 CST)" skipped: maximum number of running instances reached (1)
-[2018-11-02 11:32:02,524] Next wakeup is due at 2018-11-02 11:33:02.522303+08:00 (in 59.998258 seconds)
-[2018-11-02 11:32:02,550] read_channel: !!!!!!!!!!!!
-[2018-11-02 11:32:02,750] read_channel: !!!!!!!!!!!
-[2018-11-02 11:32:02,951] read_channel: !!!!!!!!!!!
-[2018-11-02 11:32:03,152] read_channel: !!!!!
-!!!!!!
-[2018-11-02 11:32:03,353] read_channel: !!!!!!!!!!
-[2018-11-02 11:32:03,553] read_channel: !!!!!!!!!!!
-[2018-11-02 11:32:03,754] read_channel: !!!
-Success rate is 100 percent (100/100), round-trip min/avg/max = 17/18/57 ms
+[2018-11-04 22:21:01,319] read_channel: 
+[2018-11-04 22:21:01,520] read_channel: 
+[2018-11-04 22:21:01,520] write_channel: b'show int g 0/0/1 | in 5 minute\n'
+[2018-11-04 22:21:01,520] read_channel: 
+[2018-11-04 22:21:01,721] read_channel: show int g 0/0/1 | in 5 minute
+  5 minute input rate 3000 bits/sec, 6 packets/sec
+  5 minute output rate 2000 bits/sec, 6 packets/sec
 SH-TG-RT02#
-[2018-11-02 11:32:03,755] read_channel: 
-[2018-11-02 11:32:03,755] write_channel: b'\n'
-[2018-11-02 11:32:03,855] read_channel: 
+[2018-11-04 22:21:01,722] read_channel: 
+[2018-11-04 22:21:01,722] write_channel: b'\n'
+[2018-11-04 22:21:01,822] read_channel: 
 SH-TG-RT02#
-[2018-11-02 11:32:03,956] read_channel: 
-[2018-11-02 11:32:04,157] read_channel: 
-[2018-11-02 11:32:04,157] write_channel: b'terminal length 25\n'
-[2018-11-02 11:32:04,157] read_channel: 
-[2018-11-02 11:32:04,358] read_channel: terminal length 25
+[2018-11-04 22:21:01,923] read_channel: 
+[2018-11-04 22:21:02,124] read_channel: 
+[2018-11-04 22:21:02,125] write_channel: b'terminal length 25\n'
+[2018-11-04 22:21:02,125] read_channel: 
+[2018-11-04 22:21:02,325] read_channel: terminal length 25
 SH-TG-RT02#
-[2018-11-02 11:32:04,358] write_channel: b'\n'
-[2018-11-02 11:32:04,459] read_channel: 
+[2018-11-04 22:21:02,326] write_channel: b'\n'
+[2018-11-04 22:21:02,426] read_channel: 
 SH-TG-RT02#
-[2018-11-02 11:32:04,560] read_channel: 
-[2018-11-02 11:32:06,562] read_channel: 
-[2018-11-02 11:32:06,562] exit_config_mode: 
-[2018-11-02 11:32:06,563] write_channel: b'exit\n'
-[2018-11-02 11:32:06,599] starting thread (client mode): 0xc0513f98
-[2018-11-02 11:32:06,600] Local version/idstring: SSH-2.0-paramiko_2.4.2
-[2018-11-02 11:32:06,631] Remote version/idstring: SSH-1.99-Cisco-1.25
-[2018-11-02 11:32:06,631] Connected (version 1.99, client Cisco-1.25)
-[2018-11-02 11:32:06,632] kex algos:['diffie-hellman-group1-sha1'] server key:['ssh-rsa'] client encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr'] server encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr'] client mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] server mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] client compress:['none'] server compress:['none'] client lang:[''] server lang:[''] kex follows?False
-[2018-11-02 11:32:06,632] Kex agreed: diffie-hellman-group1-sha1
-[2018-11-02 11:32:06,633] HostKey agreed: ssh-rsa
-[2018-11-02 11:32:06,633] Cipher agreed: aes128-ctr
-[2018-11-02 11:32:06,633] MAC agreed: hmac-sha1
-[2018-11-02 11:32:06,633] Compression agreed: none
-[2018-11-02 11:32:06,723] kex engine KexGroup1 specified hash_algo <built-in function openssl_sha1>
-[2018-11-02 11:32:06,725] Switch to new keys ...
-[2018-11-02 11:32:06,726] Adding ssh-rsa host key for 172.16.232.137: b'2441f5f03ae11fba3aceaf5ac78ef777'
-[2018-11-02 11:32:06,786] userauth is OK
-[2018-11-02 11:32:06,820] Authentication (password) successful!
-[2018-11-02 11:32:06,820] [chan 0] Max packet in: 32768 bytes
-[2018-11-02 11:32:06,855] [chan 0] Max packet out: 4096 bytes
-[2018-11-02 11:32:06,855] Secsh channel 0 opened.
-[2018-11-02 11:32:06,888] [chan 0] Sesch channel 0 request ok
-[2018-11-02 11:32:06,922] [chan 0] Sesch channel 0 request ok
-[2018-11-02 11:32:08,023] read_channel: Type help or '?' for a list of available commands.
-ASA-HK-1> 
-[2018-11-02 11:32:08,124] read_channel: 
-[2018-11-02 11:32:10,127] read_channel: 
-[2018-11-02 11:32:10,127] read_channel: 
-[2018-11-02 11:32:10,128] write_channel: b'\n'
-[2018-11-02 11:32:10,228] read_channel: 
-ASA-HK-1> 
-[2018-11-02 11:32:10,329] read_channel: 
-[2018-11-02 11:32:10,329] write_channel: b'\n'
-[2018-11-02 11:32:10,329] Pattern is: ASA\-HK\-1
-[2018-11-02 11:32:10,362] _read_channel_expect read_data: 
-
-[2018-11-02 11:32:10,463] _read_channel_expect read_data: ASA-HK-1> 
-[2018-11-02 11:32:10,463] Pattern found: ASA\-HK\-1 
-ASA-HK-1> 
-[2018-11-02 11:32:10,463] write_channel: b'enable\n'
-[2018-11-02 11:32:10,463] Pattern is: (ASA\-HK\-1|ssword)
-[2018-11-02 11:32:10,497] _read_channel_expect read_data: en
-[2018-11-02 11:32:10,598] _read_channel_expect read_data: able
-Password: 
-[2018-11-02 11:32:10,598] Pattern found: (ASA\-HK\-1|ssword) enable
-Password: 
-[2018-11-02 11:32:10,599] write_channel: b'esunnytrunk\n'
-[2018-11-02 11:32:10,599] Pattern is: ASA\-HK\-1
-[2018-11-02 11:32:10,634] _read_channel_expect read_data: *
-[2018-11-02 11:32:10,735] _read_channel_expect read_data: **********
-ASA-HK-1# 
-[2018-11-02 11:32:10,735] Pattern found: ASA\-HK\-1 ***********
-ASA-HK-1# 
-[2018-11-02 11:32:10,736] write_channel: b'\n'
-[2018-11-02 11:32:10,736] Pattern is: ASA\-HK\-1
-[2018-11-02 11:32:10,769] _read_channel_expect read_data: 
-
-[2018-11-02 11:32:10,870] _read_channel_expect read_data: ASA-HK-1# 
-[2018-11-02 11:32:10,870] Pattern found: ASA\-HK\-1 
-ASA-HK-1# 
-[2018-11-02 11:32:10,971] read_channel: 
-[2018-11-02 11:32:10,971] In disable_paging
-[2018-11-02 11:32:10,971] Command: terminal pager 0
-
-[2018-11-02 11:32:10,972] write_channel: b'terminal pager 0\n'
-[2018-11-02 11:32:10,972] Pattern is: ASA\-HK\-1
-[2018-11-02 11:32:11,005] _read_channel_expect read_data: t
-[2018-11-02 11:32:11,106] _read_channel_expect read_data: erminal pager 0
-ASA-HK-1# 
-[2018-11-02 11:32:11,106] Pattern found: ASA\-HK\-1 terminal pager 0
-ASA-HK-1# 
-[2018-11-02 11:32:11,106] terminal pager 0
-ASA-HK-1# 
-[2018-11-02 11:32:11,106] Exiting disable_paging
-[2018-11-02 11:32:11,106] write_channel: b'terminal width 511\n'
-[2018-11-02 11:32:11,106] Pattern is: ASA\-HK\-1
-[2018-11-02 11:32:11,140] _read_channel_expect read_data: t
-[2018-11-02 11:32:11,240] _read_channel_expect read_data: erminal width 511
-                   ^
-ERROR: % Invalid input detected at '^' marker.
-ASA-HK-1# 
-[2018-11-02 11:32:11,240] Pattern found: ASA\-HK\-1 terminal width 511
-                   ^
-ERROR: % Invalid input detected at '^' marker.
-ASA-HK-1# 
-[2018-11-02 11:32:11,541] read_channel: 
-[2018-11-02 11:32:11,542] write_channel: b'\n'
-[2018-11-02 11:32:11,542] Pattern is: ASA\-HK\-1
-[2018-11-02 11:32:11,574] _read_channel_expect read_data: 
-
-[2018-11-02 11:32:11,675] _read_channel_expect read_data: ASA-HK-1# 
-[2018-11-02 11:32:11,675] Pattern found: ASA\-HK\-1 
-ASA-HK-1# 
-[2018-11-02 11:32:11,676] read_channel: 
-[2018-11-02 11:32:11,676] write_channel: b'\n'
-[2018-11-02 11:32:11,777] read_channel: 
-ASA-HK-1# 
-[2018-11-02 11:32:11,877] read_channel: 
-[2018-11-02 11:32:12,078] read_channel: 
-[2018-11-02 11:32:12,079] write_channel: b'terminal pager 0\n'
-[2018-11-02 11:32:12,079] read_channel: 
-[2018-11-02 11:32:12,280] read_channel: terminal pager 0
-ASA-HK-1# 
-[2018-11-02 11:32:12,281] read_channel: 
-[2018-11-02 11:32:12,281] write_channel: b'\n'
-[2018-11-02 11:32:12,382] read_channel: 
-ASA-HK-1# 
-[2018-11-02 11:32:12,482] read_channel: 
-[2018-11-02 11:32:12,683] read_channel: 
-[2018-11-02 11:32:12,684] write_channel: b'ping 202.14.67.4 repeat 1000\n'
-[2018-11-02 11:32:12,684] read_channel: 
-[2018-11-02 11:32:12,884] read_channel: ping 202.14.67.4 repeat 1000
-Type escape sequence to abort.
-Sending 1000, 100-byte ICMP Echos to 202.14.67.4, timeout is 2 seconds:
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:32:13,085] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!
-[2018-11-02 11:32:13,286] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:32:13,487] read_channel: !!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:32:13,688] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:32:13,888] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!
-[2018-11-02 11:32:14,089] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:32:14,290] read_channel: !!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:32:14,491] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-[2018-11-02 11:32:14,691] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:32:14,892] read_channel: !!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:32:15,093] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:32:15,294] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:32:15,494] read_channel: !
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:32:15,695] read_channel: !!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:32:15,896] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!
-[2018-11-02 11:32:16,097] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:32:16,297] read_channel: !!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:32:16,499] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!
-[2018-11-02 11:32:16,699] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:32:16,900] read_channel: !!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!
-Success rate is 100 percent (1000/1000), round-trip min/avg/max = 1/4/30 ms
-ASA-HK-1# 
-[2018-11-02 11:32:16,901] read_channel: 
-[2018-11-02 11:32:16,901] write_channel: b'\n'
-[2018-11-02 11:32:17,002] read_channel: 
-ASA-HK-1# 
-[2018-11-02 11:32:17,102] read_channel: 
-[2018-11-02 11:32:17,303] read_channel: 
-[2018-11-02 11:32:17,303] write_channel: b'terminal pager 25\n'
-[2018-11-02 11:32:17,303] read_channel: 
-[2018-11-02 11:32:17,504] read_channel: terminal pager 25
-ASA-HK-1# 
-[2018-11-02 11:32:17,505] write_channel: b'\n'
-[2018-11-02 11:32:17,605] read_channel: 
-ASA-HK-1# 
-[2018-11-02 11:32:17,706] read_channel: 
-[2018-11-02 11:32:19,708] read_channel: 
-[2018-11-02 11:32:19,708] exit_config_mode: 
-[2018-11-02 11:32:19,709] write_channel: b'exit\n'
-[2018-11-02 11:32:19,710] Job "job (trigger: interval[0:01:00], next run at: 2018-11-02 11:33:02 CST)" executed successfully
-[2018-11-02 11:32:19,741] EOF in transport thread
-[2018-11-02 11:33:02,523] Looking for jobs to run
-[2018-11-02 11:33:02,524] Running job "job (trigger: interval[0:01:00], next run at: 2018-11-02 11:33:02 CST)" (scheduled at 2018-11-02 11:33:02.522303+08:00)
-[2018-11-02 11:33:02,525] Next wakeup is due at 2018-11-02 11:34:02.522303+08:00 (in 59.998569 seconds)
-[2018-11-02 11:33:02,529] starting thread (client mode): 0xbda54470
-[2018-11-02 11:33:02,529] Local version/idstring: SSH-2.0-paramiko_2.4.2
-[2018-11-02 11:33:02,529] Remote version/idstring: SSH-1.99-Cisco-1.25
-[2018-11-02 11:33:02,529] Connected (version 1.99, client Cisco-1.25)
-[2018-11-02 11:33:02,530] kex algos:['diffie-hellman-group1-sha1'] server key:['ssh-rsa'] client encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr'] server encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr'] client mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] server mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] client compress:['none'] server compress:['none'] client lang:[''] server lang:[''] kex follows?False
-[2018-11-02 11:33:02,530] Kex agreed: diffie-hellman-group1-sha1
-[2018-11-02 11:33:02,530] HostKey agreed: ssh-rsa
-[2018-11-02 11:33:02,530] Cipher agreed: aes128-ctr
-[2018-11-02 11:33:02,530] MAC agreed: hmac-sha1
-[2018-11-02 11:33:02,530] Compression agreed: none
-[2018-11-02 11:33:02,565] kex engine KexGroup1 specified hash_algo <built-in function openssl_sha1>
-[2018-11-02 11:33:02,566] Switch to new keys ...
-[2018-11-02 11:33:02,567] Adding ssh-rsa host key for 172.16.230.136: b'11fbfd6b8690cd70e41463467600b185'
-[2018-11-02 11:33:02,568] userauth is OK
-[2018-11-02 11:33:02,569] Authentication (password) successful!
-[2018-11-02 11:33:02,569] [chan 0] Max packet in: 32768 bytes
-[2018-11-02 11:33:02,570] [chan 0] Max packet out: 4096 bytes
-[2018-11-02 11:33:02,570] Secsh channel 0 opened.
-[2018-11-02 11:33:02,571] [chan 0] Sesch channel 0 request ok
-[2018-11-02 11:33:02,572] [chan 0] Sesch channel 0 request ok
-[2018-11-02 11:33:03,674] read_channel: Type help or '?' for a list of available commands.
+[2018-11-04 22:21:02,527] read_channel: 
+[2018-11-04 22:21:04,529] read_channel: 
+[2018-11-04 22:21:04,529] exit_config_mode: 
+[2018-11-04 22:21:04,530] write_channel: b'exit\n'
+[2018-11-04 22:21:04,632] Job "job_flow (trigger: cron[day_of_week='0-6', hour='22', minute='20'], next run at: 2018-11-05 22:20:00 CST)" executed successfully
+[2018-11-05 08:00:00,002] Looking for jobs to run
+[2018-11-05 08:00:00,004] Next wakeup is due at 2018-11-05 10:30:00+08:00 (in 8999.997532 seconds)
+[2018-11-05 08:00:00,004] Running job "job_interface (trigger: cron[day_of_week='0-6', hour='8', minute='0'], next run at: 2018-11-06 08:00:00 CST)" (scheduled at 2018-11-05 08:00:00+08:00)
+[2018-11-05 08:00:00,004] Running job "job_ping (trigger: cron[day_of_week='0-6', hour='8', minute='0'], next run at: 2018-11-06 08:00:00 CST)" (scheduled at 2018-11-05 08:00:00+08:00)
+[2018-11-05 08:00:00,012] starting thread (client mode): 0x8ad32e80
+[2018-11-05 08:00:00,013] Local version/idstring: SSH-2.0-paramiko_2.4.2
+[2018-11-05 08:00:00,013] Remote version/idstring: SSH-1.99-Cisco-1.25
+[2018-11-05 08:00:00,014] starting thread (client mode): 0x88ba2780
+[2018-11-05 08:00:00,014] Connected (version 1.99, client Cisco-1.25)
+[2018-11-05 08:00:00,015] Local version/idstring: SSH-2.0-paramiko_2.4.2
+[2018-11-05 08:00:00,015] Remote version/idstring: SSH-1.99-Cisco-1.25
+[2018-11-05 08:00:00,016] Connected (version 1.99, client Cisco-1.25)
+[2018-11-05 08:00:00,016] kex algos:['diffie-hellman-group1-sha1'] server key:['ssh-rsa'] client encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc'] server encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc'] client mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] server mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] client compress:['none'] server compress:['none'] client lang:[''] server lang:[''] kex follows?False
+[2018-11-05 08:00:00,016] Kex agreed: diffie-hellman-group1-sha1
+[2018-11-05 08:00:00,017] HostKey agreed: ssh-rsa
+[2018-11-05 08:00:00,017] kex algos:['diffie-hellman-group1-sha1'] server key:['ssh-rsa'] client encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr'] server encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr'] client mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] server mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] client compress:['none'] server compress:['none'] client lang:[''] server lang:[''] kex follows?False
+[2018-11-05 08:00:00,017] Cipher agreed: aes128-cbc
+[2018-11-05 08:00:00,017] Kex agreed: diffie-hellman-group1-sha1
+[2018-11-05 08:00:00,018] MAC agreed: hmac-sha1
+[2018-11-05 08:00:00,018] HostKey agreed: ssh-rsa
+[2018-11-05 08:00:00,018] Compression agreed: none
+[2018-11-05 08:00:00,018] Cipher agreed: aes128-ctr
+[2018-11-05 08:00:00,027] MAC agreed: hmac-sha1
+[2018-11-05 08:00:00,027] Compression agreed: none
+[2018-11-05 08:00:00,061] kex engine KexGroup1 specified hash_algo <built-in function openssl_sha1>
+[2018-11-05 08:00:00,062] Switch to new keys ...
+[2018-11-05 08:00:00,062] Adding ssh-rsa host key for 172.16.230.136: b'11fbfd6b8690cd70e41463467600b185'
+[2018-11-05 08:00:00,064] userauth is OK
+[2018-11-05 08:00:00,065] Authentication (password) successful!
+[2018-11-05 08:00:00,066] [chan 0] Max packet in: 32768 bytes
+[2018-11-05 08:00:00,067] [chan 0] Max packet out: 4096 bytes
+[2018-11-05 08:00:00,067] Secsh channel 0 opened.
+[2018-11-05 08:00:00,068] [chan 0] Sesch channel 0 request ok
+[2018-11-05 08:00:00,068] [chan 0] Sesch channel 0 request ok
+[2018-11-05 08:00:00,430] kex engine KexGroup1 specified hash_algo <built-in function openssl_sha1>
+[2018-11-05 08:00:00,431] Switch to new keys ...
+[2018-11-05 08:00:00,432] Adding ssh-rsa host key for 172.16.230.134: b'fe2da85eccd66231d19613690c9017bb'
+[2018-11-05 08:00:00,627] userauth is OK
+[2018-11-05 08:00:00,645] Authentication (password) successful!
+[2018-11-05 08:00:00,646] [chan 0] Max packet in: 32768 bytes
+[2018-11-05 08:00:00,648] [chan 0] Max packet out: 4096 bytes
+[2018-11-05 08:00:00,648] Secsh channel 0 opened.
+[2018-11-05 08:00:00,650] [chan 0] Sesch channel 0 request ok
+[2018-11-05 08:00:00,652] [chan 0] Sesch channel 0 request ok
+[2018-11-05 08:00:01,170] read_channel: Type help or '?' for a list of available commands.
 SX-ASA> 
-[2018-11-02 11:33:03,774] read_channel: 
-[2018-11-02 11:33:05,775] read_channel: 
-[2018-11-02 11:33:05,775] read_channel: 
-[2018-11-02 11:33:05,776] write_channel: b'\n'
-[2018-11-02 11:33:05,877] read_channel: 
+[2018-11-05 08:00:01,271] read_channel: 
+[2018-11-05 08:00:01,754] read_channel: 
+SX_C2960_Mgmt>
+[2018-11-05 08:00:01,855] read_channel: 
+[2018-11-05 08:00:03,273] read_channel: 
+[2018-11-05 08:00:03,273] read_channel: 
+[2018-11-05 08:00:03,274] write_channel: b'\n'
+[2018-11-05 08:00:03,374] read_channel: 
 SX-ASA> 
-[2018-11-02 11:33:05,977] read_channel: 
-[2018-11-02 11:33:05,978] write_channel: b'\n'
-[2018-11-02 11:33:05,978] Pattern is: SX\-ASA
-[2018-11-02 11:33:05,979] _read_channel_expect read_data: 
-
-[2018-11-02 11:33:06,080] _read_channel_expect read_data: SX-ASA> 
-[2018-11-02 11:33:06,080] Pattern found: SX\-ASA 
+[2018-11-05 08:00:03,475] read_channel: 
+[2018-11-05 08:00:03,475] write_channel: b'\n'
+[2018-11-05 08:00:03,476] Pattern is: SX\-ASA
+[2018-11-05 08:00:03,476] _read_channel_expect read_data: 
 SX-ASA> 
-[2018-11-02 11:33:06,081] write_channel: b'enable\n'
-[2018-11-02 11:33:06,081] Pattern is: (SX\-ASA|ssword)
-[2018-11-02 11:33:06,082] _read_channel_expect read_data: e
-[2018-11-02 11:33:06,182] _read_channel_expect read_data: nable
+[2018-11-05 08:00:03,477] Pattern found: SX\-ASA 
+SX-ASA> 
+[2018-11-05 08:00:03,477] write_channel: b'enable\n'
+[2018-11-05 08:00:03,477] Pattern is: (SX\-ASA|ssword)
+[2018-11-05 08:00:03,477] _read_channel_expect read_data: e
+[2018-11-05 08:00:03,578] _read_channel_expect read_data: nable
 Password: 
-[2018-11-02 11:33:06,183] Pattern found: (SX\-ASA|ssword) enable
+[2018-11-05 08:00:03,578] Pattern found: (SX\-ASA|ssword) enable
 Password: 
-[2018-11-02 11:33:06,183] write_channel: b'esunnytrunk\n'
-[2018-11-02 11:33:06,184] Pattern is: SX\-ASA
-[2018-11-02 11:33:06,184] _read_channel_expect read_data: *
-[2018-11-02 11:33:06,285] _read_channel_expect read_data: **********
+[2018-11-05 08:00:03,579] write_channel: b'esunnytrunk\n'
+[2018-11-05 08:00:03,579] Pattern is: SX\-ASA
+[2018-11-05 08:00:03,581] _read_channel_expect read_data: ***********
 SX-ASA# 
-[2018-11-02 11:33:06,285] Pattern found: SX\-ASA ***********
+[2018-11-05 08:00:03,581] Pattern found: SX\-ASA ***********
 SX-ASA# 
-[2018-11-02 11:33:06,286] write_channel: b'\n'
-[2018-11-02 11:33:06,286] Pattern is: SX\-ASA
-[2018-11-02 11:33:06,287] _read_channel_expect read_data: 
+[2018-11-05 08:00:03,581] write_channel: b'\n'
+[2018-11-05 08:00:03,581] Pattern is: SX\-ASA
+[2018-11-05 08:00:03,582] _read_channel_expect read_data: 
 
-[2018-11-02 11:33:06,388] _read_channel_expect read_data: SX-ASA# 
-[2018-11-02 11:33:06,388] Pattern found: SX\-ASA 
+[2018-11-05 08:00:03,682] _read_channel_expect read_data: SX-ASA# 
+[2018-11-05 08:00:03,683] Pattern found: SX\-ASA 
 SX-ASA# 
-[2018-11-02 11:33:06,489] read_channel: 
-[2018-11-02 11:33:06,489] In disable_paging
-[2018-11-02 11:33:06,489] Command: terminal pager 0
+[2018-11-05 08:00:03,783] read_channel: 
+[2018-11-05 08:00:03,783] In disable_paging
+[2018-11-05 08:00:03,784] Command: terminal pager 0
 
-[2018-11-02 11:33:06,489] write_channel: b'terminal pager 0\n'
-[2018-11-02 11:33:06,490] Pattern is: SX\-ASA
-[2018-11-02 11:33:06,490] _read_channel_expect read_data: t
-[2018-11-02 11:33:06,591] _read_channel_expect read_data: erminal pager 0
+[2018-11-05 08:00:03,784] write_channel: b'terminal pager 0\n'
+[2018-11-05 08:00:03,785] Pattern is: SX\-ASA
+[2018-11-05 08:00:03,785] _read_channel_expect read_data: t
+[2018-11-05 08:00:03,857] read_channel: 
+[2018-11-05 08:00:03,857] read_channel: 
+[2018-11-05 08:00:03,858] write_channel: b'\n'
+[2018-11-05 08:00:03,886] _read_channel_expect read_data: erminal pager 0
 SX-ASA# 
-[2018-11-02 11:33:06,591] Pattern found: SX\-ASA terminal pager 0
+[2018-11-05 08:00:03,886] Pattern found: SX\-ASA terminal pager 0
 SX-ASA# 
-[2018-11-02 11:33:06,591] terminal pager 0
+[2018-11-05 08:00:03,886] terminal pager 0
 SX-ASA# 
-[2018-11-02 11:33:06,592] Exiting disable_paging
-[2018-11-02 11:33:06,592] write_channel: b'terminal width 511\n'
-[2018-11-02 11:33:06,592] Pattern is: SX\-ASA
-[2018-11-02 11:33:06,593] _read_channel_expect read_data: te
-[2018-11-02 11:33:06,694] _read_channel_expect read_data: rminal width 511
+[2018-11-05 08:00:03,886] Exiting disable_paging
+[2018-11-05 08:00:03,887] write_channel: b'terminal width 511\n'
+[2018-11-05 08:00:03,887] Pattern is: SX\-ASA
+[2018-11-05 08:00:03,888] _read_channel_expect read_data: t
+[2018-11-05 08:00:03,958] read_channel: 
+SX_C2960_Mgmt>
+[2018-11-05 08:00:03,989] _read_channel_expect read_data: erminal width 511
                  ^
 ERROR: % Invalid input detected at '^' marker.
 SX-ASA# 
-[2018-11-02 11:33:06,694] Pattern found: SX\-ASA terminal width 511
+[2018-11-05 08:00:03,989] Pattern found: SX\-ASA terminal width 511
                  ^
 ERROR: % Invalid input detected at '^' marker.
 SX-ASA# 
-[2018-11-02 11:33:06,995] read_channel: 
-[2018-11-02 11:33:06,996] write_channel: b'\n'
-[2018-11-02 11:33:06,996] Pattern is: SX\-ASA
-[2018-11-02 11:33:06,997] _read_channel_expect read_data: 
+[2018-11-05 08:00:04,058] read_channel: 
+[2018-11-05 08:00:04,159] read_channel: 
+[2018-11-05 08:00:04,159] In disable_paging
+[2018-11-05 08:00:04,159] Command: terminal length 0
 
-[2018-11-02 11:33:07,097] _read_channel_expect read_data: SX-ASA# 
-[2018-11-02 11:33:07,098] Pattern found: SX\-ASA 
+[2018-11-05 08:00:04,160] write_channel: b'terminal length 0\n'
+[2018-11-05 08:00:04,160] Pattern is: SX_C2960_Mgmt
+[2018-11-05 08:00:04,163] _read_channel_expect read_data: t
+[2018-11-05 08:00:04,264] _read_channel_expect read_data: erminal length 0
+SX_C2960_Mgmt>
+[2018-11-05 08:00:04,264] Pattern found: SX_C2960_Mgmt terminal length 0
+SX_C2960_Mgmt>
+[2018-11-05 08:00:04,265] terminal length 0
+SX_C2960_Mgmt>
+[2018-11-05 08:00:04,265] Exiting disable_paging
+[2018-11-05 08:00:04,265] write_channel: b'terminal width 511\n'
+[2018-11-05 08:00:04,265] Pattern is: SX_C2960_Mgmt
+[2018-11-05 08:00:04,268] _read_channel_expect read_data: t
+[2018-11-05 08:00:04,289] read_channel: 
+[2018-11-05 08:00:04,290] write_channel: b'\n'
+[2018-11-05 08:00:04,290] Pattern is: SX\-ASA
+[2018-11-05 08:00:04,291] _read_channel_expect read_data: 
+
+[2018-11-05 08:00:04,369] _read_channel_expect read_data: erminal width 511
+SX_C2960_Mgmt>
+[2018-11-05 08:00:04,369] Pattern found: SX_C2960_Mgmt terminal width 511
+SX_C2960_Mgmt>
+[2018-11-05 08:00:04,391] _read_channel_expect read_data: SX-ASA# 
+[2018-11-05 08:00:04,391] Pattern found: SX\-ASA 
 SX-ASA# 
-[2018-11-02 11:33:07,098] read_channel: 
-[2018-11-02 11:33:07,098] write_channel: b'\n'
-[2018-11-02 11:33:07,199] read_channel: 
+[2018-11-05 08:00:04,392] read_channel: 
+[2018-11-05 08:00:04,392] write_channel: b'\n'
+[2018-11-05 08:00:04,493] read_channel: 
 SX-ASA# 
-[2018-11-02 11:33:07,300] read_channel: 
-[2018-11-02 11:33:07,500] read_channel: 
-[2018-11-02 11:33:07,501] write_channel: b'terminal pager 0\n'
-[2018-11-02 11:33:07,501] read_channel: 
-[2018-11-02 11:33:07,702] read_channel: terminal pager 0
+[2018-11-05 08:00:04,593] read_channel: 
+[2018-11-05 08:00:04,670] read_channel: 
+[2018-11-05 08:00:04,670] write_channel: b'\n'
+[2018-11-05 08:00:04,670] Pattern is: SX_C2960_Mgmt
+[2018-11-05 08:00:04,673] _read_channel_expect read_data: 
+
+[2018-11-05 08:00:04,774] _read_channel_expect read_data: SX_C2960_Mgmt>
+[2018-11-05 08:00:04,774] Pattern found: SX_C2960_Mgmt 
+SX_C2960_Mgmt>
+[2018-11-05 08:00:04,775] write_channel: b'enable\n'
+[2018-11-05 08:00:04,775] Pattern is: (SX_C2960_Mgmt|ssword)
+[2018-11-05 08:00:04,777] _read_channel_expect read_data: e
+[2018-11-05 08:00:04,794] read_channel: 
+[2018-11-05 08:00:04,794] write_channel: b'terminal pager 0\n'
+[2018-11-05 08:00:04,795] read_channel: 
+[2018-11-05 08:00:04,878] _read_channel_expect read_data: nable
+Password: 
+[2018-11-05 08:00:04,878] Pattern found: (SX_C2960_Mgmt|ssword) enable
+Password: 
+[2018-11-05 08:00:04,878] write_channel: b'esunnytrunk\n'
+[2018-11-05 08:00:04,878] Pattern is: SX_C2960_Mgmt
+[2018-11-05 08:00:04,906] _read_channel_expect read_data: 
+SX_C2960_Mgmt#
+[2018-11-05 08:00:04,906] Pattern found: SX_C2960_Mgmt 
+SX_C2960_Mgmt#
+[2018-11-05 08:00:04,907] write_channel: b'\n'
+[2018-11-05 08:00:04,907] Pattern is: SX_C2960_Mgmt
+[2018-11-05 08:00:04,910] _read_channel_expect read_data: 
+
+[2018-11-05 08:00:04,995] read_channel: terminal pager 0
 SX-ASA# 
-[2018-11-02 11:33:07,703] read_channel: 
-[2018-11-02 11:33:07,703] write_channel: b'\n'
-[2018-11-02 11:33:07,803] read_channel: 
+[2018-11-05 08:00:04,996] read_channel: 
+[2018-11-05 08:00:04,996] write_channel: b'\n'
+[2018-11-05 08:00:05,010] _read_channel_expect read_data: SX_C2960_Mgmt#
+[2018-11-05 08:00:05,011] Pattern found: SX_C2960_Mgmt 
+SX_C2960_Mgmt#
+[2018-11-05 08:00:05,011] read_channel: 
+[2018-11-05 08:00:05,011] write_channel: b'\n'
+[2018-11-05 08:00:05,096] read_channel: 
 SX-ASA# 
-[2018-11-02 11:33:07,904] read_channel: 
-[2018-11-02 11:33:08,104] read_channel: 
-[2018-11-02 11:33:08,105] write_channel: b'ping CNTC 114.114.114.114 repeat 1000\n'
-[2018-11-02 11:33:08,105] read_channel: 
-[2018-11-02 11:33:08,306] read_channel: ping CNTC 114.114.114.114 repeat 1000
+[2018-11-05 08:00:05,112] read_channel: 
+SX_C2960_Mgmt#
+[2018-11-05 08:00:05,197] read_channel: 
+[2018-11-05 08:00:05,213] read_channel: 
+[2018-11-05 08:00:05,397] read_channel: 
+[2018-11-05 08:00:05,398] write_channel: b'ping CNTC 114.114.114.114 repeat 1000\n'
+[2018-11-05 08:00:05,398] read_channel: 
+[2018-11-05 08:00:05,413] read_channel: 
+[2018-11-05 08:00:05,414] write_channel: b'terminal length 0\n'
+[2018-11-05 08:00:05,414] read_channel: 
+[2018-11-05 08:00:05,599] read_channel: ping CNTC 114.114.114.114 repeat 1000
 Type escape sequence to abort.
 Sending 1000, 100-byte ICMP Echos to 114.114.114.114, timeout is 2 seconds:
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:33:08,507] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:33:08,707] read_channel: !!
+[2018-11-05 08:00:05,614] read_channel: terminal length 0
+SX_C2960_Mgmt#
+[2018-11-05 08:00:05,615] read_channel: 
+[2018-11-05 08:00:05,615] write_channel: b'\n'
+[2018-11-05 08:00:05,715] read_channel: 
+SX_C2960_Mgmt#
+[2018-11-05 08:00:05,800] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:05,816] read_channel: 
+[2018-11-05 08:00:06,001] read_channel: !!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:33:08,908] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:33:09,109] read_channel: !!!!
+[2018-11-05 08:00:06,017] read_channel: 
+[2018-11-05 08:00:06,017] write_channel: b'show ip int br | ex up\n'
+[2018-11-05 08:00:06,017] read_channel: 
+[2018-11-05 08:00:06,201] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:06,218] read_channel: show ip int br | ex up
+Interface              IP-Address      OK? Method Status                Protocol
+Vlan1                  unassigned      YES TFTP   administratively down down    
+GigabitEthernet0/8     unassigned      YES unset  down                  down    
+GigabitEthernet0/23    unassigned      YES unset  down                  down    
+SX_C2960_Mgmt#
+[2018-11-05 08:00:06,218] read_channel: 
+[2018-11-05 08:00:06,219] write_channel: b'\n'
+[2018-11-05 08:00:06,319] read_channel: 
+SX_C2960_Mgmt#
+[2018-11-05 08:00:06,402] read_channel: !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:33:09,310] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:33:09,511] read_channel: !!!!!
+[2018-11-05 08:00:06,419] read_channel: 
+[2018-11-05 08:00:06,602] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:06,620] read_channel: 
+[2018-11-05 08:00:06,620] write_channel: b'terminal length 25\n'
+[2018-11-05 08:00:06,621] read_channel: 
+[2018-11-05 08:00:06,803] read_channel: !!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:06,821] read_channel: terminal length 25
+SX_C2960_Mgmt#
+[2018-11-05 08:00:06,822] write_channel: b'\n'
+[2018-11-05 08:00:06,922] read_channel: 
+SX_C2960_Mgmt#
+[2018-11-05 08:00:07,004] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:07,023] read_channel: 
+[2018-11-05 08:00:07,204] read_channel: !!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:33:09,712] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:33:09,912] read_channel: !!!!!!
+[2018-11-05 08:00:07,405] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:07,606] read_channel: !!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:33:10,113] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:33:10,314] read_channel: !!!!!!!!
+[2018-11-05 08:00:07,806] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:08,007] read_channel: !!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:08,208] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:08,409] read_channel: !!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:33:10,515] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:33:10,716] read_channel: !!!!!!!!!
+[2018-11-05 08:00:08,609] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:08,810] read_channel: !!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:33:10,917] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:33:11,118] read_channel: !!!!!!!!!!
+[2018-11-05 08:00:09,011] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:09,025] read_channel: 
+[2018-11-05 08:00:09,026] exit_config_mode: 
+[2018-11-05 08:00:09,026] write_channel: b'exit\n'
+[2018-11-05 08:00:09,030] EOF in transport thread
+[2018-11-05 08:00:09,211] read_channel: !!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:33:11,320] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:33:11,520] read_channel: !!!!!!!!!!!!
+[2018-11-05 08:00:09,412] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:09,613] read_channel: !!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:33:11,721] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:33:11,922] read_channel: !!!!!!!!!!!!!
+[2018-11-05 08:00:09,813] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:10,015] read_channel: !!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:10,146] read_channel: 
+User Access Verification
+
+Username: 
+[2018-11-05 08:00:10,146] write_channel: b'cisco\r\n'
+[2018-11-05 08:00:10,216] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:10,416] read_channel: !!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:33:12,123] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:33:12,332] read_channel: !!!!!!!!!!!!!!
+[2018-11-05 08:00:10,617] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:10,818] read_channel: !!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:33:12,532] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:33:12,733] read_channel: !!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:33:12,934] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:33:13,135] read_channel: !!!!!!!!!!!!!!!
+[2018-11-05 08:00:11,019] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:11,148] read_channel: cisco
+Password: 
+[2018-11-05 08:00:11,148] write_channel: b'cisco\r\n'
+[2018-11-05 08:00:11,220] read_channel: !!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:33:13,336] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:33:13,536] read_channel: !!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:33:13,737] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:33:13,938] read_channel: !!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!
-[2018-11-02 11:33:14,139] read_channel: !!!!
+[2018-11-05 08:00:11,421] read_channel: !
 Success rate is 100 percent (1000/1000), round-trip min/avg/max = 1/6/10 ms
 SX-ASA# 
-[2018-11-02 11:33:14,140] read_channel: 
-[2018-11-02 11:33:14,140] write_channel: b'\n'
-[2018-11-02 11:33:14,241] read_channel: 
+[2018-11-05 08:00:11,421] read_channel: 
+[2018-11-05 08:00:11,422] write_channel: b'\n'
+[2018-11-05 08:00:11,523] read_channel: 
 SX-ASA# 
-[2018-11-02 11:33:14,341] read_channel: 
-[2018-11-02 11:33:14,542] read_channel: 
-[2018-11-02 11:33:14,543] write_channel: b'ping CNUC 221.6.4.66 repeat 1000\n'
-[2018-11-02 11:33:14,543] read_channel: 
-[2018-11-02 11:33:14,744] read_channel: ping CNUC 221.6.4.66 repeat 1000
+[2018-11-05 08:00:11,623] read_channel: 
+[2018-11-05 08:00:11,649] read_channel: 
+Sw2960_ilo_Mgt>
+[2018-11-05 08:00:11,824] read_channel: 
+[2018-11-05 08:00:11,825] write_channel: b'ping CNUC 221.6.4.66 repeat 1000\n'
+[2018-11-05 08:00:11,825] read_channel: 
+[2018-11-05 08:00:12,025] read_channel: ping CNUC 221.6.4.66 repeat 1000
 Type escape sequence to abort.
 Sending 1000, 100-byte ICMP Echos to 221.6.4.66, timeout is 2 seconds:
 !!!!!!!!!!!!!!!!!!
-[2018-11-02 11:33:14,945] read_channel: !!!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:33:15,145] read_channel: !!!!!!!!!!!!!!!!!!!
-[2018-11-02 11:33:15,346] read_channel: !!!!!!!!!!!!!
+[2018-11-05 08:00:12,226] read_channel: !!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:12,427] read_channel: !!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:12,627] read_channel: !!!!!!!!!!!!!
 !!!!!!!
-[2018-11-02 11:33:15,547] read_channel: !!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:12,751] read_channel: 
+[2018-11-05 08:00:12,828] read_channel: !!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:13,029] read_channel: !!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:13,229] read_channel: !!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:13,430] read_channel: !!!!!
+!!!!!!!!!!!!!!
+[2018-11-05 08:00:13,631] read_channel: !!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:13,832] read_channel: !!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:14,033] read_channel: !!!!!!!!!!!!!!!!!
+!!!
+[2018-11-05 08:00:14,233] read_channel: !!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:14,434] read_channel: !!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:14,635] read_channel: !!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:14,754] read_channel: 
+[2018-11-05 08:00:14,755] write_channel: b'\n'
+[2018-11-05 08:00:14,836] read_channel: !!!!!!!!!
+!!!!!!!!!!
+[2018-11-05 08:00:14,965] read_channel: 
+Sw2960_ilo_Mgt>
+[2018-11-05 08:00:15,037] read_channel: !!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:15,066] read_channel: 
+[2018-11-05 08:00:15,237] read_channel: !!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:15,438] read_channel: !!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:15,639] read_channel: !
+!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:15,839] read_channel: !!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:16,040] read_channel: !!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:16,241] read_channel: !!!!!!!!!!!!!
+!!!!!!!
+[2018-11-05 08:00:16,441] read_channel: !!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:16,642] read_channel: !!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:16,843] read_channel: !!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:17,044] read_channel: !!!!!
+!!!!!!!!!!!!!!
+[2018-11-05 08:00:17,067] read_channel: 
+[2018-11-05 08:00:17,067] read_channel: 
+[2018-11-05 08:00:17,068] write_channel: b'\n'
+[2018-11-05 08:00:17,168] read_channel: 
+Sw2960_ilo_Mgt>
+[2018-11-05 08:00:17,245] read_channel: !!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:17,269] read_channel: 
+[2018-11-05 08:00:17,370] read_channel: 
+[2018-11-05 08:00:17,370] In disable_paging
+[2018-11-05 08:00:17,370] Command: terminal length 0
+
+[2018-11-05 08:00:17,371] write_channel: b'terminal length 0\n'
+[2018-11-05 08:00:17,371] Pattern is: Sw2960_ilo_Mgt
+[2018-11-05 08:00:17,371] read_channel: 
+[2018-11-05 08:00:17,445] read_channel: !!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:17,472] read_channel: terminal length 0
+Sw2960_ilo_Mgt>
+[2018-11-05 08:00:17,472] Pattern found: Sw2960_ilo_Mgt terminal length 0
+Sw2960_ilo_Mgt>
+[2018-11-05 08:00:17,472] terminal length 0
+Sw2960_ilo_Mgt>
+[2018-11-05 08:00:17,472] Exiting disable_paging
+[2018-11-05 08:00:17,472] write_channel: b'terminal width 511\n'
+[2018-11-05 08:00:17,472] Pattern is: Sw2960_ilo_Mgt
+[2018-11-05 08:00:17,473] read_channel: 
+[2018-11-05 08:00:17,574] read_channel: 
+[2018-11-05 08:00:17,646] read_channel: !!!!!!!!!!!!!!!!!
+!!
+[2018-11-05 08:00:17,674] read_channel: 
+[2018-11-05 08:00:17,775] read_channel: terminal width 511
+Sw2960_ilo_Mgt>
+[2018-11-05 08:00:17,775] Pattern found: Sw2960_ilo_Mgt terminal width 511
+Sw2960_ilo_Mgt>
+[2018-11-05 08:00:17,847] read_channel: !!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:18,048] read_channel: !!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:18,076] read_channel: 
+[2018-11-05 08:00:18,076] write_channel: b'\n'
+[2018-11-05 08:00:18,076] Pattern is: Sw2960_ilo_Mgt
+[2018-11-05 08:00:18,077] read_channel: 
+[2018-11-05 08:00:18,177] read_channel: 
+Sw2960_ilo_Mgt>
+[2018-11-05 08:00:18,177] Pattern found: Sw2960_ilo_Mgt 
+Sw2960_ilo_Mgt>
+[2018-11-05 08:00:18,177] write_channel: b'enable\n'
+[2018-11-05 08:00:18,178] Pattern is: (Sw2960_ilo_Mgt|ssword)
+[2018-11-05 08:00:18,178] read_channel: 
+[2018-11-05 08:00:18,249] read_channel: !!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:18,279] read_channel: enable
+Password: 
+[2018-11-05 08:00:18,279] Pattern found: (Sw2960_ilo_Mgt|ssword) enable
+Password: 
+[2018-11-05 08:00:18,279] write_channel: b'cisco\n'
+[2018-11-05 08:00:18,279] Pattern is: Sw2960_ilo_Mgt
+[2018-11-05 08:00:18,279] read_channel: 
+[2018-11-05 08:00:18,380] read_channel: 
+Sw2960_ilo_Mgt#
+[2018-11-05 08:00:18,380] Pattern found: Sw2960_ilo_Mgt 
+Sw2960_ilo_Mgt#
+[2018-11-05 08:00:18,381] write_channel: b'\n'
+[2018-11-05 08:00:18,381] Pattern is: Sw2960_ilo_Mgt
+[2018-11-05 08:00:18,381] read_channel: 
+[2018-11-05 08:00:18,450] read_channel: !!!!!!!!!!
+!!!!!!!!!
+[2018-11-05 08:00:18,482] read_channel: 
+Sw2960_ilo_Mgt#
+[2018-11-05 08:00:18,482] Pattern found: Sw2960_ilo_Mgt 
+Sw2960_ilo_Mgt#
+[2018-11-05 08:00:18,482] read_channel: 
+[2018-11-05 08:00:18,483] write_channel: b'\n'
+[2018-11-05 08:00:18,584] read_channel: 
+Sw2960_ilo_Mgt#
+[2018-11-05 08:00:18,651] read_channel: !!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:18,684] read_channel: 
+[2018-11-05 08:00:18,851] read_channel: !!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:18,885] read_channel: 
+[2018-11-05 08:00:18,885] write_channel: b'terminal length 0\n'
+[2018-11-05 08:00:18,886] read_channel: 
+[2018-11-05 08:00:19,052] read_channel: !!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:19,086] read_channel: terminal length 0
+Sw2960_ilo_Mgt#
+[2018-11-05 08:00:19,087] read_channel: 
+[2018-11-05 08:00:19,087] write_channel: b'\n'
+[2018-11-05 08:00:19,188] read_channel: 
+Sw2960_ilo_Mgt#
+[2018-11-05 08:00:19,253] read_channel: !!
+!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:19,288] read_channel: 
+[2018-11-05 08:00:19,454] read_channel: !!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:19,489] read_channel: 
+[2018-11-05 08:00:19,489] write_channel: b'show ip int br | ex up\n'
+[2018-11-05 08:00:19,490] read_channel: 
+[2018-11-05 08:00:19,654] read_channel: !!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:19,701] read_channel: show ip int br | ex up
+Interface              IP-Address      OK? Method Status                Protocol
+Vlan1                  unassigned      YES manual administratively down down    
+GigabitEthernet1/0/1   unassigned      YES unset  down                  down    
+GigabitEthernet1/0/2   unassigned      YES unset  down                  down    
+GigabitEthernet1/0/3   unassigned      YES unset  down                  down    
+GigabitEthernet1/0/4   unassigned      YES unset  down                  down    
+GigabitEthernet1/0/5   unassigned      YES unset  down                  down    
+GigabitEthernet1/0/6   unassigned      YES unset  down                  down    
+GigabitEthernet1/0/7   unassigned      YES unset  down                  down    
+GigabitEthernet1/0/8   unassigned      YES unset  down                  down    
+GigabitEthernet1/0/9   unassigned      YES unset  down                  down    
+GigabitEthernet1/0/10  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/11  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/12  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/13  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/14  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/15  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/16  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/17  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/18  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/19  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/20  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/21  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/22  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/23  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/24  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/25  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/26  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/27  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/28  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/29  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/30  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/31  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/32  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/33  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/34  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/35  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/36  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/37  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/38  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/39  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/40  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/41  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/42  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/43  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/44  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/45  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/46  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/47  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/48  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/49  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/50  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/51  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/52  unassigned      YES unset  down                  down    
+
+Sw2960_ilo_Mgt#
+[2018-11-05 08:00:19,701] read_channel: 
+[2018-11-05 08:00:19,701] write_channel: b'\n'
+[2018-11-05 08:00:19,802] read_channel: 
+Sw2960_ilo_Mgt#
+[2018-11-05 08:00:19,855] read_channel: !!!!!!!!!!!!!!
+!!!!!
+[2018-11-05 08:00:19,902] read_channel: 
+[2018-11-05 08:00:20,055] read_channel: !!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:20,103] read_channel: 
+[2018-11-05 08:00:20,103] write_channel: b'terminal length 25\n'
+[2018-11-05 08:00:20,103] read_channel: 
+[2018-11-05 08:00:20,256] read_channel: !!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:20,305] read_channel: terminal length 25
+Sw2960_ilo_Mgt#
+[2018-11-05 08:00:20,305] write_channel: b'\n'
+[2018-11-05 08:00:20,405] read_channel: 
+[2018-11-05 08:00:20,457] read_channel: !!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:20,658] read_channel: !!!!!!!
+!!!!!!!!!!!!
+[2018-11-05 08:00:20,859] read_channel: !!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:21,059] read_channel: !!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:21,260] read_channel: !!!!!!!!!!!!!!!!!!!
+
+[2018-11-05 08:00:21,460] read_channel: !!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:21,661] read_channel: !!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:21,862] read_channel: !!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:00:22,063] read_channel: !!!!!!!!!!!!
+!!!!!!!!
+[2018-11-05 08:00:22,264] read_channel: !!!!!!!!!!!!
+Success rate is 100 percent (1000/1000), round-trip min/avg/max = 1/10/20 ms
+SX-ASA# 
+[2018-11-05 08:00:22,264] read_channel: 
+[2018-11-05 08:00:22,264] write_channel: b'\n'
+[2018-11-05 08:00:22,365] read_channel: 
+SX-ASA# 
+[2018-11-05 08:00:22,408] read_channel: 
+Sw2960_ilo_Mgt#
+[2018-11-05 08:00:22,465] read_channel: 
+[2018-11-05 08:00:22,509] read_channel: 
+[2018-11-05 08:00:22,666] read_channel: 
+[2018-11-05 08:00:22,667] write_channel: b'terminal pager 25\n'
+[2018-11-05 08:00:22,667] read_channel: 
+[2018-11-05 08:00:22,868] read_channel: terminal pager 25
+SX-ASA# 
+[2018-11-05 08:00:22,869] write_channel: b'\n'
+[2018-11-05 08:00:22,969] read_channel: 
+SX-ASA# 
+[2018-11-05 08:00:23,070] read_channel: 
+[2018-11-05 08:00:24,511] read_channel: 
+[2018-11-05 08:00:24,511] exit_config_mode: 
+[2018-11-05 08:00:24,512] write_channel: b'exit\n'
+[2018-11-05 08:00:25,071] read_channel: 
+[2018-11-05 08:00:25,071] exit_config_mode: 
+[2018-11-05 08:00:25,072] write_channel: b'exit\n'
+[2018-11-05 08:00:25,073] EOF in transport thread
+[2018-11-05 08:00:25,177] starting thread (client mode): 0x88acc400
+[2018-11-05 08:00:25,178] Local version/idstring: SSH-2.0-paramiko_2.4.2
+[2018-11-05 08:00:25,178] Remote version/idstring: SSH-1.99-Cisco-1.25
+[2018-11-05 08:00:25,178] Connected (version 1.99, client Cisco-1.25)
+[2018-11-05 08:00:25,179] kex algos:['diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa'] client encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc'] server encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc'] client mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] server mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] client compress:['none'] server compress:['none'] client lang:[''] server lang:[''] kex follows?False
+[2018-11-05 08:00:25,179] Kex agreed: diffie-hellman-group-exchange-sha1
+[2018-11-05 08:00:25,179] HostKey agreed: ssh-rsa
+[2018-11-05 08:00:25,179] Cipher agreed: aes128-cbc
+[2018-11-05 08:00:25,179] MAC agreed: hmac-sha1
+[2018-11-05 08:00:25,180] Compression agreed: none
+[2018-11-05 08:00:25,378] Got server p (2048 bits)
+[2018-11-05 08:00:25,525] kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+[2018-11-05 08:00:25,525] Switch to new keys ...
+[2018-11-05 08:00:25,526] Adding ssh-rsa host key for 172.16.230.129: b'7a7ce7076b6d2a036995e4bd8b6114aa'
+[2018-11-05 08:00:25,618] read_channel: 
+User Access Verification
+
+Username: 
+[2018-11-05 08:00:25,618] write_channel: b'esunny\r\n'
+[2018-11-05 08:00:25,722] userauth is OK
+[2018-11-05 08:00:25,726] Authentication (password) successful!
+[2018-11-05 08:00:25,726] [chan 0] Max packet in: 32768 bytes
+[2018-11-05 08:00:25,727] [chan 0] Max packet out: 4096 bytes
+[2018-11-05 08:00:25,727] Secsh channel 0 opened.
+[2018-11-05 08:00:25,728] [chan 0] Sesch channel 0 request ok
+[2018-11-05 08:00:25,730] [chan 0] Sesch channel 0 request ok
+[2018-11-05 08:00:26,620] read_channel: esunny
+Password: 
+[2018-11-05 08:00:26,620] write_channel: b'Esunny123\r\n'
+[2018-11-05 08:00:26,832] read_channel: SX_RB>
+[2018-11-05 08:00:26,932] read_channel: 
+[2018-11-05 08:00:27,121] read_channel: 
+SX_2960_Extend>
+[2018-11-05 08:00:28,223] read_channel: 
+[2018-11-05 08:00:28,935] read_channel: 
+[2018-11-05 08:00:28,935] read_channel: 
+[2018-11-05 08:00:28,935] write_channel: b'\n'
+[2018-11-05 08:00:29,037] read_channel: 
+SX_RB>
+[2018-11-05 08:00:29,137] read_channel: 
+[2018-11-05 08:00:29,238] read_channel: 
+[2018-11-05 08:00:29,238] In disable_paging
+[2018-11-05 08:00:29,238] Command: terminal length 0
+
+[2018-11-05 08:00:29,238] write_channel: b'terminal length 0\n'
+[2018-11-05 08:00:29,239] Pattern is: SX_RB
+[2018-11-05 08:00:29,239] _read_channel_expect read_data: t
+[2018-11-05 08:00:29,340] _read_channel_expect read_data: erminal length 0
+SX_RB>
+[2018-11-05 08:00:29,340] Pattern found: SX_RB terminal length 0
+SX_RB>
+[2018-11-05 08:00:29,340] terminal length 0
+SX_RB>
+[2018-11-05 08:00:29,341] Exiting disable_paging
+[2018-11-05 08:00:29,341] write_channel: b'terminal width 511\n'
+[2018-11-05 08:00:29,341] Pattern is: SX_RB
+[2018-11-05 08:00:29,342] _read_channel_expect read_data: t
+[2018-11-05 08:00:29,443] _read_channel_expect read_data: erminal width 511
+SX_RB>
+[2018-11-05 08:00:29,443] Pattern found: SX_RB terminal width 511
+SX_RB>
+[2018-11-05 08:00:29,744] read_channel: 
+[2018-11-05 08:00:29,744] write_channel: b'\n'
+[2018-11-05 08:00:29,744] Pattern is: SX_RB
+[2018-11-05 08:00:29,745] _read_channel_expect read_data: 
+
+[2018-11-05 08:00:29,846] _read_channel_expect read_data: SX_RB>
+[2018-11-05 08:00:29,846] Pattern found: SX_RB 
+SX_RB>
+[2018-11-05 08:00:29,847] write_channel: b'enable\n'
+[2018-11-05 08:00:29,847] Pattern is: (SX_RB|ssword)
+[2018-11-05 08:00:29,848] _read_channel_expect read_data: e
+[2018-11-05 08:00:29,949] _read_channel_expect read_data: nable
+Password: 
+[2018-11-05 08:00:29,949] Pattern found: (SX_RB|ssword) enable
+Password: 
+[2018-11-05 08:00:29,949] write_channel: b'esunnytrunk\n'
+[2018-11-05 08:00:29,950] Pattern is: SX_RB
+[2018-11-05 08:00:29,953] _read_channel_expect read_data: 
+SX_RB#
+[2018-11-05 08:00:29,953] Pattern found: SX_RB 
+SX_RB#
+[2018-11-05 08:00:29,953] write_channel: b'\n'
+[2018-11-05 08:00:29,954] Pattern is: SX_RB
+[2018-11-05 08:00:29,954] _read_channel_expect read_data: 
+
+[2018-11-05 08:00:30,055] _read_channel_expect read_data: SX_RB#
+[2018-11-05 08:00:30,056] Pattern found: SX_RB 
+SX_RB#
+[2018-11-05 08:00:30,056] read_channel: 
+[2018-11-05 08:00:30,056] write_channel: b'\n'
+[2018-11-05 08:00:30,156] read_channel: 
+SX_RB#
+[2018-11-05 08:00:30,225] read_channel: 
+[2018-11-05 08:00:30,225] write_channel: b'\n'
+[2018-11-05 08:00:30,257] read_channel: 
+[2018-11-05 08:00:30,437] read_channel: 
+SX_2960_Extend>
+[2018-11-05 08:00:30,458] read_channel: 
+[2018-11-05 08:00:30,458] write_channel: b'terminal length 0\n'
+[2018-11-05 08:00:30,459] read_channel: 
+[2018-11-05 08:00:30,538] read_channel: 
+[2018-11-05 08:00:30,659] read_channel: terminal length 0
+SX_RB#
+[2018-11-05 08:00:30,659] read_channel: 
+[2018-11-05 08:00:30,660] write_channel: b'\n'
+[2018-11-05 08:00:30,760] read_channel: 
+SX_RB#
+[2018-11-05 08:00:30,861] read_channel: 
+[2018-11-05 08:00:31,061] read_channel: 
+[2018-11-05 08:00:31,062] write_channel: b'ping 172.17.1.34 repeat 100\n'
+[2018-11-05 08:00:31,062] read_channel: 
+[2018-11-05 08:00:31,263] read_channel: ping 172.17.1.34 repeat 100
+Type escape sequence to abort.
+Sending 100, 100-byte ICMP Echos to 172.17.1.34, timeout is 2 seconds:
+!!!!!!
+[2018-11-05 08:00:31,464] read_channel: !!!!!!
+[2018-11-05 08:00:31,665] read_channel: !!!!!!
+[2018-11-05 08:00:31,866] read_channel: !!!!!!!
+[2018-11-05 08:00:32,067] read_channel: !!!!!!
+[2018-11-05 08:00:32,267] read_channel: !!!!!!
+[2018-11-05 08:00:32,468] read_channel: !!!!!!
+[2018-11-05 08:00:32,540] read_channel: 
+[2018-11-05 08:00:32,541] read_channel: 
+[2018-11-05 08:00:32,541] write_channel: b'\n'
+[2018-11-05 08:00:32,641] read_channel: 
+SX_2960_Extend>
+[2018-11-05 08:00:32,669] read_channel: !!!!!!!
+[2018-11-05 08:00:32,742] read_channel: 
+[2018-11-05 08:00:32,842] read_channel: 
+[2018-11-05 08:00:32,843] In disable_paging
+[2018-11-05 08:00:32,843] Command: terminal length 0
+
+[2018-11-05 08:00:32,843] write_channel: b'terminal length 0\n'
+[2018-11-05 08:00:32,843] Pattern is: SX_2960_Extend
+[2018-11-05 08:00:32,844] read_channel: 
+[2018-11-05 08:00:32,869] read_channel: !!!!!!
+[2018-11-05 08:00:32,944] read_channel: terminal length 0
+SX_2960_Extend>
+[2018-11-05 08:00:32,944] Pattern found: SX_2960_Extend terminal length 0
+SX_2960_Extend>
+[2018-11-05 08:00:32,944] terminal length 0
+SX_2960_Extend>
+[2018-11-05 08:00:32,945] Exiting disable_paging
+[2018-11-05 08:00:32,945] write_channel: b'terminal width 511\n'
+[2018-11-05 08:00:32,945] Pattern is: SX_2960_Extend
+[2018-11-05 08:00:32,945] read_channel: 
+[2018-11-05 08:00:33,046] read_channel: terminal width 511
+SX_2960_Extend>
+[2018-11-05 08:00:33,046] Pattern found: SX_2960_Extend terminal width 511
+SX_2960_Extend>
+[2018-11-05 08:00:33,070] read_channel: !!!!!!
+[2018-11-05 08:00:33,270] read_channel: !!!!!!!
+[2018-11-05 08:00:33,346] read_channel: 
+[2018-11-05 08:00:33,347] write_channel: b'\n'
+[2018-11-05 08:00:33,347] Pattern is: SX_2960_Extend
+[2018-11-05 08:00:33,347] read_channel: 
+[2018-11-05 08:00:33,448] read_channel: 
+SX_2960_Extend>
+[2018-11-05 08:00:33,448] Pattern found: SX_2960_Extend 
+SX_2960_Extend>
+[2018-11-05 08:00:33,448] write_channel: b'enable\n'
+[2018-11-05 08:00:33,448] Pattern is: (SX_2960_Extend|ssword)
+[2018-11-05 08:00:33,448] read_channel: 
+[2018-11-05 08:00:33,471] read_channel: !
+!!!!!
+[2018-11-05 08:00:33,549] read_channel: enable
+Password: 
+[2018-11-05 08:00:33,549] Pattern found: (SX_2960_Extend|ssword) enable
+Password: 
+[2018-11-05 08:00:33,549] write_channel: b'esunnytrunk\n'
+[2018-11-05 08:00:33,549] Pattern is: SX_2960_Extend
+[2018-11-05 08:00:33,550] read_channel: 
+[2018-11-05 08:00:33,650] read_channel: 
+SX_2960_Extend#
+[2018-11-05 08:00:33,650] Pattern found: SX_2960_Extend 
+SX_2960_Extend#
+[2018-11-05 08:00:33,651] write_channel: b'\n'
+[2018-11-05 08:00:33,651] Pattern is: SX_2960_Extend
+[2018-11-05 08:00:33,651] read_channel: 
+[2018-11-05 08:00:33,672] read_channel: !!!!!!
+[2018-11-05 08:00:33,752] read_channel: 
+SX_2960_Extend#
+[2018-11-05 08:00:33,752] Pattern found: SX_2960_Extend 
+SX_2960_Extend#
+[2018-11-05 08:00:33,752] read_channel: 
+[2018-11-05 08:00:33,753] write_channel: b'\n'
+[2018-11-05 08:00:33,854] read_channel: 
+SX_2960_Extend#
+[2018-11-05 08:00:33,873] read_channel: !!!!!!!
+[2018-11-05 08:00:33,954] read_channel: 
+[2018-11-05 08:00:34,073] read_channel: !!!!!!
+[2018-11-05 08:00:34,155] read_channel: 
+[2018-11-05 08:00:34,155] write_channel: b'terminal length 0\n'
+[2018-11-05 08:00:34,155] read_channel: 
+[2018-11-05 08:00:34,274] read_channel: !!!!!!
+Success rate is 100 percent (100/100), round-trip min/avg/max = 28/31/36 ms
+SX_RB#
+[2018-11-05 08:00:34,275] read_channel: 
+[2018-11-05 08:00:34,275] write_channel: b'\n'
+[2018-11-05 08:00:34,356] read_channel: terminal length 0
+SX_2960_Extend#
+[2018-11-05 08:00:34,357] read_channel: 
+[2018-11-05 08:00:34,357] write_channel: b'\n'
+[2018-11-05 08:00:34,377] read_channel: 
+SX_RB#
+[2018-11-05 08:00:34,458] read_channel: 
+SX_2960_Extend#
+[2018-11-05 08:00:34,477] read_channel: 
+[2018-11-05 08:00:34,558] read_channel: 
+[2018-11-05 08:00:34,678] read_channel: 
+[2018-11-05 08:00:34,678] write_channel: b'ping 172.17.1.42 repeat 100\n'
+[2018-11-05 08:00:34,679] read_channel: 
+[2018-11-05 08:00:34,759] read_channel: 
+[2018-11-05 08:00:34,759] write_channel: b'show ip int br | ex up\n'
+[2018-11-05 08:00:34,760] read_channel: 
+[2018-11-05 08:00:34,879] read_channel: ping 172.17.1.42 repeat 100
+Type escape sequence to abort.
+Sending 100, 100-byte ICMP Echos to 172.17.1.42, timeout is 2 seconds:
+!!!!!
+[2018-11-05 08:00:34,962] read_channel: show ip int br | ex up
+Interface              IP-Address      OK? Method Status                Protocol
+Vlan1                  unassigned      YES unset  administratively down down    
+GigabitEthernet1/0/35  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/36  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/50  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/51  unassigned      YES unset  down                  down    
+GigabitEthernet1/0/52  unassigned      YES unset  down                  down    
+
+SX_2960_Extend#
+[2018-11-05 08:00:34,962] read_channel: 
+[2018-11-05 08:00:34,962] write_channel: b'\n'
+[2018-11-05 08:00:35,063] read_channel: 
+SX_2960_Extend#
+[2018-11-05 08:00:35,080] read_channel: !!!!!
+[2018-11-05 08:00:35,164] read_channel: 
+[2018-11-05 08:00:35,281] read_channel: !!!!!!
+[2018-11-05 08:00:35,365] read_channel: 
+[2018-11-05 08:00:35,365] write_channel: b'terminal length 25\n'
+[2018-11-05 08:00:35,365] read_channel: 
+[2018-11-05 08:00:35,482] read_channel: !!!!!
+[2018-11-05 08:00:35,566] read_channel: terminal length 25
+SX_2960_Extend#
+[2018-11-05 08:00:35,566] write_channel: b'\n'
+[2018-11-05 08:00:35,667] read_channel: 
+SX_2960_Extend#
+[2018-11-05 08:00:35,682] read_channel: !!!!!
+[2018-11-05 08:00:35,767] read_channel: 
+[2018-11-05 08:00:35,883] read_channel: !!!!!!
+[2018-11-05 08:00:36,084] read_channel: !!!!!
+[2018-11-05 08:00:36,285] read_channel: !!!!!!
+[2018-11-05 08:00:36,485] read_channel: !!!!!
+[2018-11-05 08:00:36,686] read_channel: !!!!!!
+[2018-11-05 08:00:36,887] read_channel: !!!!!
+[2018-11-05 08:00:37,088] read_channel: !!!!!
+[2018-11-05 08:00:37,289] read_channel: !!!!!!
+
+[2018-11-05 08:00:37,489] read_channel: !!!!!
+[2018-11-05 08:00:37,690] read_channel: !!!!!!
+[2018-11-05 08:00:37,770] read_channel: 
+[2018-11-05 08:00:37,770] exit_config_mode: 
+[2018-11-05 08:00:37,771] write_channel: b'exit\n'
+[2018-11-05 08:00:37,875] starting thread (client mode): 0x8ad7ed30
+[2018-11-05 08:00:37,876] Local version/idstring: SSH-2.0-paramiko_2.4.2
+[2018-11-05 08:00:37,876] Remote version/idstring: SSH-1.99-Cisco-1.25
+[2018-11-05 08:00:37,876] Connected (version 1.99, client Cisco-1.25)
+[2018-11-05 08:00:37,878] kex algos:['diffie-hellman-group1-sha1'] server key:['ssh-rsa'] client encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc'] server encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc'] client mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] server mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] client compress:['none'] server compress:['none'] client lang:[''] server lang:[''] kex follows?False
+[2018-11-05 08:00:37,878] Kex agreed: diffie-hellman-group1-sha1
+[2018-11-05 08:00:37,878] HostKey agreed: ssh-rsa
+[2018-11-05 08:00:37,878] Cipher agreed: aes128-cbc
+[2018-11-05 08:00:37,878] MAC agreed: hmac-sha1
+[2018-11-05 08:00:37,879] Compression agreed: none
+[2018-11-05 08:00:37,891] read_channel: !!!!!
+[2018-11-05 08:00:38,092] read_channel: !!!!!
+[2018-11-05 08:00:38,296] read_channel: !!!!!!
+[2018-11-05 08:00:38,297] kex engine KexGroup1 specified hash_algo <built-in function openssl_sha1>
+[2018-11-05 08:00:38,297] Switch to new keys ...
+[2018-11-05 08:00:38,298] Adding ssh-rsa host key for 172.16.230.131: b'990e893008b9ba1785fdc8c6f2a0ede8'
+[2018-11-05 08:00:38,497] read_channel: !!!
+Success rate is 100 percent (100/100), round-trip min/avg/max = 36/36/40 ms
+SX_RB#
+[2018-11-05 08:00:38,497] read_channel: 
+[2018-11-05 08:00:38,497] write_channel: b'\n'
+[2018-11-05 08:00:38,502] userauth is OK
+[2018-11-05 08:00:38,563] Authentication (password) successful!
+[2018-11-05 08:00:38,564] [chan 0] Max packet in: 32768 bytes
+[2018-11-05 08:00:38,566] [chan 0] Max packet out: 4096 bytes
+[2018-11-05 08:00:38,566] Secsh channel 0 opened.
+[2018-11-05 08:00:38,568] [chan 0] Sesch channel 0 request ok
+[2018-11-05 08:00:38,571] [chan 0] Sesch channel 0 request ok
+[2018-11-05 08:00:38,598] read_channel: 
+SX_RB#
+[2018-11-05 08:00:38,698] read_channel: 
+[2018-11-05 08:00:38,899] read_channel: 
+[2018-11-05 08:00:38,900] write_channel: b'terminal length 25\n'
+[2018-11-05 08:00:38,900] read_channel: 
+[2018-11-05 08:00:39,101] read_channel: terminal length 25
+SX_RB#
+[2018-11-05 08:00:39,101] write_channel: b'\n'
+[2018-11-05 08:00:39,202] read_channel: 
+SX_RB#
+[2018-11-05 08:00:39,303] read_channel: 
+[2018-11-05 08:00:39,673] read_channel: 
+SX_SW3750>
+[2018-11-05 08:00:39,774] read_channel: 
+[2018-11-05 08:00:41,305] read_channel: 
+[2018-11-05 08:00:41,306] exit_config_mode: 
+[2018-11-05 08:00:41,306] write_channel: b'exit\n'
+[2018-11-05 08:00:41,307] EOF in transport thread
+[2018-11-05 08:00:41,776] read_channel: 
+[2018-11-05 08:00:41,777] read_channel: 
+[2018-11-05 08:00:41,777] write_channel: b'\n'
+[2018-11-05 08:00:41,878] read_channel: 
+SX_SW3750>
+[2018-11-05 08:00:41,978] read_channel: 
+[2018-11-05 08:00:42,079] read_channel: 
+[2018-11-05 08:00:42,079] In disable_paging
+[2018-11-05 08:00:42,079] Command: terminal length 0
+
+[2018-11-05 08:00:42,079] write_channel: b'terminal length 0\n'
+[2018-11-05 08:00:42,080] Pattern is: SX_SW3750
+[2018-11-05 08:00:42,082] _read_channel_expect read_data: t
+[2018-11-05 08:00:42,182] _read_channel_expect read_data: erminal length 0
+SX_SW3750>
+[2018-11-05 08:00:42,183] Pattern found: SX_SW3750 terminal length 0
+SX_SW3750>
+[2018-11-05 08:00:42,183] terminal length 0
+SX_SW3750>
+[2018-11-05 08:00:42,183] Exiting disable_paging
+[2018-11-05 08:00:42,184] write_channel: b'terminal width 511\n'
+[2018-11-05 08:00:42,184] Pattern is: SX_SW3750
+[2018-11-05 08:00:42,186] _read_channel_expect read_data: t
+[2018-11-05 08:00:42,287] _read_channel_expect read_data: erminal width 511
+SX_SW3750>
+[2018-11-05 08:00:42,287] Pattern found: SX_SW3750 terminal width 511
+SX_SW3750>
+[2018-11-05 08:00:42,412] read_channel: C
+******************************************
+*  ZCE
+*  Hostname: SH-TG-RT01
+*  Module: ASR1006
+*  Location: SH
+*  Any Unauthorized Login is Illegal !!! 
+******************************************
+
+
+User Access Verification
+
+Username: 
+[2018-11-05 08:00:42,412] write_channel: b'cisco\r\n'
+[2018-11-05 08:00:42,588] read_channel: 
+[2018-11-05 08:00:42,589] write_channel: b'\n'
+[2018-11-05 08:00:42,589] Pattern is: SX_SW3750
+[2018-11-05 08:00:42,598] _read_channel_expect read_data: 
+
+[2018-11-05 08:00:42,700] _read_channel_expect read_data: SX_SW3750>
+[2018-11-05 08:00:42,700] Pattern found: SX_SW3750 
+SX_SW3750>
+[2018-11-05 08:00:42,701] write_channel: b'enable\n'
+[2018-11-05 08:00:42,701] Pattern is: (SX_SW3750|ssword)
+[2018-11-05 08:00:42,704] _read_channel_expect read_data: e
+[2018-11-05 08:00:42,805] _read_channel_expect read_data: nable
+Password: 
+[2018-11-05 08:00:42,805] Pattern found: (SX_SW3750|ssword) enable
+Password: 
+[2018-11-05 08:00:42,805] write_channel: b'esunnytrunk\n'
+[2018-11-05 08:00:42,806] Pattern is: SX_SW3750
+[2018-11-05 08:00:42,874] _read_channel_expect read_data: 
+SX_SW3750#
+[2018-11-05 08:00:42,875] Pattern found: SX_SW3750 
+SX_SW3750#
+[2018-11-05 08:00:42,875] write_channel: b'\n'
+[2018-11-05 08:00:42,875] Pattern is: SX_SW3750
+[2018-11-05 08:00:42,878] _read_channel_expect read_data: 
+
+[2018-11-05 08:00:42,979] _read_channel_expect read_data: SX_SW3750#
+[2018-11-05 08:00:42,979] Pattern found: SX_SW3750 
+SX_SW3750#
+[2018-11-05 08:00:42,979] read_channel: 
+[2018-11-05 08:00:42,980] write_channel: b'\n'
+[2018-11-05 08:00:43,080] read_channel: 
+SX_SW3750#
+[2018-11-05 08:00:43,181] read_channel: 
+[2018-11-05 08:00:43,382] read_channel: 
+[2018-11-05 08:00:43,382] write_channel: b'terminal length 0\n'
+[2018-11-05 08:00:43,382] read_channel: 
+[2018-11-05 08:00:43,414] read_channel: cisco
+Password: 
+[2018-11-05 08:00:43,414] write_channel: b'cisco\r\n'
+[2018-11-05 08:00:43,583] read_channel: terminal length 0
+SX_SW3750#
+[2018-11-05 08:00:43,583] read_channel: 
+[2018-11-05 08:00:43,584] write_channel: b'\n'
+[2018-11-05 08:00:43,684] read_channel: 
+SX_SW3750#
+[2018-11-05 08:00:43,785] read_channel: 
+[2018-11-05 08:00:43,916] read_channel: 
+SH-TG-RT01>
+[2018-11-05 08:00:43,985] read_channel: 
+[2018-11-05 08:00:43,986] write_channel: b'show ip int br | ex up\n'
+[2018-11-05 08:00:43,986] read_channel: 
+[2018-11-05 08:00:44,186] read_channel: show ip int br | ex up
+Interface              IP-Address      OK? Method Status                Protocol
+Vlan1                  unassigned      YES NVRAM  administratively down down    
+FastEthernet0          unassigned      YES TFTP   down                  down    
+GigabitEthernet1/0/1   unassigned      YES unset  down                  down    
+GigabitEthernet1/0/4   unassigned      YES unset  down                  down    
+GigabitEthernet1/0/45  unassigned      YES unset  administratively down down    
+GigabitEthernet1/1/1   unassigned      YES unset  down                  down    
+GigabitEthernet1/1/2   unassigned      YES unset  down                  down    
+GigabitEthernet1/1/3   unassigned      YES unset  down                  down    
+GigabitEthernet1/1/4   unassigned      YES unset  down                  down    
+Te1/1/1                unassigned      YES unset  down                  down    
+Te1/1/2                unassigned      YES unset  down                  down    
+GigabitEthernet2/0/2   unassigned      YES unset  down                  down    
+GigabitEthernet2/0/13  unassigned      YES unset  down                  down    
+GigabitEthernet2/0/14  unassigned      YES unset  down                  down    
+GigabitEthernet2/0/21  unassigned      YES unset  down                  down    
+GigabitEthernet2/0/33  unassigned      YES unset  down                  down    
+GigabitEthernet2/0/34  unassigned      YES unset  down                  down    
+GigabitEthernet2/0/45  unassigned      YES unset  down                  down    
+GigabitEthernet2/0/48  unassigned      YES unset  down                  down    
+GigabitEthernet2/1/1   unassigned      YES unset  down                  down    
+GigabitEthernet2/1/2   unassigned      YES unset  down                  down    
+GigabitEthernet2/1/3   unassigned      YES unset  down                  down    
+GigabitEthernet2/1/4   unassigned      YES unset  down                  down    
+Te2/1/1                unassigned      YES unset  down                  down    
+Te2/1/2                unassigned      YES unset  down                  down    
+Port-channel3          unassigned      YES unset  down                  down    
+Port-channel5          unassigned      YES manual down                  down    
+Port-channel6          unassigned      YES unset  down                  down    
+SX_SW3750#
+[2018-11-05 08:00:44,187] read_channel: 
+[2018-11-05 08:00:44,188] write_channel: b'\n'
+[2018-11-05 08:00:44,288] read_channel: 
+SX_SW3750#
+[2018-11-05 08:00:44,389] read_channel: 
+[2018-11-05 08:00:44,590] read_channel: 
+[2018-11-05 08:00:44,590] write_channel: b'terminal length 25\n'
+[2018-11-05 08:00:44,590] read_channel: 
+[2018-11-05 08:00:44,791] read_channel: terminal length 25
+SX_SW3750#
+[2018-11-05 08:00:44,791] write_channel: b'\n'
+[2018-11-05 08:00:44,892] read_channel: 
+SX_SW3750#
+[2018-11-05 08:00:44,992] read_channel: 
+[2018-11-05 08:00:45,018] read_channel: 
+[2018-11-05 08:00:46,995] read_channel: 
+[2018-11-05 08:00:46,995] exit_config_mode: 
+[2018-11-05 08:00:46,995] write_channel: b'exit\n'
+[2018-11-05 08:00:46,999] EOF in transport thread
+[2018-11-05 08:00:47,030] read_channel: 
+[2018-11-05 08:00:47,039] write_channel: b'\n'
+[2018-11-05 08:00:47,098] Job "job_interface (trigger: cron[day_of_week='0-6', hour='8', minute='0'], next run at: 2018-11-06 08:00:00 CST)" executed successfully
+[2018-11-05 08:00:47,255] read_channel: 
+SH-TG-RT01>
+[2018-11-05 08:00:47,356] read_channel: 
+[2018-11-05 08:00:49,358] read_channel: 
+[2018-11-05 08:00:49,359] read_channel: 
+[2018-11-05 08:00:49,359] write_channel: b'\n'
+[2018-11-05 08:00:49,460] read_channel: 
+SH-TG-RT01>
+[2018-11-05 08:00:49,560] read_channel: 
+[2018-11-05 08:00:49,661] read_channel: 
+[2018-11-05 08:00:49,661] In disable_paging
+[2018-11-05 08:00:49,661] Command: terminal length 0
+
+[2018-11-05 08:00:49,661] write_channel: b'terminal length 0\n'
+[2018-11-05 08:00:49,662] Pattern is: SH\-TG\-RT01
+[2018-11-05 08:00:49,662] read_channel: 
+[2018-11-05 08:00:49,762] read_channel: terminal length 0
+SH-TG-RT01>
+[2018-11-05 08:00:49,763] Pattern found: SH\-TG\-RT01 terminal length 0
+SH-TG-RT01>
+[2018-11-05 08:00:49,763] terminal length 0
+SH-TG-RT01>
+[2018-11-05 08:00:49,763] Exiting disable_paging
+[2018-11-05 08:00:49,763] write_channel: b'terminal width 511\n'
+[2018-11-05 08:00:49,763] Pattern is: SH\-TG\-RT01
+[2018-11-05 08:00:49,763] read_channel: 
+[2018-11-05 08:00:49,864] read_channel: terminal width 511
+SH-TG-RT01>
+[2018-11-05 08:00:49,864] Pattern found: SH\-TG\-RT01 terminal width 511
+SH-TG-RT01>
+[2018-11-05 08:00:50,165] read_channel: 
+[2018-11-05 08:00:50,165] write_channel: b'\n'
+[2018-11-05 08:00:50,165] Pattern is: SH\-TG\-RT01
+[2018-11-05 08:00:50,166] read_channel: 
+[2018-11-05 08:00:50,266] read_channel: 
+SH-TG-RT01>
+[2018-11-05 08:00:50,267] Pattern found: SH\-TG\-RT01 
+SH-TG-RT01>
+[2018-11-05 08:00:50,267] write_channel: b'enable\n'
+[2018-11-05 08:00:50,267] Pattern is: (SH\-TG\-RT01|ssword)
+[2018-11-05 08:00:50,268] read_channel: en
+[2018-11-05 08:00:50,368] read_channel: able
+Password: 
+[2018-11-05 08:00:50,368] Pattern found: (SH\-TG\-RT01|ssword) enable
+Password: 
+[2018-11-05 08:00:50,369] write_channel: b'cisco\n'
+[2018-11-05 08:00:50,369] Pattern is: SH\-TG\-RT01
+[2018-11-05 08:00:50,369] read_channel: 
+[2018-11-05 08:00:50,469] read_channel: 
+SH-TG-RT01#
+[2018-11-05 08:00:50,470] Pattern found: SH\-TG\-RT01 
+SH-TG-RT01#
+[2018-11-05 08:00:50,470] write_channel: b'\n'
+[2018-11-05 08:00:50,470] Pattern is: SH\-TG\-RT01
+[2018-11-05 08:00:50,471] read_channel: 
+SH-TG-RT01#
+[2018-11-05 08:00:50,471] Pattern found: SH\-TG\-RT01 
+SH-TG-RT01#
+[2018-11-05 08:00:50,471] read_channel: 
+[2018-11-05 08:00:50,471] write_channel: b'\n'
+[2018-11-05 08:00:50,572] read_channel: 
+SH-TG-RT01#
+[2018-11-05 08:00:50,673] read_channel: 
+[2018-11-05 08:00:50,873] read_channel: 
+[2018-11-05 08:00:50,874] write_channel: b'terminal length 0\n'
+[2018-11-05 08:00:50,874] read_channel: 
+[2018-11-05 08:00:51,074] read_channel: terminal length 0
+SH-TG-RT01#
+[2018-11-05 08:00:51,075] read_channel: 
+[2018-11-05 08:00:51,075] write_channel: b'\n'
+[2018-11-05 08:00:51,176] read_channel: 
+SH-TG-RT01#
+[2018-11-05 08:00:51,276] read_channel: 
+[2018-11-05 08:00:51,477] read_channel: 
+[2018-11-05 08:00:51,477] write_channel: b'ping 10.18.0.1 repeat 100\n'
+[2018-11-05 08:00:51,478] read_channel: 
+[2018-11-05 08:00:51,679] read_channel: ping 10.18.0.1 repeat 100
+Type escape sequence to abort.
+Sending 100, 100-byte ICMP Echos to 10.18.0.1, timeout is 2 seconds:
+!!
+[2018-11-05 08:00:51,879] read_channel: !!!
+[2018-11-05 08:00:52,080] read_channel: !!!!!!!!!!!!
+[2018-11-05 08:00:52,281] read_channel: !!!!!!!!!!!
+[2018-11-05 08:00:52,482] read_channel: !!!!!!!!!!!
+[2018-11-05 08:00:52,682] read_channel: !!!!!!!!!!!
+[2018-11-05 08:00:52,884] read_channel: !!!!!!!!!!!
+[2018-11-05 08:00:53,085] read_channel: !!!!!!!!!
+!!!
+[2018-11-05 08:00:53,286] read_channel: !!!!!!!!!!!
+[2018-11-05 08:00:53,486] read_channel: !!!!!!!!!!!
+[2018-11-05 08:00:53,688] read_channel: !!!!!
+Success rate is 100 percent (100/100), round-trip min/avg/max = 17/20/256 ms
+SH-TG-RT01#
+[2018-11-05 08:00:53,688] read_channel: 
+[2018-11-05 08:00:53,688] write_channel: b'\n'
+[2018-11-05 08:00:53,789] read_channel: 
+SH-TG-RT01#
+[2018-11-05 08:00:53,890] read_channel: 
+[2018-11-05 08:00:54,091] read_channel: 
+[2018-11-05 08:00:54,091] write_channel: b'ping 10.98.0.1 repeat 100\n'
+[2018-11-05 08:00:54,091] read_channel: 
+[2018-11-05 08:00:54,292] read_channel: ping 10.98.0.1 repeat 100
+Type escape sequence to abort.
+Sending 100, 100-byte ICMP Echos to 10.98.0.1, timeout is 2 seconds:
+!!!!!!
+[2018-11-05 08:00:54,493] read_channel: !!!!!!!!!
+[2018-11-05 08:00:54,694] read_channel: !!!!!!!!
+[2018-11-05 08:00:54,895] read_channel: !!!!!!!!!
+[2018-11-05 08:00:55,096] read_channel: !!!!!!!!
+[2018-11-05 08:00:55,296] read_channel: !!!!!!!!
+[2018-11-05 08:00:55,497] read_channel: !!!!!!!!!
+[2018-11-05 08:00:55,698] read_channel: !!!!!!!
+[2018-11-05 08:00:55,899] read_channel: !!!!!!
+!!
+[2018-11-05 08:00:56,100] read_channel: !!!!!!!!
+[2018-11-05 08:00:56,300] read_channel: !!!!!!!!!
+[2018-11-05 08:00:56,502] read_channel: !!!!!!!!
+[2018-11-05 08:00:56,703] read_channel: !!!
+Success rate is 100 percent (100/100), round-trip min/avg/max = 23/24/61 ms
+SH-TG-RT01#
+[2018-11-05 08:00:56,703] read_channel: 
+[2018-11-05 08:00:56,703] write_channel: b'\n'
+[2018-11-05 08:00:56,804] read_channel: 
+SH-TG-RT01#
+[2018-11-05 08:00:56,905] read_channel: 
+[2018-11-05 08:00:57,105] read_channel: 
+[2018-11-05 08:00:57,106] write_channel: b'terminal length 25\n'
+[2018-11-05 08:00:57,106] read_channel: 
+[2018-11-05 08:00:57,307] read_channel: terminal length 25
+SH-TG-RT01#
+[2018-11-05 08:00:57,307] write_channel: b'\n'
+[2018-11-05 08:00:57,408] read_channel: 
+SH-TG-RT01#
+[2018-11-05 08:00:57,509] read_channel: 
+[2018-11-05 08:00:59,511] read_channel: 
+[2018-11-05 08:00:59,512] exit_config_mode: 
+[2018-11-05 08:00:59,512] write_channel: b'exit\n'
+[2018-11-05 08:00:59,616] starting thread (client mode): 0x88241550
+[2018-11-05 08:00:59,616] Local version/idstring: SSH-2.0-paramiko_2.4.2
+[2018-11-05 08:00:59,617] Remote version/idstring: SSH-1.99-Cisco-1.25
+[2018-11-05 08:00:59,617] Connected (version 1.99, client Cisco-1.25)
+[2018-11-05 08:00:59,618] kex algos:['diffie-hellman-group1-sha1'] server key:['ssh-rsa'] client encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr'] server encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr'] client mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] server mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] client compress:['none'] server compress:['none'] client lang:[''] server lang:[''] kex follows?False
+[2018-11-05 08:00:59,618] Kex agreed: diffie-hellman-group1-sha1
+[2018-11-05 08:00:59,618] HostKey agreed: ssh-rsa
+[2018-11-05 08:00:59,618] Cipher agreed: aes128-ctr
+[2018-11-05 08:00:59,618] MAC agreed: hmac-sha1
+[2018-11-05 08:00:59,618] Compression agreed: none
+[2018-11-05 08:00:59,652] kex engine KexGroup1 specified hash_algo <built-in function openssl_sha1>
+[2018-11-05 08:00:59,653] Switch to new keys ...
+[2018-11-05 08:00:59,654] Adding ssh-rsa host key for 172.16.230.136: b'11fbfd6b8690cd70e41463467600b185'
+[2018-11-05 08:00:59,655] userauth is OK
+[2018-11-05 08:00:59,656] Authentication (password) successful!
+[2018-11-05 08:00:59,656] [chan 0] Max packet in: 32768 bytes
+[2018-11-05 08:00:59,657] [chan 0] Max packet out: 4096 bytes
+[2018-11-05 08:00:59,657] Secsh channel 0 opened.
+[2018-11-05 08:00:59,658] [chan 0] Sesch channel 0 request ok
+[2018-11-05 08:00:59,659] [chan 0] Sesch channel 0 request ok
+[2018-11-05 08:01:00,761] read_channel: Type help or '?' for a list of available commands.
+SX-ASA> 
+[2018-11-05 08:01:00,861] read_channel: 
+[2018-11-05 08:01:02,864] read_channel: 
+[2018-11-05 08:01:02,864] read_channel: 
+[2018-11-05 08:01:02,865] write_channel: b'\n'
+[2018-11-05 08:01:02,965] read_channel: 
+SX-ASA> 
+[2018-11-05 08:01:03,066] read_channel: 
+[2018-11-05 08:01:03,066] write_channel: b'\n'
+[2018-11-05 08:01:03,067] Pattern is: SX\-ASA
+[2018-11-05 08:01:03,067] _read_channel_expect read_data: 
+
+[2018-11-05 08:01:03,168] _read_channel_expect read_data: SX-ASA> 
+[2018-11-05 08:01:03,168] Pattern found: SX\-ASA 
+SX-ASA> 
+[2018-11-05 08:01:03,169] write_channel: b'enable\n'
+[2018-11-05 08:01:03,169] Pattern is: (SX\-ASA|ssword)
+[2018-11-05 08:01:03,170] _read_channel_expect read_data: e
+[2018-11-05 08:01:03,270] _read_channel_expect read_data: nable
+Password: 
+[2018-11-05 08:01:03,270] Pattern found: (SX\-ASA|ssword) enable
+Password: 
+[2018-11-05 08:01:03,271] write_channel: b'esunnytrunk\n'
+[2018-11-05 08:01:03,271] Pattern is: SX\-ASA
+[2018-11-05 08:01:03,272] _read_channel_expect read_data: *
+[2018-11-05 08:01:03,373] _read_channel_expect read_data: **********
+SX-ASA# 
+[2018-11-05 08:01:03,373] Pattern found: SX\-ASA ***********
+SX-ASA# 
+[2018-11-05 08:01:03,374] write_channel: b'\n'
+[2018-11-05 08:01:03,374] Pattern is: SX\-ASA
+[2018-11-05 08:01:03,375] _read_channel_expect read_data: 
+
+[2018-11-05 08:01:03,475] _read_channel_expect read_data: SX-ASA# 
+[2018-11-05 08:01:03,476] Pattern found: SX\-ASA 
+SX-ASA# 
+[2018-11-05 08:01:03,576] read_channel: 
+[2018-11-05 08:01:03,577] In disable_paging
+[2018-11-05 08:01:03,577] Command: terminal pager 0
+
+[2018-11-05 08:01:03,577] write_channel: b'terminal pager 0\n'
+[2018-11-05 08:01:03,577] Pattern is: SX\-ASA
+[2018-11-05 08:01:03,578] _read_channel_expect read_data: t
+[2018-11-05 08:01:03,679] _read_channel_expect read_data: erminal pager 0
+SX-ASA# 
+[2018-11-05 08:01:03,679] Pattern found: SX\-ASA terminal pager 0
+SX-ASA# 
+[2018-11-05 08:01:03,680] terminal pager 0
+SX-ASA# 
+[2018-11-05 08:01:03,680] Exiting disable_paging
+[2018-11-05 08:01:03,680] write_channel: b'terminal width 511\n'
+[2018-11-05 08:01:03,680] Pattern is: SX\-ASA
+[2018-11-05 08:01:03,681] _read_channel_expect read_data: t
+[2018-11-05 08:01:03,782] _read_channel_expect read_data: erminal width 511
+                 ^
+ERROR: % Invalid input detected at '^' marker.
+SX-ASA# 
+[2018-11-05 08:01:03,782] Pattern found: SX\-ASA terminal width 511
+                 ^
+ERROR: % Invalid input detected at '^' marker.
+SX-ASA# 
+[2018-11-05 08:01:04,083] read_channel: 
+[2018-11-05 08:01:04,083] write_channel: b'\n'
+[2018-11-05 08:01:04,083] Pattern is: SX\-ASA
+[2018-11-05 08:01:04,084] _read_channel_expect read_data: 
+
+[2018-11-05 08:01:04,185] _read_channel_expect read_data: SX-ASA# 
+[2018-11-05 08:01:04,185] Pattern found: SX\-ASA 
+SX-ASA# 
+[2018-11-05 08:01:04,185] read_channel: 
+[2018-11-05 08:01:04,186] write_channel: b'\n'
+[2018-11-05 08:01:04,286] read_channel: 
+SX-ASA# 
+[2018-11-05 08:01:04,387] read_channel: 
+[2018-11-05 08:01:04,587] read_channel: 
+[2018-11-05 08:01:04,588] write_channel: b'terminal pager 0\n'
+[2018-11-05 08:01:04,588] read_channel: 
+[2018-11-05 08:01:04,789] read_channel: terminal pager 0
+SX-ASA# 
+[2018-11-05 08:01:04,789] read_channel: 
+[2018-11-05 08:01:04,790] write_channel: b'\n'
+[2018-11-05 08:01:04,890] read_channel: 
+SX-ASA# 
+[2018-11-05 08:01:04,991] read_channel: 
+[2018-11-05 08:01:05,192] read_channel: 
+[2018-11-05 08:01:05,192] write_channel: b'ping 202.99.166.4 repeat 1000\n'
+[2018-11-05 08:01:05,193] read_channel: 
+[2018-11-05 08:01:05,393] read_channel: ping 202.99.166.4 repeat 1000
+Type escape sequence to abort.
+Sending 1000, 100-byte ICMP Echos to 202.99.166.4, timeout is 2 seconds:
+!!!!!!!!
+[2018-11-05 08:01:05,594] read_channel: !!!!!!!!!
+[2018-11-05 08:01:05,795] read_channel: !!!!!!!!
+[2018-11-05 08:01:05,995] read_channel: !!!!!!!!!
+[2018-11-05 08:01:06,196] read_channel: !!!!!!!!
+[2018-11-05 08:01:06,396] read_channel: !!!!!!!!!
+[2018-11-05 08:01:06,597] read_channel: !!!!!!!!
+[2018-11-05 08:01:06,798] read_channel: !!!!!!!!!
+[2018-11-05 08:01:06,999] read_channel: !!
+!!!!!!!
+[2018-11-05 08:01:07,200] read_channel: !!!!!!!!
+[2018-11-05 08:01:07,401] read_channel: !!!!!!!!!
+[2018-11-05 08:01:07,601] read_channel: !!!!!!!!
+[2018-11-05 08:01:07,802] read_channel: !!!!!!!!!
+[2018-11-05 08:01:08,003] read_channel: !!!!!!!!!
+[2018-11-05 08:01:08,204] read_channel: !!!!!!!!
+[2018-11-05 08:01:08,404] read_channel: !!!!!!!!!
+[2018-11-05 08:01:08,605] read_channel: !!!
+!!!!!
+[2018-11-05 08:01:08,806] read_channel: !!!!!!!!!
+[2018-11-05 08:01:09,007] read_channel: !!!!!!!!
+[2018-11-05 08:01:09,207] read_channel: !!!!!!!!!
+[2018-11-05 08:01:09,408] read_channel: !!!!!!!!!
+[2018-11-05 08:01:09,609] read_channel: !!!!!!!!
+[2018-11-05 08:01:09,809] read_channel: !!!!!!!!!
+[2018-11-05 08:01:10,010] read_channel: !!!!!!!!
+[2018-11-05 08:01:10,211] read_channel: !!!!!
+!!!!
+[2018-11-05 08:01:10,411] read_channel: !!!!!!!!!
+[2018-11-05 08:01:10,612] read_channel: !!!!!!!!
+[2018-11-05 08:01:10,813] read_channel: !!!!!!!!!
+[2018-11-05 08:01:11,013] read_channel: !!!!!!!!
+[2018-11-05 08:01:11,214] read_channel: !!!!!!!!!
+[2018-11-05 08:01:11,415] read_channel: !!!!!!!!!
+[2018-11-05 08:01:11,615] read_channel: !!!!!!!!
+[2018-11-05 08:01:11,816] read_channel: !!!!!!
+!!!
+[2018-11-05 08:01:12,017] read_channel: !!!!!!!!!
+[2018-11-05 08:01:12,218] read_channel: !!!!!!!!
+[2018-11-05 08:01:12,419] read_channel: !!!!!!!!!
+[2018-11-05 08:01:12,619] read_channel: !!!!!!!!
+[2018-11-05 08:01:12,820] read_channel: !!!!!!!!!
+[2018-11-05 08:01:13,020] read_channel: !!!!!!!!!
+[2018-11-05 08:01:13,221] read_channel: !!!!!!!!
+[2018-11-05 08:01:13,422] read_channel: !!!!!!!
+!!
+[2018-11-05 08:01:13,622] read_channel: !!!!!!!!!
+[2018-11-05 08:01:13,823] read_channel: !!!!!!!!
+[2018-11-05 08:01:14,024] read_channel: !!!!!!!!!
+[2018-11-05 08:01:14,224] read_channel: !!!!!!!!
+[2018-11-05 08:01:14,425] read_channel: !!!!!!!!!
+[2018-11-05 08:01:14,626] read_channel: !!!!!!!!
+[2018-11-05 08:01:14,827] read_channel: !!!!!!!!!
+[2018-11-05 08:01:15,028] read_channel: !!!!!!!!
+
+[2018-11-05 08:01:15,229] read_channel: !!!!!!!!!
+[2018-11-05 08:01:15,429] read_channel: !!!!!!!!!
+[2018-11-05 08:01:15,630] read_channel: !!!!!!!!
+[2018-11-05 08:01:15,830] read_channel: !!!!!!!!!
+[2018-11-05 08:01:16,031] read_channel: !!!!!!!!
+[2018-11-05 08:01:16,231] read_channel: !!!!!!!!!
+[2018-11-05 08:01:16,432] read_channel: !!!!!!!!!
+[2018-11-05 08:01:16,633] read_channel: !!!!!!!!
+[2018-11-05 08:01:16,833] read_channel: !
+!!!!!!!!
+[2018-11-05 08:01:17,034] read_channel: !!!!!!!!
+[2018-11-05 08:01:17,235] read_channel: !!!!!!!!!
+[2018-11-05 08:01:17,436] read_channel: !!!!!!!!
+[2018-11-05 08:01:17,637] read_channel: !!!!!!!!!
+[2018-11-05 08:01:17,837] read_channel: !!!!!!!!!
+[2018-11-05 08:01:18,038] read_channel: !!!!!!!!
+[2018-11-05 08:01:18,239] read_channel: !!!!!!!!!
+[2018-11-05 08:01:18,439] read_channel: !!
+!!!!!!
+[2018-11-05 08:01:18,640] read_channel: !!!!!!!!!
+[2018-11-05 08:01:18,841] read_channel: !!!!!!!!
+[2018-11-05 08:01:19,041] read_channel: !!!!!!!!!
+[2018-11-05 08:01:19,242] read_channel: !!!!!!!!!
+[2018-11-05 08:01:19,443] read_channel: !!!!!!!!
+[2018-11-05 08:01:19,644] read_channel: !!!!!!!!!
+[2018-11-05 08:01:19,844] read_channel: !!!!!!!!!
+[2018-11-05 08:01:20,045] read_channel: !!!
+!!!!!
+[2018-11-05 08:01:20,246] read_channel: !!!!!!!!!
+[2018-11-05 08:01:20,447] read_channel: !!!!!!!!
+[2018-11-05 08:01:20,647] read_channel: !!!!!!!!!
+[2018-11-05 08:01:20,848] read_channel: !!!!!!!!!
+[2018-11-05 08:01:21,049] read_channel: !!!!!!!!
+[2018-11-05 08:01:21,250] read_channel: !!!!!!!!!
+[2018-11-05 08:01:21,451] read_channel: !!!!!!!!
+[2018-11-05 08:01:21,652] read_channel: !!!!!
+!!!!
+[2018-11-05 08:01:21,852] read_channel: !!!!!!!!!
+[2018-11-05 08:01:22,053] read_channel: !!!!!!!!
+[2018-11-05 08:01:22,254] read_channel: !!!!!!!!!
+[2018-11-05 08:01:22,454] read_channel: !!!!!!!!
+[2018-11-05 08:01:22,655] read_channel: !!!!!!!!!
+[2018-11-05 08:01:22,855] read_channel: !!!!!!!!!
+[2018-11-05 08:01:23,056] read_channel: !!!!!!!!
+[2018-11-05 08:01:23,256] read_channel: !!!!!!
+!!!
+[2018-11-05 08:01:23,457] read_channel: !!!!!!!!
+[2018-11-05 08:01:23,658] read_channel: !!!!!!!!!
+[2018-11-05 08:01:23,858] read_channel: !!!!!!!!!
+[2018-11-05 08:01:24,059] read_channel: !!!!!!!!
+[2018-11-05 08:01:24,259] read_channel: !!!!!!!!!
+[2018-11-05 08:01:24,460] read_channel: !!!!!!!!
+[2018-11-05 08:01:24,661] read_channel: !!!!!!!!!
+[2018-11-05 08:01:24,861] read_channel: !!!!!!!
+!!
+[2018-11-05 08:01:25,063] read_channel: !!!!!!!!
+[2018-11-05 08:01:25,263] read_channel: !!!!!!!!!
+[2018-11-05 08:01:25,464] read_channel: !!!!!!!!
+[2018-11-05 08:01:25,664] read_channel: !!!!!!!!!
+[2018-11-05 08:01:25,865] read_channel: !!!!!!!!!
+[2018-11-05 08:01:26,066] read_channel: !!!!!!!!
+[2018-11-05 08:01:26,267] read_channel: !!!!!!!!!
+[2018-11-05 08:01:26,467] read_channel: !!!!!!!!
+
+[2018-11-05 08:01:26,668] read_channel: !!!!!!!!!
+[2018-11-05 08:01:26,869] read_channel: !!!!!!!!
+[2018-11-05 08:01:27,069] read_channel: !!!!!!!!!
+[2018-11-05 08:01:27,270] read_channel: !!!!!!!!!
+[2018-11-05 08:01:27,471] read_channel: !!!!!!!!
+[2018-11-05 08:01:27,671] read_channel: !!!!!!!!!
+[2018-11-05 08:01:27,872] read_channel: !!!!!!!!
+[2018-11-05 08:01:28,072] read_channel: !!!!!!!!!
+[2018-11-05 08:01:28,273] read_channel: !
+!!!!!!!
+[2018-11-05 08:01:28,475] read_channel: !!!!!!!!!
+[2018-11-05 08:01:28,675] read_channel: !!!!
+Success rate is 100 percent (1000/1000), round-trip min/avg/max = 20/23/30 ms
+SX-ASA# 
+[2018-11-05 08:01:28,676] read_channel: 
+[2018-11-05 08:01:28,676] write_channel: b'\n'
+[2018-11-05 08:01:28,777] read_channel: 
+SX-ASA# 
+[2018-11-05 08:01:28,878] read_channel: 
+[2018-11-05 08:01:29,078] read_channel: 
+[2018-11-05 08:01:29,079] write_channel: b'terminal pager 25\n'
+[2018-11-05 08:01:29,079] read_channel: 
+[2018-11-05 08:01:29,280] read_channel: terminal pager 25
+SX-ASA# 
+[2018-11-05 08:01:29,280] write_channel: b'\n'
+[2018-11-05 08:01:29,381] read_channel: 
+SX-ASA# 
+[2018-11-05 08:01:29,481] read_channel: 
+[2018-11-05 08:01:31,483] read_channel: 
+[2018-11-05 08:01:31,484] exit_config_mode: 
+[2018-11-05 08:01:31,484] write_channel: b'exit\n'
+[2018-11-05 08:01:31,486] EOF in transport thread
+[2018-11-05 08:01:31,588] starting thread (client mode): 0x88bad208
+[2018-11-05 08:01:31,589] Local version/idstring: SSH-2.0-paramiko_2.4.2
+[2018-11-05 08:01:31,589] Remote version/idstring: SSH-2.0-Cisco-1.25
+[2018-11-05 08:01:31,589] Connected (version 2.0, client Cisco-1.25)
+[2018-11-05 08:01:31,590] kex algos:['diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1', 'diffie-hellman-group1-sha1'] server key:['ssh-rsa'] client encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc'] server encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc'] client mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] server mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] client compress:['none'] server compress:['none'] client lang:[''] server lang:[''] kex follows?False
+[2018-11-05 08:01:31,590] Kex agreed: diffie-hellman-group-exchange-sha1
+[2018-11-05 08:01:31,590] HostKey agreed: ssh-rsa
+[2018-11-05 08:01:31,590] Cipher agreed: aes128-cbc
+[2018-11-05 08:01:31,590] MAC agreed: hmac-sha1
+[2018-11-05 08:01:31,590] Compression agreed: none
+[2018-11-05 08:01:31,790] Got server p (2048 bits)
+[2018-11-05 08:01:31,929] kex engine KexGex specified hash_algo <built-in function openssl_sha1>
+[2018-11-05 08:01:31,930] Switch to new keys ...
+[2018-11-05 08:01:31,930] Adding ssh-rsa host key for 172.16.230.130: b'7a0d6137d4242b7a8e4b5a22cc29e02c'
+[2018-11-05 08:01:32,126] userauth is OK
+[2018-11-05 08:01:32,129] Authentication (password) successful!
+[2018-11-05 08:01:32,129] [chan 0] Max packet in: 32768 bytes
+[2018-11-05 08:01:32,131] [chan 0] Max packet out: 4096 bytes
+[2018-11-05 08:01:32,131] Secsh channel 0 opened.
+[2018-11-05 08:01:32,133] [chan 0] Sesch channel 0 request ok
+[2018-11-05 08:01:32,134] [chan 0] Sesch channel 0 request ok
+[2018-11-05 08:01:33,236] read_channel: SX_RA>
+[2018-11-05 08:01:33,337] read_channel: 
+[2018-11-05 08:01:35,340] read_channel: 
+[2018-11-05 08:01:35,340] read_channel: 
+[2018-11-05 08:01:35,340] write_channel: b'\n'
+[2018-11-05 08:01:35,441] read_channel: 
+SX_RA>
+[2018-11-05 08:01:35,542] read_channel: 
+[2018-11-05 08:01:35,643] read_channel: 
+[2018-11-05 08:01:35,643] In disable_paging
+[2018-11-05 08:01:35,643] Command: terminal length 0
+
+[2018-11-05 08:01:35,643] write_channel: b'terminal length 0\n'
+[2018-11-05 08:01:35,644] Pattern is: SX_RA
+[2018-11-05 08:01:35,645] _read_channel_expect read_data: t
+[2018-11-05 08:01:35,745] _read_channel_expect read_data: erminal length 0
+SX_RA>
+[2018-11-05 08:01:35,745] Pattern found: SX_RA terminal length 0
+SX_RA>
+[2018-11-05 08:01:35,746] terminal length 0
+SX_RA>
+[2018-11-05 08:01:35,746] Exiting disable_paging
+[2018-11-05 08:01:35,746] write_channel: b'terminal width 511\n'
+[2018-11-05 08:01:35,746] Pattern is: SX_RA
+[2018-11-05 08:01:35,747] _read_channel_expect read_data: t
+[2018-11-05 08:01:35,848] _read_channel_expect read_data: erminal width 511
+SX_RA>
+[2018-11-05 08:01:35,848] Pattern found: SX_RA terminal width 511
+SX_RA>
+[2018-11-05 08:01:36,148] read_channel: 
+[2018-11-05 08:01:36,149] write_channel: b'\n'
+[2018-11-05 08:01:36,149] Pattern is: SX_RA
+[2018-11-05 08:01:36,150] _read_channel_expect read_data: 
+
+[2018-11-05 08:01:36,250] _read_channel_expect read_data: SX_RA>
+[2018-11-05 08:01:36,251] Pattern found: SX_RA 
+SX_RA>
+[2018-11-05 08:01:36,251] write_channel: b'enable\n'
+[2018-11-05 08:01:36,251] Pattern is: (SX_RA|ssword)
+[2018-11-05 08:01:36,252] _read_channel_expect read_data: e
+[2018-11-05 08:01:36,353] _read_channel_expect read_data: nable
+Password: 
+[2018-11-05 08:01:36,353] Pattern found: (SX_RA|ssword) enable
+Password: 
+[2018-11-05 08:01:36,354] write_channel: b'esunnytrunk\n'
+[2018-11-05 08:01:36,354] Pattern is: SX_RA
+[2018-11-05 08:01:36,356] _read_channel_expect read_data: 
+SX_RA#
+[2018-11-05 08:01:36,357] Pattern found: SX_RA 
+SX_RA#
+[2018-11-05 08:01:36,357] write_channel: b'\n'
+[2018-11-05 08:01:36,357] Pattern is: SX_RA
+[2018-11-05 08:01:36,358] _read_channel_expect read_data: 
+
+[2018-11-05 08:01:36,458] _read_channel_expect read_data: SX_RA#
+[2018-11-05 08:01:36,459] Pattern found: SX_RA 
+SX_RA#
+[2018-11-05 08:01:36,459] read_channel: 
+[2018-11-05 08:01:36,459] write_channel: b'\n'
+[2018-11-05 08:01:36,560] read_channel: 
+SX_RA#
+[2018-11-05 08:01:36,660] read_channel: 
+[2018-11-05 08:01:36,861] read_channel: 
+[2018-11-05 08:01:36,862] write_channel: b'terminal length 0\n'
+[2018-11-05 08:01:36,862] read_channel: 
+[2018-11-05 08:01:37,062] read_channel: terminal length 0
+SX_RA#
+[2018-11-05 08:01:37,062] read_channel: 
+[2018-11-05 08:01:37,063] write_channel: b'\n'
+[2018-11-05 08:01:37,163] read_channel: 
+SX_RA#
+[2018-11-05 08:01:37,264] read_channel: 
+[2018-11-05 08:01:37,465] read_channel: 
+[2018-11-05 08:01:37,465] write_channel: b'ping 172.17.1.66 repeat 100\n'
+[2018-11-05 08:01:37,465] read_channel: 
+[2018-11-05 08:01:37,666] read_channel: ping 172.17.1.66 repeat 100
+Type escape sequence to abort.
+Sending 100, 100-byte ICMP Echos to 172.17.1.66, timeout is 2 seconds:
+!!!!!!
+[2018-11-05 08:01:37,866] read_channel: !!!!!!
+[2018-11-05 08:01:38,067] read_channel: !!!!!!!
+[2018-11-05 08:01:38,268] read_channel: !!!!!!
+[2018-11-05 08:01:38,469] read_channel: !!!!!!!
+[2018-11-05 08:01:38,670] read_channel: !!!!!!
+[2018-11-05 08:01:38,870] read_channel: !!!!!!
+[2018-11-05 08:01:39,071] read_channel: !!!!!!!
+[2018-11-05 08:01:39,272] read_channel: !!!!!!
+[2018-11-05 08:01:39,472] read_channel: !!!!!!!
+[2018-11-05 08:01:39,673] read_channel: !!!!!!
+
+[2018-11-05 08:01:39,874] read_channel: !!!!!!
+[2018-11-05 08:01:40,074] read_channel: !!!!!!!
+[2018-11-05 08:01:40,275] read_channel: !!!!!!
+[2018-11-05 08:01:40,476] read_channel: !!!!!!!
+[2018-11-05 08:01:40,676] read_channel: !!!!
+Success rate is 100 percent (100/100), round-trip min/avg/max = 28/31/32 ms
+SX_RA#
+[2018-11-05 08:01:40,677] read_channel: 
+[2018-11-05 08:01:40,677] write_channel: b'\n'
+[2018-11-05 08:01:40,777] read_channel: 
+SX_RA#
+[2018-11-05 08:01:40,878] read_channel: 
+[2018-11-05 08:01:41,078] read_channel: 
+[2018-11-05 08:01:41,079] write_channel: b'ping 172.17.1.73 repeat 100\n'
+[2018-11-05 08:01:41,079] read_channel: 
+[2018-11-05 08:01:41,281] read_channel: ping 172.17.1.73 repeat 100
+Type escape sequence to abort.
+Sending 100, 100-byte ICMP Echos to 172.17.1.73, timeout is 2 seconds:
+!!!!!!!
+[2018-11-05 08:01:41,481] read_channel: !!!!!!!
+[2018-11-05 08:01:41,682] read_channel: !!!!!!!
+[2018-11-05 08:01:41,883] read_channel: !!!!!!!
+[2018-11-05 08:01:42,084] read_channel: !!!!!!!!
+[2018-11-05 08:01:42,284] read_channel: !!!!!!!
+[2018-11-05 08:01:42,485] read_channel: !!!!!!!
+[2018-11-05 08:01:42,686] read_channel: !!!!!!!
+[2018-11-05 08:01:42,887] read_channel: !!!!!!!!
+[2018-11-05 08:01:43,088] read_channel: !!!!!
+!!
+[2018-11-05 08:01:43,288] read_channel: !!!!!!!
+[2018-11-05 08:01:43,489] read_channel: !!!!!!!
+[2018-11-05 08:01:43,690] read_channel: !!!!!!!!
+[2018-11-05 08:01:43,890] read_channel: !!!!!!
+Success rate is 100 percent (100/100), round-trip min/avg/max = 24/27/28 ms
+SX_RA#
+[2018-11-05 08:01:43,890] read_channel: 
+[2018-11-05 08:01:43,891] write_channel: b'\n'
+[2018-11-05 08:01:43,991] read_channel: 
+SX_RA#
+[2018-11-05 08:01:44,092] read_channel: 
+[2018-11-05 08:01:44,293] read_channel: 
+[2018-11-05 08:01:44,293] write_channel: b'terminal length 25\n'
+[2018-11-05 08:01:44,293] read_channel: 
+[2018-11-05 08:01:44,494] read_channel: terminal length 25
+SX_RA#
+[2018-11-05 08:01:44,494] write_channel: b'\n'
+[2018-11-05 08:01:44,595] read_channel: 
+SX_RA#
+[2018-11-05 08:01:44,696] read_channel: 
+[2018-11-05 08:01:46,699] read_channel: 
+[2018-11-05 08:01:46,699] exit_config_mode: 
+[2018-11-05 08:01:46,699] write_channel: b'exit\n'
+[2018-11-05 08:01:46,701] EOF in transport thread
+[2018-11-05 08:01:47,805] read_channel: C
+******************************************
+*  ZCE
+*  Hostname: SH-TG-RT02
+*  Module: ASR1006
+*  Location: SH
+*  Any Unauthorized Login is Illegal !!! 
+******************************************
+
+
+User Access Verification
+
+Username: 
+[2018-11-05 08:01:47,805] write_channel: b'cisco\r\n'
+[2018-11-05 08:01:48,807] read_channel: cisco
+Password: 
+[2018-11-05 08:01:48,808] write_channel: b'cisco\r\n'
+[2018-11-05 08:01:49,309] read_channel: 
+SH-TG-RT02>
+[2018-11-05 08:01:50,411] read_channel: 
+[2018-11-05 08:01:52,414] read_channel: 
+[2018-11-05 08:01:52,414] write_channel: b'\n'
+[2018-11-05 08:01:52,625] read_channel: 
+SH-TG-RT02>
+[2018-11-05 08:01:52,726] read_channel: 
+[2018-11-05 08:01:54,728] read_channel: 
+[2018-11-05 08:01:54,729] read_channel: 
+[2018-11-05 08:01:54,729] write_channel: b'\n'
+[2018-11-05 08:01:54,830] read_channel: 
+SH-TG-RT02>
+[2018-11-05 08:01:54,930] read_channel: 
+[2018-11-05 08:01:55,031] read_channel: 
+[2018-11-05 08:01:55,031] In disable_paging
+[2018-11-05 08:01:55,032] Command: terminal length 0
+
+[2018-11-05 08:01:55,032] write_channel: b'terminal length 0\n'
+[2018-11-05 08:01:55,032] Pattern is: SH\-TG\-RT02
+[2018-11-05 08:01:55,032] read_channel: 
+[2018-11-05 08:01:55,133] read_channel: terminal length 0
+SH-TG-RT02>
+[2018-11-05 08:01:55,133] Pattern found: SH\-TG\-RT02 terminal length 0
+SH-TG-RT02>
+[2018-11-05 08:01:55,133] terminal length 0
+SH-TG-RT02>
+[2018-11-05 08:01:55,133] Exiting disable_paging
+[2018-11-05 08:01:55,133] write_channel: b'terminal width 511\n'
+[2018-11-05 08:01:55,133] Pattern is: SH\-TG\-RT02
+[2018-11-05 08:01:55,134] read_channel: 
+[2018-11-05 08:01:55,234] read_channel: terminal width 511
+SH-TG-RT02>
+[2018-11-05 08:01:55,235] Pattern found: SH\-TG\-RT02 terminal width 511
+SH-TG-RT02>
+[2018-11-05 08:01:55,535] read_channel: 
+[2018-11-05 08:01:55,536] write_channel: b'\n'
+[2018-11-05 08:01:55,536] Pattern is: SH\-TG\-RT02
+[2018-11-05 08:01:55,536] read_channel: 
+[2018-11-05 08:01:55,637] read_channel: 
+SH-TG-RT02>
+[2018-11-05 08:01:55,637] Pattern found: SH\-TG\-RT02 
+SH-TG-RT02>
+[2018-11-05 08:01:55,637] write_channel: b'enable\n'
+[2018-11-05 08:01:55,637] Pattern is: (SH\-TG\-RT02|ssword)
+[2018-11-05 08:01:55,637] read_channel: 
+[2018-11-05 08:01:55,738] read_channel: enable
+Password: 
+[2018-11-05 08:01:55,738] Pattern found: (SH\-TG\-RT02|ssword) enable
+Password: 
+[2018-11-05 08:01:55,738] write_channel: b'cisco\n'
+[2018-11-05 08:01:55,738] Pattern is: SH\-TG\-RT02
+[2018-11-05 08:01:55,739] read_channel: 
+[2018-11-05 08:01:55,839] read_channel: 
+SH-TG-RT02#
+[2018-11-05 08:01:55,840] Pattern found: SH\-TG\-RT02 
+SH-TG-RT02#
+[2018-11-05 08:01:55,840] write_channel: b'\n'
+[2018-11-05 08:01:55,840] Pattern is: SH\-TG\-RT02
+[2018-11-05 08:01:55,840] read_channel: 
+SH-TG-RT02#
+[2018-11-05 08:01:55,841] Pattern found: SH\-TG\-RT02 
+SH-TG-RT02#
+[2018-11-05 08:01:55,841] read_channel: 
+[2018-11-05 08:01:55,841] write_channel: b'\n'
+[2018-11-05 08:01:55,941] read_channel: 
+SH-TG-RT02#
+[2018-11-05 08:01:56,042] read_channel: 
+[2018-11-05 08:01:56,243] read_channel: 
+[2018-11-05 08:01:56,243] write_channel: b'terminal length 0\n'
+[2018-11-05 08:01:56,244] read_channel: t
+[2018-11-05 08:01:56,444] read_channel: erminal length 0
+SH-TG-RT02#
+[2018-11-05 08:01:56,445] read_channel: 
+[2018-11-05 08:01:56,445] write_channel: b'\n'
+[2018-11-05 08:01:56,546] read_channel: 
+SH-TG-RT02#
+[2018-11-05 08:01:56,646] read_channel: 
+[2018-11-05 08:01:56,847] read_channel: 
+[2018-11-05 08:01:56,848] write_channel: b'ping 10.18.0.5 repeat 100\n'
+[2018-11-05 08:01:56,848] read_channel: 
+[2018-11-05 08:01:57,049] read_channel: ping 10.18.0.5 repeat 100
+Type escape sequence to abort.
+Sending 100, 100-byte ICMP Echos to 10.18.0.5, timeout is 2 seconds:
+!!!!!!!
+[2018-11-05 08:01:57,250] read_channel: !!!!!!!!
+[2018-11-05 08:01:57,450] read_channel: !!!!!!!!!
+[2018-11-05 08:01:57,652] read_channel: !!!!!!!!
+[2018-11-05 08:01:57,852] read_channel: !!!!!!!!!
+[2018-11-05 08:01:58,053] read_channel: !!!!!!!!
+[2018-11-05 08:01:58,254] read_channel: !!!!!!!!!
+[2018-11-05 08:01:58,455] read_channel: !!!!!!!!
+[2018-11-05 08:01:58,656] read_channel: !!!!
+!!!!!
+[2018-11-05 08:01:58,857] read_channel: !!!!!!!!
+[2018-11-05 08:01:59,058] read_channel: !!!!!!!!!
+[2018-11-05 08:01:59,259] read_channel: !!!!!!!!
+Success rate is 100 percent (100/100), round-trip min/avg/max = 23/23/25 ms
+SH-TG-RT02#
+[2018-11-05 08:01:59,259] read_channel: 
+[2018-11-05 08:01:59,260] write_channel: b'\n'
+[2018-11-05 08:01:59,360] read_channel: 
+SH-TG-RT02#
+[2018-11-05 08:01:59,461] read_channel: 
+[2018-11-05 08:01:59,661] read_channel: 
+[2018-11-05 08:01:59,662] write_channel: b'ping 10.98.0.5 repeat 100\n'
+[2018-11-05 08:01:59,662] read_channel: 
+[2018-11-05 08:01:59,863] read_channel: ping 10.98.0.5 repeat 100
+Type escape sequence to abort.
+Sending 100, 100-byte ICMP Echos to 10.98.0.5, timeout is 2 seconds:
+!!!!!!!!
+[2018-11-05 08:02:00,063] read_channel: !!!!!!!!!!!
+[2018-11-05 08:02:00,264] read_channel: !!!!!!!!!!!!
+[2018-11-05 08:02:00,465] read_channel: !!!!!!!!!!!
+[2018-11-05 08:02:00,666] read_channel: !!!!!!!!!!!
+[2018-11-05 08:02:00,867] read_channel: !!!!!!!!!!!!
+[2018-11-05 08:02:01,067] read_channel: !!!!!
+
+[2018-11-05 08:02:01,268] read_channel: !!!!!!!!!!
+[2018-11-05 08:02:01,469] read_channel: !!!!!!!!!!!
+[2018-11-05 08:02:01,670] read_channel: !!!!!!!!!
+Success rate is 100 percent (100/100), round-trip min/avg/max = 17/18/57 ms
+SH-TG-RT02#
+[2018-11-05 08:02:01,670] read_channel: 
+[2018-11-05 08:02:01,670] write_channel: b'\n'
+[2018-11-05 08:02:01,771] read_channel: 
+SH-TG-RT02#
+[2018-11-05 08:02:01,872] read_channel: 
+[2018-11-05 08:02:02,072] read_channel: 
+[2018-11-05 08:02:02,072] write_channel: b'terminal length 25\n'
+[2018-11-05 08:02:02,073] read_channel: 
+[2018-11-05 08:02:02,274] read_channel: terminal length 25
+SH-TG-RT02#
+[2018-11-05 08:02:02,274] write_channel: b'\n'
+[2018-11-05 08:02:02,375] read_channel: 
+SH-TG-RT02#
+[2018-11-05 08:02:02,475] read_channel: 
+[2018-11-05 08:02:04,478] read_channel: 
+[2018-11-05 08:02:04,478] exit_config_mode: 
+[2018-11-05 08:02:04,478] write_channel: b'exit\n'
+[2018-11-05 08:02:04,641] starting thread (client mode): 0x8ace4278
+[2018-11-05 08:02:04,642] Local version/idstring: SSH-2.0-paramiko_2.4.2
+[2018-11-05 08:02:04,673] Remote version/idstring: SSH-1.99-Cisco-1.25
+[2018-11-05 08:02:04,674] Connected (version 1.99, client Cisco-1.25)
+[2018-11-05 08:02:04,675] kex algos:['diffie-hellman-group1-sha1'] server key:['ssh-rsa'] client encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr'] server encrypt:['aes128-cbc', '3des-cbc', 'aes192-cbc', 'aes256-cbc', 'aes128-ctr', 'aes192-ctr', 'aes256-ctr'] client mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] server mac:['hmac-sha1', 'hmac-sha1-96', 'hmac-md5', 'hmac-md5-96'] client compress:['none'] server compress:['none'] client lang:[''] server lang:[''] kex follows?False
+[2018-11-05 08:02:04,675] Kex agreed: diffie-hellman-group1-sha1
+[2018-11-05 08:02:04,675] HostKey agreed: ssh-rsa
+[2018-11-05 08:02:04,675] Cipher agreed: aes128-ctr
+[2018-11-05 08:02:04,675] MAC agreed: hmac-sha1
+[2018-11-05 08:02:04,675] Compression agreed: none
+[2018-11-05 08:02:04,754] kex engine KexGroup1 specified hash_algo <built-in function openssl_sha1>
+[2018-11-05 08:02:04,755] Switch to new keys ...
+[2018-11-05 08:02:04,756] Adding ssh-rsa host key for 172.16.232.137: b'2441f5f03ae11fba3aceaf5ac78ef777'
+[2018-11-05 08:02:04,820] userauth is OK
+[2018-11-05 08:02:04,853] Authentication (password) successful!
+[2018-11-05 08:02:04,854] [chan 0] Max packet in: 32768 bytes
+[2018-11-05 08:02:04,886] [chan 0] Max packet out: 4096 bytes
+[2018-11-05 08:02:04,887] Secsh channel 0 opened.
+[2018-11-05 08:02:04,920] [chan 0] Sesch channel 0 request ok
+[2018-11-05 08:02:04,953] [chan 0] Sesch channel 0 request ok
+[2018-11-05 08:02:06,055] read_channel: Type help or '?' for a list of available commands.
+ASA-HK-1> 
+[2018-11-05 08:02:06,155] read_channel: 
+[2018-11-05 08:02:08,158] read_channel: 
+[2018-11-05 08:02:08,158] read_channel: 
+[2018-11-05 08:02:08,159] write_channel: b'\n'
+[2018-11-05 08:02:08,259] read_channel: 
+ASA-HK-1> 
+[2018-11-05 08:02:08,360] read_channel: 
+[2018-11-05 08:02:08,360] write_channel: b'\n'
+[2018-11-05 08:02:08,361] Pattern is: ASA\-HK\-1
+[2018-11-05 08:02:08,394] _read_channel_expect read_data: 
+
+[2018-11-05 08:02:08,495] _read_channel_expect read_data: ASA-HK-1> 
+[2018-11-05 08:02:08,496] Pattern found: ASA\-HK\-1 
+ASA-HK-1> 
+[2018-11-05 08:02:08,496] write_channel: b'enable\n'
+[2018-11-05 08:02:08,496] Pattern is: (ASA\-HK\-1|ssword)
+[2018-11-05 08:02:08,529] _read_channel_expect read_data: e
+[2018-11-05 08:02:08,629] _read_channel_expect read_data: nable
+Password: 
+[2018-11-05 08:02:08,630] Pattern found: (ASA\-HK\-1|ssword) enable
+Password: 
+[2018-11-05 08:02:08,630] write_channel: b'esunnytrunk\n'
+[2018-11-05 08:02:08,630] Pattern is: ASA\-HK\-1
+[2018-11-05 08:02:08,663] _read_channel_expect read_data: *
+[2018-11-05 08:02:08,764] _read_channel_expect read_data: **********
+ASA-HK-1# 
+[2018-11-05 08:02:08,764] Pattern found: ASA\-HK\-1 ***********
+ASA-HK-1# 
+[2018-11-05 08:02:08,765] write_channel: b'\n'
+[2018-11-05 08:02:08,765] Pattern is: ASA\-HK\-1
+[2018-11-05 08:02:08,798] _read_channel_expect read_data: 
+
+[2018-11-05 08:02:08,899] _read_channel_expect read_data: ASA-HK-1# 
+[2018-11-05 08:02:08,899] Pattern found: ASA\-HK\-1 
+ASA-HK-1# 
+[2018-11-05 08:02:08,999] read_channel: 
+[2018-11-05 08:02:09,000] In disable_paging
+[2018-11-05 08:02:09,000] Command: terminal pager 0
+
+[2018-11-05 08:02:09,000] write_channel: b'terminal pager 0\n'
+[2018-11-05 08:02:09,000] Pattern is: ASA\-HK\-1
+[2018-11-05 08:02:09,034] _read_channel_expect read_data: t
+[2018-11-05 08:02:09,135] _read_channel_expect read_data: erminal pager 0
+ASA-HK-1# 
+[2018-11-05 08:02:09,135] Pattern found: ASA\-HK\-1 terminal pager 0
+ASA-HK-1# 
+[2018-11-05 08:02:09,135] terminal pager 0
+ASA-HK-1# 
+[2018-11-05 08:02:09,136] Exiting disable_paging
+[2018-11-05 08:02:09,136] write_channel: b'terminal width 511\n'
+[2018-11-05 08:02:09,136] Pattern is: ASA\-HK\-1
+[2018-11-05 08:02:09,169] _read_channel_expect read_data: t
+[2018-11-05 08:02:09,270] _read_channel_expect read_data: erminal width 511
+                   ^
+ERROR: % Invalid input detected at '^' marker.
+ASA-HK-1# 
+[2018-11-05 08:02:09,270] Pattern found: ASA\-HK\-1 terminal width 511
+                   ^
+ERROR: % Invalid input detected at '^' marker.
+ASA-HK-1# 
+[2018-11-05 08:02:09,571] read_channel: 
+[2018-11-05 08:02:09,572] write_channel: b'\n'
+[2018-11-05 08:02:09,572] Pattern is: ASA\-HK\-1
+[2018-11-05 08:02:09,606] _read_channel_expect read_data: 
+
+[2018-11-05 08:02:09,707] _read_channel_expect read_data: ASA-HK-1# 
+[2018-11-05 08:02:09,707] Pattern found: ASA\-HK\-1 
+ASA-HK-1# 
+[2018-11-05 08:02:09,707] read_channel: 
+[2018-11-05 08:02:09,708] write_channel: b'\n'
+[2018-11-05 08:02:09,808] read_channel: 
+ASA-HK-1# 
+[2018-11-05 08:02:09,909] read_channel: 
+[2018-11-05 08:02:10,109] read_channel: 
+[2018-11-05 08:02:10,110] write_channel: b'terminal pager 0\n'
+[2018-11-05 08:02:10,110] read_channel: 
+[2018-11-05 08:02:10,310] read_channel: terminal pager 0
+ASA-HK-1# 
+[2018-11-05 08:02:10,311] read_channel: 
+[2018-11-05 08:02:10,312] write_channel: b'\n'
+[2018-11-05 08:02:10,413] read_channel: 
+ASA-HK-1# 
+[2018-11-05 08:02:10,513] read_channel: 
+[2018-11-05 08:02:10,714] read_channel: 
+[2018-11-05 08:02:10,714] write_channel: b'ping 202.14.67.4 repeat 1000\n'
+[2018-11-05 08:02:10,714] read_channel: 
+[2018-11-05 08:02:10,915] read_channel: ping 202.14.67.4 repeat 1000
+Type escape sequence to abort.
+Sending 1000, 100-byte ICMP Echos to 202.14.67.4, timeout is 2 seconds:
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:02:11,116] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!
+[2018-11-05 08:02:11,316] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:02:11,517] read_channel: !!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:02:11,717] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:02:11,918] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:02:12,119] read_channel: !!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:02:12,320] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:02:12,521] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!
+[2018-11-05 08:02:12,721] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:02:12,922] read_channel: !!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:02:13,123] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!
+[2018-11-05 08:02:13,324] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:02:13,525] read_channel: !!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:02:13,726] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:02:13,927] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:02:14,128] read_channel: !!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:02:14,328] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:02:14,529] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:02:14,729] read_channel: !!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+[2018-11-05 08:02:14,930] read_channel: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!
+Success rate is 100 percent (1000/1000), round-trip min/avg/max = 1/4/10 ms
+ASA-HK-1# 
+[2018-11-05 08:02:14,931] read_channel: 
+[2018-11-05 08:02:14,931] write_channel: b'\n'
+[2018-11-05 08:02:15,031] read_channel: 
+ASA-HK-1# 
+[2018-11-05 08:02:15,132] read_channel: 
+[2018-11-05 08:02:15,333] read_channel: 
+[2018-11-05 08:02:15,333] write_channel: b'terminal pager 25\n'
+[2018-11-05 08:02:15,333] read_channel: 
+[2018-11-05 08:02:15,534] read_channel: terminal pager 25
+ASA-HK-1# 
+[2018-11-05 08:02:15,535] write_channel: b'\n'
+[2018-11-05 08:02:15,635] read_channel: 
+ASA-HK-1# 
+[2018-11-05 08:02:15,736] read_channel: 
+[2018-11-05 08:02:17,738] read_channel: 
+[2018-11-05 08:02:17,739] exit_config_mode: 
+[2018-11-05 08:02:17,739] write_channel: b'exit\n'
+[2018-11-05 08:02:17,777] EOF in transport thread
+[2018-11-05 08:02:17,842] Job "job_ping (trigger: cron[day_of_week='0-6', hour='8', minute='0'], next run at: 2018-11-06 08:00:00 CST)" executed successfully
