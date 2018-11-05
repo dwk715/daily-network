@@ -1,2 +1,8 @@
-.vscode/settings.json
-
+.vscode/
+.idea/
+log/
+config.csv
+*.xlsx
+__pycache__/
+daily-work
+*.pyc
