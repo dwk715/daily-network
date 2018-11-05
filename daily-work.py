@@ -7,7 +7,6 @@ import datetime
 import time
 import os
 import csv
-import logging
 import yaml
 import re
 import openpyxl
@@ -134,11 +133,11 @@ def parse_flow(flow_raw):
         for k, v in linebits.items():
             if 'bytes' in flow_result:
                 v = format(
-                    float(re.findall("\d+", v)[0]) * 8 / (1024 * 1024), "0.1f")
+                    float(re.findall("\d+", v)[0]) * 8 / (1024 * 1024), "0.3f")
                 result[k] = v
             if 'bit' in flow_result:
                 v = format(
-                    float(re.findall("\d+", v)[0]) / (1024 * 1024), "0.1f")
+                    float(re.findall("\d+", v)[0]) / (1024 * 1024), "0.3f")
                 result[k] = v
         results.append(result)
     #save_flow(device,results)
@@ -147,12 +146,12 @@ def parse_flow(flow_raw):
 
 #打开表格文件，返回需要打开的表格对象、表格最大行、需要保存的文件名
 def open_xlsx():
-    filename = '易盛上海分公司日常巡检表_' + time.strftime('%Y-%m-%d',
+    filename = 'archive/易盛上海分公司日常巡检表_' + time.strftime('%Y-%m-%d',
                                                time.localtime()) + '.xlsx'
     if (os.path.exists(filename)):
         wb = openpyxl.load_workbook(filename)
     else:
-        wb = openpyxl.load_workbook('易盛上海分公司日常巡检表V3.3.xlsx')
+        wb = openpyxl.load_workbook('archive/易盛上海分公司日常巡检表V3.3.xlsx')
     ws = wb.active
     max = ws.max_row
     return ({"filename": filename, "wb": wb, "max_raw": max})
@@ -299,6 +298,7 @@ def job_interface():
   
 
 def main():
+    job_flow()
     scheduler = BlockingScheduler()
     scheduler.add_job(job_interface, 'cron', day_of_week='0-6', hour=8, minute=00)
     scheduler.add_job(job_cup_memory, 'cron', day_of_week='0-6', hour=10, minute=30)

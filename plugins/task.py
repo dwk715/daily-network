@@ -1,9 +1,19 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-# Date: 2018/10/31
-# Autor : dwk zlw zly 
+# Date: 2018/11/5
+# Autor :  zlw dwk zly
 
-def connect_devices(device_info, commands):
+
+from netmiko import ConnectHandler
+import csv
+import yaml
+import os
+import sys
+sys.path.append('plugins')
+import store
+import parse
+
+def connect(device_info, commands):
     ip = device_info[0]
     protocol = device_info[1]
     device_type = device_info[2]
@@ -43,14 +53,14 @@ def read_csv(ip, commands):
         f_csv = csv.reader(f)
         for row in f_csv:
             if ip == row[0]:
-                result = connect_devices(row, commands)
+                result = connect(row, commands)
             else:
                 pass
     return result
 
 
 
-def read_yml(tables):
+def run(tables):
     path = "commands/" + tables
     files = os.listdir(path)
     for file in files:
@@ -59,18 +69,20 @@ def read_yml(tables):
             y = yaml.load(f)
             tmp = read_csv(y['ip'], y['commands'])
             if tables == 'ping':
-                save_ping(y['device_name'], parse_ping(tmp))
+                print(y['device_name'], tmp)
+                store.ping(y['device_name'], parse.ping(tmp))
 
             if tables == 'cpu_memory':
                 print(y['device_name'], tmp)
-                save_cpu_mem(y['device_name'], parse_cpu_mem(tmp))
+                store.cpu_mem(y['device_name'], parse.cpu_mem(tmp))
 
             if tables == 'flow':
                 print(y['device_name'], tmp)
-                save_flow(y['device_name'], parse_flow(tmp))
+                store.flow(y['device_name'], parse.flow(tmp))
 
             if tables == 'interface':
-                save_interface(y['device_name'], parse_interface(tmp))
+                print(y['device_name'], tmp)
+                store.interface(y['device_name'], parse.interface(tmp))
 
         else:
             pass

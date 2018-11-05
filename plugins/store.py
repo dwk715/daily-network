@@ -1,16 +1,20 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-# Date: 2018/10/31
-# Autor : dwk zlw zly 
+# Date: 2018/11/5
+# Autor :  zlw dwk zly 
+
+import os
+import openpyxl
+import time
 
 #打开表格文件，返回需要打开的表格对象、表格最大行、需要保存的文件名
 def open_xlsx():
-    filename = '易盛上海分公司日常巡检表_' + time.strftime('%Y-%m-%d',
+    filename = 'archive/易盛上海分公司日常巡检表_' + time.strftime('%Y-%m-%d',
                                                time.localtime()) + '.xlsx'
     if (os.path.exists(filename)):
         wb = openpyxl.load_workbook(filename)
     else:
-        wb = openpyxl.load_workbook('易盛上海分公司日常巡检表V3.3.xlsx')
+        wb = openpyxl.load_workbook('archive/易盛上海分公司日常巡检表V3.3.xlsx')
     ws = wb.active
     max = ws.max_row
     return ({"filename": filename, "wb": wb, "max_raw": max})
@@ -23,7 +27,7 @@ cpu_mem_result：dict eg:{"cpu":40,"mem":60}
 '''
 
 
-def save_cpu_mem(device, cpu_mem_result):
+def cpu_mem(device, cpu_mem_result):
     wb_info = open_xlsx()
     wb = wb_info["wb"]
     ws = wb.active
@@ -41,7 +45,7 @@ interface_result：int/str 可用端口数
 '''
 
 
-def save_interface(device, interface_result):
+def interface(device, interface_result):
     wb_info = open_xlsx()
     wb = wb_info["wb"]
     ws = wb.active
@@ -58,7 +62,7 @@ flow_result：list eg:[{'in': '17.0', 'out': '51.0'},{'in': '8.0', 'out': '32.0'
 '''
 
 
-def save_flow(device, flow_result):
+def flow(device, flow_result):
     wb_info = open_xlsx()
     wb = wb_info["wb"]
     ws = wb.active
@@ -80,7 +84,7 @@ ping_result：list 处理后的ping数据 eg [{"loss":0,"time":6},{"loss":1,"tim
 '''
 
 
-def save_ping(device, ping_result):
+def ping(device, ping_result):
     wb_info = open_xlsx()
     wb = wb_info["wb"]
     ws = wb.active

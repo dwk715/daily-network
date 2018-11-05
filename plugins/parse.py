@@ -1,13 +1,13 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-# Date: 2018/10/31
-# Autor : dwk zlw zly
+# Date: 2018/11/5
+# Autor :  zlw zly
 import time
 import os
 import re
 
 
-def parse_ping(result):
+def ping(result):
     ping_result_write = []
     for row in result:
         if row == '':
@@ -28,7 +28,7 @@ def parse_ping(result):
     return ping_result_write
 
 
-def parse_cpu_mem(cpu_mem_raw):
+def cpu_mem(cpu_mem_raw):
     result = {}
     cpu_reg = re.compile(r'.*?utilization.*?:\s*?(?P<cpu>\d.*?)%.*',
                          re.S | re.M)
@@ -64,7 +64,7 @@ return int 可用接口数
 '''
 
 
-def parse_interface(interface_raw):
+def interface(interface_raw):
     #save_interface(device,len(re.findall("Ethernet",interface_raw[1])))
     return len(re.findall("Ethernet", interface_raw[1]))
 
@@ -76,7 +76,7 @@ return list 处理后的流量数据 eg:[{'in': '17.0', 'out': '51.0'},{'in': '8
 '''
 
 
-def parse_flow(flow_raw):
+def flow(flow_raw):
     results = []
     flow_reg = re.compile(
         r'''.*?input.*?\s+(?P<in>\d+?)\s+b.*?/sec.*

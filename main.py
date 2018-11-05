@@ -1,27 +1,32 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-# Date: 2018/10/31
-# Autor : dwk zlw zly 
+# Date: 2018/11/5
+# Autor :  zlw dwk zly
 
 
 
 from apscheduler.schedulers.blocking import BlockingScheduler
+import sys
+sys.path.append('plugins')
+import task
+from log import logmode
 
+log_ap = logmode('apscheduler').getlog()
 
 def job_ping():
-    read_yml('ping')
+    task.run('ping')
 
 
 def job_flow():
-    read_yml('flow')
+    task.run('flow')
   
 
 def job_cup_memory():
-    read_yml('cpu_memory')
+    task.run('cpu_memory')
 
 
 def job_interface():
-    read_yml('interface')
+    task.run('interface')
   
 
 def main():
@@ -31,7 +36,7 @@ def main():
     scheduler.add_job(job_flow, 'cron', day_of_week='0-6', hour=10, minute=30)
     scheduler.add_job(job_flow, 'cron', day_of_week='0-6', hour=22, minute=20)
     scheduler.add_job(job_ping, 'cron', day_of_week='0-6', hour=8, minute=00)
-    # read_yml('interface')
+    task.run('ping')
     scheduler.start()
 
 if __name__ == '__main__':
