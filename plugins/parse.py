@@ -42,18 +42,14 @@ def cpu_mem(cpu_mem_raw):
         cpu_mem_raw[2]) or firewall_mem_reg.match(
             cpu_mem_raw[2]) or router_mem_reg.match(cpu_mem_raw[2])
     result['cpu'] = cpu_regMatch.groupdict()['cpu']
-    #print(mem_regMatch.groupdict())
     if 'used_rate' in mem_regMatch.groupdict():
         result['mem'] = 100 - (float(mem_regMatch.groupdict()['used_rate']))
     if 'free_rate' in mem_regMatch.groupdict():
         result['mem'] = float(mem_regMatch.groupdict()['free_rate'])
     if 'total' in mem_regMatch.groupdict():
-        #print ('free',mem_regMatch.groupdict()['free'],'tatal',mem_regMatch.groupdict()['total'])
         result['mem'] = format(
             float(mem_regMatch.groupdict()['free']) * 100 / float(
                 mem_regMatch.groupdict()['total']), "0.1f")
-    #print (result['cpu'],result['mem'])
-    #save_cpu_mem(device,result)
     return result
 
 
@@ -65,7 +61,6 @@ return int 可用接口数
 
 
 def interface(interface_raw):
-    #save_interface(device,len(re.findall("Ethernet",interface_raw[1])))
     return len(re.findall("Ethernet", interface_raw[1]))
 
 
@@ -97,5 +92,4 @@ def flow(flow_raw):
                     float(re.findall("\d+", v)[0]) / (1024 * 1024), "0.3f")
                 result[k] = v
         results.append(result)
-    #save_flow(device,results)
     return results
