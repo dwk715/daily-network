@@ -1,0 +1,6 @@
+      1 minute input rate 9447 pkts/sec,  2501814 bytes/sec
+      1 minute output rate 10922 pkts/sec,  2694757 bytes/sec
+      1 minute drop rate, 0 pkts/sec
+      1 minute input rate 1677 pkts/sec,  331474 bytes/sec
+      1 minute output rate 1807 pkts/sec,  570968 bytes/sec
+      1 minute drop rate, 0 pkts/sec

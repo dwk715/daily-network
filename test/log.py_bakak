@@ -1,0 +1,22 @@
+# -*- coding: utf-8 -*-
+import logging
+import logging.handlers
+import os
+import datetime
+
+logger = logging.getLogger(os.path.join(os.getcwd(), 'backup_log'))
+logger.setLevel(logging.DEBUG)
+
+
+fh = logging.handlers.TimedRotatingFileHandler('test', when='S', interval=1, backupCount=0)
+
+fh.suffix = "%Y-%m-%d.log"
+
+formatter = logging.Formatter('[%(asctime)s] %(message)s')
+
+fh.setFormatter(formatter)
+
+logger.addHandler(fh)
+
+
+logger.info('123')

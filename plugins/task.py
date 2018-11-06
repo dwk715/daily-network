@@ -12,6 +12,9 @@ import sys
 sys.path.append('plugins')
 import store
 import parse
+from log import logmode
+
+log_ap = logmode('daily-network').getlog()
 
 def connect(device_info, commands):
     ip = device_info[0]
@@ -20,6 +23,7 @@ def connect(device_info, commands):
     username = device_info[3]
     password = device_info[4]
     secret = device_info[5]
+    name = device_info[6]
     port = 22 if protocol == 'ssh' else 23
 
     device_type = device_type + '_telnet' if protocol == 'telnet' else device_type
@@ -33,13 +37,15 @@ def connect(device_info, commands):
         'secret': secret,  # optional, defaults to ''
         'verbose': False,  # optional, defaults to False
     }
-
+    log_ap.info("'{0}'-'{1}' start connecting.".format(ip, name))
     net_connect = ConnectHandler(**cisco_device)
     net_connect.enable()
 
     result = []
     for cmd in commands:
         result.append(net_connect.send_command(cmd))
+
+    
 
     net_connect.disconnect()
     return result

@@ -9,7 +9,7 @@ sys.path.append('plugins')
 import task
 from log import logmode
 
-log_ap = logmode('apscheduler').getlog()
+log_ap = logmode('daily-network').getlog()
 
 
 def job_ping():
@@ -42,6 +42,8 @@ def main():
         scheduler.start()
     except (KeyboardInterrupt, SystemExit):
         scheduler.shutdown()
+    except Exception as e:
+        log_ap.error('e')
 
 
 if __name__ == '__main__':
