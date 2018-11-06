@@ -39,8 +39,6 @@ scheduler.add_job(job_ping, 'cron', day_of_week='0-6', hour=8, minute=00)
 
 def main():
     try:
-        # task.run('ping')
-        task.run('flow')
         scheduler.start()
     except (KeyboardInterrupt, SystemExit):
         scheduler.shutdown()

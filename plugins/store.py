@@ -22,9 +22,11 @@ def open_xlsx():
         '%Y-%m-%d', time.localtime()) + '.xlsx'
     if (os.path.exists(filename)):
         wb = openpyxl.load_workbook(filename)
+        ws = wb.active
     else:
         wb = openpyxl.load_workbook('excel/template.xlsx')
-    ws = wb.active
+        ws = wb.active
+        ws.cell(row=2, column=1).value = time.strftime('日期: %Y 年 %m 月 %d 日', time.localtime())
     max = ws.max_row
     return ({"filename": filename, "wb": wb, "max_raw": max})
 
@@ -73,9 +75,9 @@ flow_result：list eg:[{'in': '17.0', 'out': '51.0'},{'in': '8.0', 'out': '32.0'
 
 def flow(device, flow_result):
     hour = time.strftime('%H', time.localtime())
-    if (hour == 10):
+    if (int(hour) == 10):
         col = 7
-    elif (hour == 22):
+    elif (int(hour) == 22):
         col = 8
     wb_info = open_xlsx()
     wb = wb_info["wb"]
