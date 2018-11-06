@@ -1,27 +1,25 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 # Date: 2018/11/5
-# Autor :  zlw dwk zly 
+# Autor :  zlw dwk zly
 
 import os
 import openpyxl
 import time
-
 '''
 此模块用于将数据保存在excel文件中
 读取excel/template.xlsx文件并另存为：
 excel/易盛上海分公司日常巡检表_{日期}.xlsx
 '''
-
-
 '''
 打开表格文件
 return dict 包含需要保存的文件名，模板表格对象、表格最大行
 '''
 
+
 def open_xlsx():
-    filename = 'excel/易盛上海分公司日常巡检表_' + time.strftime('%Y-%m-%d',
-                                               time.localtime()) + '.xlsx'
+    filename = 'excel/易盛上海分公司日常巡检表_' + time.strftime(
+        '%Y-%m-%d', time.localtime()) + '.xlsx'
     if (os.path.exists(filename)):
         wb = openpyxl.load_workbook(filename)
     else:
@@ -74,11 +72,11 @@ flow_result：list eg:[{'in': '17.0', 'out': '51.0'},{'in': '8.0', 'out': '32.0'
 
 
 def flow(device, flow_result):
-    hour=time.strftime('%H',time.localtime())
-    if (hour==10):
-        col=7
-    else if (hour==22):
-        col=8
+    hour = time.strftime('%H', time.localtime())
+    if (hour == 10):
+        col = 7
+    elif (hour == 22):
+        col = 8
     wb_info = open_xlsx()
     wb = wb_info["wb"]
     ws = wb.active
