@@ -6,6 +6,15 @@ import time
 import os
 import re
 
+'''
+此模块用于解析网络设备执行命令后的返回结果
+'''
+
+'''
+解析ping结果
+result list 原始的ping操作输出
+return list 解析后的ping数据 eg [{"loss":0,"time":6},{"loss":1,"time":7}]
+'''
 
 def ping(result):
     ping_result_write = []
@@ -27,6 +36,11 @@ def ping(result):
 
     return ping_result_write
 
+'''
+解析cpu使用率和内存剩余率
+cpu_mem_raw：list cpu_mem_raw[1]为CPU输出信息、cpu_mem_raw[2]为内存输出信息
+return dict 解析后的数据 eg: {"cpu":40,"mem":60}
+'''
 
 def cpu_mem(cpu_mem_raw):
     result = {}
@@ -67,7 +81,7 @@ def interface(interface_raw):
 '''
 解析流量
 flow_raw：list 流量原始信息
-return list 处理后的流量数据 eg:[{'in': '17.0', 'out': '51.0'},{'in': '8.0', 'out': '32.0'}]
+return list 解析后的流量数据 eg:[{'in': '17.0', 'out': '51.0'},{'in': '8.0', 'out': '32.0'}]
 '''
 
 

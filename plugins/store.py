@@ -7,14 +7,25 @@ import os
 import openpyxl
 import time
 
-#打开表格文件，返回需要打开的表格对象、表格最大行、需要保存的文件名
+'''
+此模块用于将数据保存在excel文件中
+读取excel/template.xlsx文件并另存为：
+excel/易盛上海分公司日常巡检表_{日期}.xlsx
+'''
+
+
+'''
+打开表格文件
+return dict 包含需要保存的文件名，模板表格对象、表格最大行
+'''
+
 def open_xlsx():
-    filename = 'archive/易盛上海分公司日常巡检表_' + time.strftime('%Y-%m-%d',
+    filename = 'excel/易盛上海分公司日常巡检表_' + time.strftime('%Y-%m-%d',
                                                time.localtime()) + '.xlsx'
     if (os.path.exists(filename)):
         wb = openpyxl.load_workbook(filename)
     else:
-        wb = openpyxl.load_workbook('archive/易盛上海分公司日常巡检表V3.3.xlsx')
+        wb = openpyxl.load_workbook('excel/template.xlsx')
     ws = wb.active
     max = ws.max_row
     return ({"filename": filename, "wb": wb, "max_raw": max})
@@ -56,13 +67,18 @@ def interface(device, interface_result):
 
 
 '''
-保存流量结果
+根据当前时间保存流量结果
 device：str 设备名
 flow_result：list eg:[{'in': '17.0', 'out': '51.0'},{'in': '8.0', 'out': '32.0'}]
 '''
 
 
 def flow(device, flow_result):
+    hour=time.strftime('%H',time.localtime())
+    if (hour==10):
+        col=7
+    else if (hour==22):
+        col=8
     wb_info = open_xlsx()
     wb = wb_info["wb"]
     ws = wb.active
@@ -71,7 +87,6 @@ def flow(device, flow_result):
         if (ws.cell(row=work_row, column=4).value == device):
             write_rows.append(work_row)
     for i, v in enumerate(flow_result):
-        col = 8 if (ws.cell(row=write_rows[i], column=7).value) else 7
         ws.cell(row=write_rows[i], column=col).value = str(v['in'])
         ws.cell(row=write_rows[i], column=(col + 2)).value = str(v['out'])
     wb.save(wb_info["filename"])
