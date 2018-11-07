@@ -76,7 +76,7 @@ def run(tables):
             y = yaml.load(f)
             tmp = read_csv(y['ip'], y['commands'])
             if tables == 'ping':
-                print(y['device_name'])
+                # print(y['device_name'])
                 store.ping(y['device_name'], parse.ping(tmp))
 
             if tables == 'cpu_memory':
