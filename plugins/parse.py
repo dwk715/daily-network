@@ -24,7 +24,7 @@ def ping(result):
             matchObj = re.search(
                 r'.* rate is (.*?) .*max = (.*?)/(.*?)/(.*?).*', row,
                 re.M | re.I)
-            percent = 100 - int(matchObj.group(1))
+            percent = 100 - float(matchObj.group(1))
             avg = matchObj.group(3)
 
             ping_result = {
