@@ -18,7 +18,7 @@ class logmode(object):
         self.log_name = os.path.join(self.log_dir, self.log_filename)
 
         fh = logging.handlers.TimedRotatingFileHandler(
-            self.log_name, mode='a', when='D', interval=1, backupCount=0)
+            self.log_name, when='D', interval=1, backupCount=0)
         #fh.suffix = datetime.datetime.now().strftime('-%Y-%m-%d') + '.log'
         fh.suffix = "%Y-%m-%d.log"
         fh.setLevel(logging.INFO)
@@ -41,5 +41,4 @@ class logmode(object):
         fh.close()
         #sh.close()
 
-    def getlog(self):
-        return self.logger
+log_instance = logmode('daily-network').logger

@@ -12,9 +12,9 @@ import sys
 sys.path.append('plugins')
 import store
 import parse
-from log import logmode
+from log import log_instance
 
-log_ap = logmode('daily-network').getlog()
+
 
 def connect(device_info, commands):
     ip = device_info[0]
@@ -37,7 +37,8 @@ def connect(device_info, commands):
         'secret': secret,  # optional, defaults to ''
         'verbose': False,  # optional, defaults to False
     }
-    log_ap.info("'{0}'-'{1}' start connecting.".format(ip, name))
+
+    log_instance.info("'{0}'-'{1}' start connecting.".format(ip, name))
     net_connect = ConnectHandler(**cisco_device)
     net_connect.enable()
 
@@ -75,19 +76,19 @@ def run(tables):
             y = yaml.load(f)
             tmp = read_csv(y['ip'], y['commands'])
             if tables == 'ping':
-                print(y['device_name'], tmp)
+                print(y['device_name'])
                 store.ping(y['device_name'], parse.ping(tmp))
 
             if tables == 'cpu_memory':
-                print(y['device_name'], tmp)
+                # print(y['device_name'], tmp)
                 store.cpu_mem(y['device_name'], parse.cpu_mem(tmp))
 
             if tables == 'flow':
-                print(y['device_name'], tmp)
+                # print(y['device_name'], tmp)
                 store.flow(y['device_name'], parse.flow(tmp))
 
             if tables == 'interface':
-                print(y['device_name'], tmp)
+                # print(y['device_name'], tmp)
                 store.interface(y['device_name'], parse.interface(tmp))
 
         else:

@@ -7,9 +7,10 @@ from apscheduler.schedulers.blocking import BlockingScheduler
 import sys
 sys.path.append('plugins')
 import task
-from log import logmode
+from log import log_instance
+# from log import logmode
 
-log_ap = logmode('daily-network').getlog()
+# log_ap = logmode('daily-network').getlog()
 
 
 def job_ping():
@@ -43,7 +44,9 @@ def main():
     except (KeyboardInterrupt, SystemExit):
         scheduler.shutdown()
     except Exception as e:
-        log_ap.error('e')
+        log_instance.error('e')
+    # task.run('ping')
+    
 
 
 if __name__ == '__main__':
