@@ -5,6 +5,7 @@
 import time
 import os
 import re
+from log import log_instance
 '''
 此模块用于解析网络设备执行命令后的返回结果
 '''
@@ -16,25 +17,25 @@ return list 解析后的ping数据 eg [{"loss":0,"time":6},{"loss":1,"time":7}]
 
 
 def ping(result):
-    ping_result_write = []
-    for row in result:
-        if row == '':
-            pass
-        else:
-            matchObj = re.search(
-                r'.* rate is (.*?) percent\s[(](\d+)/(\d+)[)]\,.*max = (.*?)/(.*?)/(.*?).*', row,
-                re.M | re.I)
-            over = float(matchObj.group(2))
-            total = float(matchObj.group(3))
-            percent = format((total-over)*100/total,"0.1f")
-            # print(percent)
-            avg = matchObj.group(5)
-            ping_result = {
-                'loss': percent,
-                'avg': avg,
-            }
-            ping_result_write.append(ping_result)
-
+    if result is None:
+        log_instance.info("连接失败，请检查设备")
+    else:
+        for row in result:
+            if row == '':
+                pass
+            else:
+                matchObj = re.search(
+                    r'.* rate is (.*?) percent\s[(](\d+)/(\d+)[)]\,.*max = (.*?)/(.*?)/(.*?).*', row,
+                    re.M | re.I)
+                over = float(matchObj.group(2))
+                total = float(matchObj.group(3))
+                percent = format((total-over)*100/total,"0.1f")
+                # print(percent)
+                avg = matchObj.group(5)
+                ping_result = {
+                    'loss': percent,
+                    'avg': avg,
+                }
     return ping_result_write
 
 

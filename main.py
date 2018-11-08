@@ -45,13 +45,13 @@ scheduler.add_job(job_ping, 'cron', day_of_week='0-6', hour=10, minute=10)
 开启scheduler
 '''
 def main():
-    # try:
-    #     scheduler.start()
-    # except (KeyboardInterrupt, SystemExit):
-    #     scheduler.shutdown()
-    # except Exception as e:
-    #     log_instance.error('e')
-    task.run('ping')
+    try:
+        scheduler.start()
+    except (KeyboardInterrupt, SystemExit):
+        scheduler.shutdown()
+    except Exception as e:
+        log_instance.error('e')
+    # task.run('ping')
     
 if __name__ == '__main__':
     main()
