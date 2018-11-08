@@ -89,24 +89,27 @@ def run(tables):
                     store.ping(y['device_name'], parse.ping(tmp))
                 except Exception as e:
                     log_instance.error('e')
-            if tables == 'cpu_memory':
+            elif tables == 'cpu_memory':
                 # print(y['device_name'], tmp)
                 try:
                     store.cpu_mem(y['device_name'], parse.cpu_mem(tmp))
                 except Exception as e:
                     log_instance.error('e')
-            if tables == 'flow':
+            elif tables == 'flow':
                 # print(y['device_name'], tmp)
                 try:
                     store.flow(y['device_name'], parse.flow(tmp))
                 except Exception as e:
                     log_instance.error('e')
-            if tables == 'interface':
+            elif tables == 'interface':
                 # print(y['device_name'], tmp)
                 try:
                     store.interface(y['device_name'], parse.interface(tmp))
                 except Exception as e:
                     log_instance.error('e')
+            else:
+                log_instance.error("不存在配置文件，请检查输入的目录名")
         else:
-            pass
             log_instance.error("不存在配置文件，请检查目录结构")
+            pass
+            

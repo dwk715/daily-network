@@ -5,3 +5,4 @@ config.csv
 *.xlsx
 __pycache__/
 *.pyc
+test/

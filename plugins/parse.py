@@ -22,11 +22,13 @@ def ping(result):
             pass
         else:
             matchObj = re.search(
-                r'.* rate is (.*?) .*max = (.*?)/(.*?)/(.*?).*', row,
+                r'.* rate is (.*?) percent\s[(](\d+)/(\d+)[)]\,.*max = (.*?)/(.*?)/(.*?).*', row,
                 re.M | re.I)
-            percent = 100 - float(matchObj.group(1))
-            avg = matchObj.group(3)
-
+            over = float(matchObj.group(2))
+            total = float(matchObj.group(3))
+            percent = format((total-over)*100/total,"0.1f")
+            # print(percent)
+            avg = matchObj.group(5)
             ping_result = {
                 'loss': percent,
                 'avg': avg,
@@ -56,7 +58,8 @@ def cpu_mem(cpu_mem_raw):
     mem_regMatch = switch_mem_reg.match(
         cpu_mem_raw[2]) or firewall_mem_reg.match(
             cpu_mem_raw[2]) or router_mem_reg.match(cpu_mem_raw[2])
-    result['cpu'] = cpu_regMatch.groupdict()['cpu']
+    if cpu_regMatch:
+        result['cpu'] = cpu_regMatch.groupdict()['cpu']
     if 'used_rate' in mem_regMatch.groupdict():
         result['mem'] = 100 - (float(mem_regMatch.groupdict()['used_rate']))
     if 'free_rate' in mem_regMatch.groupdict():

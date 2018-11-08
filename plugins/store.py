@@ -75,10 +75,7 @@ flow_result：list eg:[{'in': '17.0', 'out': '51.0'},{'in': '8.0', 'out': '32.0'
 
 def flow(device, flow_result):
     hour = time.strftime('%H', time.localtime())
-    if (int(hour) == 10):
-        col = 7
-    elif (int(hour) == 22):
-        col = 8
+    col=7 if (int(hour) < 12) else 8
     wb_info = open_xlsx()
     wb = wb_info["wb"]
     ws = wb.active
@@ -87,8 +84,8 @@ def flow(device, flow_result):
         if (ws.cell(row=work_row, column=4).value == device):
             write_rows.append(work_row)
     for i, v in enumerate(flow_result):
-        ws.cell(row=write_rows[i], column=col).value = str(v['in'])
-        ws.cell(row=write_rows[i], column=(col + 2)).value = str(v['out'])
+        ws.cell(row=write_rows[i], column=(col + 2)).value = str(v['in'])
+        ws.cell(row=write_rows[i], column=col).value = str(v['out'])
     wb.save(wb_info["filename"])
 
 
@@ -109,7 +106,7 @@ def ping(device, ping_result):
         if (ws.cell(row=work_row, column=4).value == device):
             write_rows.append(work_row)
     for i, v in enumerate(ping_result):
-        if (v['loss'] > 0):
+        if (float(v['loss']) > 0):
             ws.cell(
                 row=write_rows[i],
                 column=5).fill = openpyxl.styles.PatternFill(
