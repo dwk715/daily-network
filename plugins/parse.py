@@ -65,7 +65,7 @@ def cpu_mem(cpu_mem_raw):
             cpu_match = cpu_reg.match(raw)
             if cpu_match:
                 result['cpu'] = cpu_match.groupdict()['cpu']
-        elif "memory" in raw:
+        elif "Free" in raw or "DRAM" in raw:
             mem_regmatch = switch_mem_reg.match(raw) or firewall_mem_reg.match(
                 raw) or router_mem_reg.match(raw)
             if mem_regmatch:
@@ -132,12 +132,12 @@ def flow(flow_raw):
         flow_match = flow_reg.match(raw)
         if flow_match:
             for k, v in flow_match.groupdict().items():
-                if 'bytes' in flow_result:
+                if 'bytes' in raw:
                     v = format(
                         float(re.findall("\d+", v)[0]) * 8 / (1024 * 1024),
                         "0.3f")
                     result[k] = v
-                elif 'bit' in flow_result:
+                elif 'bit' in raw:
                     v = format(
                         float(re.findall("\d+", v)[0]) / (1024 * 1024), "0.3f")
                     result[k] = v

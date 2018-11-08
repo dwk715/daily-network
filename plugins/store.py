@@ -25,8 +25,8 @@ def open_xlsx():
     try:
         wb = openpyxl.load_workbook(open_file)
         ws = wb.active
-    except IOError, e:
-        log_instance.critical("open file error!", e.message)
+    except IOError as e:
+        log_instance.critical("open file error!", e)
     if open_file == 'excel/template.xlsx':
         ws.cell(
             row=2, column=1).value = time.strftime('日期: %Y 年 %m 月 %d 日',
@@ -108,10 +108,9 @@ def ping(device, ping_result):
                 and not ws.cell(row=i, column=5).value):
             ws.cell(row=i, column=5).value = str(ping_result['loss'])
             ws.cell(row=i, column=6).value = str(ping_result['avg'])
-            if (float(v['loss']) > 0):
+            if (float(ping_result['loss']) > 0):
                 ws.cell(
-                    row=write_rows[i],
-                    column=5).fill = openpyxl.styles.PatternFill(
+                    row=i, column=5).fill = openpyxl.styles.PatternFill(
                         "solid", fgColor="FFC125")
             wb_info["wb"].save(wb_info["filename"])
             return True
