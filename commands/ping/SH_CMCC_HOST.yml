@@ -1,9 +1,9 @@
 ip: 172.16.230.187
 device_name: SH_TG_RT01
-device_type: Route
+device_type: Router
+line: SH_CMCC_HOST
 commands: [
   terminal length 0,
-  show int g 0/0/0 | in 5 minute,
-  show int g 0/0/1 | in 5 minute,
+  ping 10.98.0.1 repeat 100,
   terminal length 25
 ]

@@ -1,0 +1,9 @@
+ip: 172.16.230.130
+device_name: SX_3945A
+device_type: Switch
+line: HK_CNUC
+commands: [
+  terminal length 0,
+  show int g 0/1 | in 5 minute,
+  terminal length 25
+]

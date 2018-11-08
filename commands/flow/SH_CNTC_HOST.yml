@@ -1,0 +1,9 @@
+ip: 172.16.230.187
+device_name: SH_TG_RT01
+device_type: Router
+line: SH_CNTC_HOST
+commands: [
+  terminal length 0,
+  show int g 0/0/0 | in 5 minute,
+  terminal length 25
+]
