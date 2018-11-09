@@ -50,7 +50,7 @@ def main():
     except (KeyboardInterrupt, SystemExit):
         scheduler.shutdown()
     except Exception as e:
-        log_instance.error('e')
+        log_instance.error(e)
     # task.run('ping')
     
 if __name__ == '__main__':
