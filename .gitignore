@@ -6,3 +6,5 @@ config.csv
 __pycache__/
 *.pyc
 test/
+data/
+mongod.cfg
