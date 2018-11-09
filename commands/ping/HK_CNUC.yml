@@ -5,6 +5,5 @@ line: HK_CNUC
 commands: [
   terminal length 0,
   ping 172.17.1.66 repeat 100,
-  ping 172.17.1.73 repeat 100,
   terminal length 25
 ]
