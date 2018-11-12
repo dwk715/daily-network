@@ -1,9 +1,9 @@
-ip: 172.16.230.136
+ip: 172.16.236.131
 device_name: BJ_ASA5525
 device_type: ASA
 line: BJ_CNUC
 commands: [
   terminal pager 0,
-  show int g 0/0 | in 1 minute,
+  show int g0/0 | in 1 minute,
   terminal pager 25
 ]

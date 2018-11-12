@@ -8,9 +8,6 @@ import sys
 sys.path.append('plugins')
 import task
 from log import log_instance
-# from log import logmode
-
-# log_ap = logmode('daily-network').getlog()
 
 
 def job_ping():
@@ -28,6 +25,7 @@ def job_cup_memory():
 def job_interface():
     task.run('interface')
 
+
 '''
 实例化BlockingScheduler
 添加定时计划
@@ -39,11 +37,12 @@ scheduler.add_job(
 scheduler.add_job(job_flow, 'cron', day_of_week='0-6', hour=10, minute=30)
 scheduler.add_job(job_flow, 'cron', day_of_week='0-6', hour=22, minute=20)
 scheduler.add_job(job_ping, 'cron', day_of_week='0-6', hour=10, minute=10)
-
 '''
 主函数
 开启scheduler
 '''
+
+
 def main():
     try:
         scheduler.start()
@@ -51,7 +50,7 @@ def main():
         scheduler.shutdown()
     except Exception as e:
         log_instance.error(e)
-    # task.run('ping')
-    
+
+
 if __name__ == '__main__':
     main()
