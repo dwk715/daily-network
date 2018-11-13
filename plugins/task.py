@@ -86,7 +86,7 @@ def run(tables):
             if tables == 'ping':
                 # print(y['device_name'])
                 try:
-                    store.ping(y['device_name'], parse.ping(tmp))
+                    store.ping(y['line'], parse.ping(tmp))
                 except Exception as e:
                     log_instance.error(e)
             elif tables == 'cpu_memory':
@@ -98,7 +98,7 @@ def run(tables):
             elif tables == 'flow':
                 # print(y['device_name'], tmp)
                 try:
-                    store.flow(y['device_name'], parse.flow(tmp))
+                    store.flow(y['line'], parse.flow(tmp))
                 except Exception as e:
                     log_instance.error(e)
             elif tables == 'interface':

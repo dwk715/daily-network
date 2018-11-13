@@ -1,6 +1,7 @@
 ip: 172.16.230.130
 device_name: SX_3945A
 device_type: Switch
+line: BJ_SX
 commands: [
   terminal length 0,
   ping 172.17.1.73 repeat 100,

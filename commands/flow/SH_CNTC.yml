@@ -1,7 +1,7 @@
 ip: 172.16.230.136
 device_name: SH_5525B
 device_type: ASA
-line: CNTC
+line: SH_CNTC
 commands: [
   terminal pager 0,
   show int g 0/2 | in 1 minute,

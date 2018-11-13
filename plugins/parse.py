@@ -5,6 +5,7 @@
 import time
 import os
 import re
+import sys
 sys.path.append('plugins')
 from log import log_instance
 '''
