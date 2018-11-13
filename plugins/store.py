@@ -55,7 +55,7 @@ def ping(line_name, result):
             "flow_out_pm": []
         }
     )
-    if collection_line.find_one({'name':line_name}) is None:
+    if collection_line.count_documents({'name':line_name}) is None:
         collection_line.find_one_and_update(
             {'name':line_name},
             {'$set':ping_line},
@@ -94,7 +94,7 @@ def flow(line_name, result):
             "flow_out_pm": []
         }
     )
-    if collection_line.find_one({'name':line_name}) is None:
+    if collection_line.count_documents({'name':line_name}) is None:
         collection_line.find_one_and_update(
             {'name':line_name},
             {'$set':flow_line},
@@ -156,7 +156,7 @@ def interface(device_name, result):
     }
     )
     
-    if collection_device.find_one({'name':device_name}) is None:
+    if collection_device.count_documents({'name':device_name}) is None:
         collection_line.find_one_and_update(
             {'name':device_name},
             {'$set':interface_device},
@@ -192,7 +192,7 @@ def cpu_men(device_name, result):
     "memory": [],  
     }
     )
-    if collection_device.find_one({'name':device_name}) is None:
+    if collection_device.count_documents({'name':device_name}) is None:
         collection_device.find_one_and_update(
             {'name':device_name},
             {'$set':cpu_men_device},
