@@ -6,7 +6,7 @@
 import datetime
 from pymongo import MongoClient
 import copy
-Client = MongoClient('mongodb://172.25.25.11:27017/')
+Client = MongoClient('mongodb://127.0.0.1:27017/')
 try:
     db = Client['daily_network']
 except Exception as e:
@@ -14,9 +14,7 @@ except Exception as e:
 collection_line = db['line']
 collection_device = db['device']
 current_date = datetime.datetime.now().strftime("%Y-%m-%d")
-# current_date = '2018-11-12'
 hour = int(datetime.datetime.now().strftime("%H"))
-# hour=11
 
 line = {
     "name": None,  # name --> string 线路名称
@@ -57,7 +55,7 @@ def ping(line_name, result):
             'name': line_name
         }, {'$set': ping_line},
                                             upsert=True)
-    
+
     collection_line.find_one_and_update({
         'name': line_name
     }, {'$push': {
@@ -94,7 +92,7 @@ def flow(line_name, result):
             'name': line_name
         }, {'$set': flow_line},
                                             upsert=True)
-    
+
     if hour < 12:
         flow_in_am = result['in']
         flow_out_am = result['out']
@@ -159,7 +157,7 @@ def interface(device_name, result):
         collection_device.find_one_and_update({
             'name': device_name
         }, {'$set': interface_device},
-                                            upsert=True)
+                                              upsert=True)
 
     collection_device.find_one_and_update({
         'name': device_name
@@ -169,10 +167,9 @@ def interface(device_name, result):
                 'date': current_date,
                 'total': total,
                 'aviliable': aviliable
-                }
             }
         }
-    )
+    })
 
 
 def cpu_mem(device_name, result):
@@ -191,7 +188,7 @@ def cpu_mem(device_name, result):
             'name': device_name
         }, {'$set': cpu_men_device},
                                               upsert=True)
-   
+
     collection_device.find_one_and_update({
         'name': device_name
     }, {'$push': {

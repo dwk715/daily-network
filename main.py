@@ -52,10 +52,10 @@ def main():
     except Exception as e:
         log_instance.error(e)
     
-    # task.run('flow')
+    # # task.run('flow')
     # task.run('ping')
-    # task.run('cpu_memory')
-    # task.run('interface')
+    # # task.run('cpu_memory')
+    # # task.run('interface')
     
 
 

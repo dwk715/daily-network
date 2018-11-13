@@ -107,7 +107,7 @@ def ping(device, ping_result):
         if (ws.cell(row=i, column=4).value == device
                 and not ws.cell(row=i, column=5).value):
             ws.cell(row=i, column=5).value = str(ping_result['loss'])
-            ws.cell(row=i, column=6).value = str(ping_result['avg'])
+            ws.cell(row=i, column=6).value = str(ping_result['delay_avg'])
             if (float(ping_result['loss']) > 0):
                 ws.cell(
                     row=i, column=5).fill = openpyxl.styles.PatternFill(

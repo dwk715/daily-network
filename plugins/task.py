@@ -12,6 +12,7 @@ import sys
 sys.path.append('plugins')
 import store
 import parse
+import write_excel
 from log import log_instance
 
 '''
@@ -84,27 +85,31 @@ def run(tables):
             y = yaml.load(f)
             tmp = read_csv(y['ip'], y['commands'])
             if tables == 'ping':
-                # print(y['device_name'])
                 try:
-                    store.ping(y['line'], parse.ping(tmp))
+                    parse_result=parse.ping(tmp)
+                    store.ping(y['line'], parse_result)
+                    write_excel.ping(y['device_name'], parse_result)
                 except Exception as e:
                     log_instance.error(e)
             elif tables == 'cpu_memory':
-                # print(y['device_name'], tmp)
                 try:
-                    store.cpu_mem(y['device_name'], parse.cpu_mem(tmp))
+                    parse_result=parse.cpu_mem(tmp)
+                    store.cpu_mem(y['device_name'], parse_result)
+                    write_excel.cpu_mem(y['device_name'], parse_result)
                 except Exception as e:
                     log_instance.error(e)
             elif tables == 'flow':
-                # print(y['device_name'], tmp)
                 try:
-                    store.flow(y['line'], parse.flow(tmp))
+                    parse_result=parse.flow(tmp)
+                    store.flow(y['line'], parse_result)
+                    write_excel.flow(y['device_name'], parse_result)
                 except Exception as e:
                     log_instance.error(e)
             elif tables == 'interface':
-                # print(y['device_name'], tmp)
                 try:
-                    store.interface(y['device_name'], parse.interface(tmp))
+                    parse_result=parse.interface(tmp)
+                    store.interface(y['device_name'], parse_result)
+                    write_excel.interface(y['device_name'], parse_result)
                 except Exception as e:
                     log_instance.error(e)
             else:
