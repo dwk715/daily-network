@@ -4,5 +4,6 @@ device_type: Switch
 commands: [
   terminal length 0,
   show ip int br | ex up,
+  show ip int br,
   terminal length 25
 ]

@@ -5,6 +5,8 @@
 import time
 import os
 import re
+import sys
+sys.path.append('plugins')
 from log import log_instance
 '''
 此模块用于解析网络设备执行命令后的返回结果
@@ -34,7 +36,7 @@ def ping(result):
                 avg = matchObj.group(5)
                 ping_result = {
                     'loss': percent,
-                    'avg': avg,
+                    'delay_avg': avg,
                 }
     return ping_result
 

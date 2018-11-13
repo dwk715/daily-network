@@ -36,7 +36,8 @@ scheduler.add_job(
     job_cup_memory, 'cron', day_of_week='0-6', hour=10, minute=30)
 scheduler.add_job(job_flow, 'cron', day_of_week='0-6', hour=10, minute=30)
 scheduler.add_job(job_flow, 'cron', day_of_week='0-6', hour=22, minute=20)
-scheduler.add_job(job_ping, 'cron', day_of_week='0-6', hour=8, minute=30)
+scheduler.add_job(job_ping, 'cron', day_of_week='0-6', hour=8, minute=00)
+
 '''
 主函数
 开启scheduler
@@ -51,6 +52,12 @@ def main():
     except Exception as e:
         log_instance.error(e)
 
+    
+    # task.run('flow')
+    # task.run('ping')
+    # task.run('cpu_memory')
+    # task.run('interface')
+    
 
 if __name__ == '__main__':
     main()
