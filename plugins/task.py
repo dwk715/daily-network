@@ -8,12 +8,12 @@ from netmiko import ConnectHandler
 import csv
 import yaml
 import os
-import sys
-sys.path.append('plugins')
-import store
-import parse
-import write_excel
-from log import log_instance
+from . import store
+from . import parse
+from . import write_excel
+from .log import log_instance
+from .slack_bot import dn_say
+import traceback
 
 '''
 连接设备
@@ -91,6 +91,7 @@ def run(tables):
                     write_excel.ping(y['device_name'], parse_result)
                 except Exception as e:
                     log_instance.error(e)
+                    dn_say(traceback.format_exc())
             elif tables == 'cpu_memory':
                 try:
                     parse_result=parse.cpu_mem(tmp)
@@ -98,6 +99,7 @@ def run(tables):
                     write_excel.cpu_mem(y['device_name'], parse_result)
                 except Exception as e:
                     log_instance.error(e)
+                    dn_say(traceback.format_exc())
             elif tables == 'flow':
                 try:
                     parse_result=parse.flow(tmp)
@@ -105,6 +107,7 @@ def run(tables):
                     write_excel.flow(y['device_name'], parse_result)
                 except Exception as e:
                     log_instance.error(e)
+                    dn_say(traceback.format_exc())
             elif tables == 'interface':
                 try:
                     parse_result=parse.interface(tmp)
@@ -112,9 +115,12 @@ def run(tables):
                     write_excel.interface(y['device_name'], parse_result)
                 except Exception as e:
                     log_instance.error(e)
+                    dn_say(traceback.format_exc())
             else:
                 log_instance.error("不存在配置文件，请检查输入的目录名")
+                dn_say(traceback.format_exc())
         else:
             log_instance.error("不存在配置文件，请检查目录结构")
+            dn_say(traceback.format_exc())
             pass
             

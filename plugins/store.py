@@ -6,11 +6,17 @@
 import datetime
 from pymongo import MongoClient
 import copy
+from .slack_bot import dn_say
+import traceback 
+
 Client = MongoClient('mongodb://127.0.0.1:27017/')
+
 try:
-    db = Client['daily_network']
+    db = Client['daily_network_dev']
 except Exception as e:
     print(e)
+    dn_say(traceback.format_exc())
+
 collection_line = db['line']
 collection_device = db['device']
 current_date = datetime.datetime.now().strftime("%Y-%m-%d")

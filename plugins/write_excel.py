@@ -6,7 +6,9 @@
 import os
 import openpyxl
 import time
-from log import log_instance
+from .log import log_instance
+from .slack_bot import dn_say
+import traceback
 '''
 此模块用于将数据保存在excel文件中
 读取excel/template.xlsx文件并另存为：
@@ -27,6 +29,7 @@ def open_xlsx():
         ws = wb.active
     except IOError as e:
         log_instance.critical("open file error!", e)
+        dn_say(traceback.format_exc())
     if open_file == 'excel/template.xlsx':
         ws.cell(
             row=2, column=1).value = time.strftime('日期: %Y 年 %m 月 %d 日',

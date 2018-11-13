@@ -4,10 +4,13 @@
 # Autor :  zlw dwk zly
 
 from apscheduler.schedulers.blocking import BlockingScheduler
-import sys
-sys.path.append('plugins')
-import task
-from log import log_instance
+
+from plugins import task
+import plugins.task as task
+from plugins.log import log_instance
+import traceback
+from plugins.slack_bot import dn_say
+
 # from log import logmode
 
 # log_ap = logmode('daily-network').getlog()
@@ -28,6 +31,7 @@ def job_cup_memory():
 def job_interface():
     task.run('interface')
 
+
 '''
 实例化BlockingScheduler
 添加定时计划
@@ -39,26 +43,25 @@ scheduler.add_job(
 scheduler.add_job(job_flow, 'cron', day_of_week='0-6', hour=10, minute=30)
 scheduler.add_job(job_flow, 'cron', day_of_week='0-6', hour=22, minute=20)
 scheduler.add_job(job_ping, 'cron', day_of_week='0-6', hour=8, minute=00)
-
 '''
 主函数
 开启scheduler
 '''
+
+
 def main():
-    try:
-        scheduler.start()
-    except (KeyboardInterrupt, SystemExit):
-        scheduler.shutdown()
-    except Exception as e:
-        log_instance.error(e)
-    
-    # # task.run('flow')
+    # try:
+    #     scheduler.start()
+    # except Exception as e:
+    #     scheduler.shutdown()
+    #     log_instance.error(e)
+    #     dn_say(traceback.format_exc())
+
+    # task.run('flow')
     # task.run('ping')
-    # # task.run('cpu_memory')
-    # # task.run('interface')
-    
+    task.run('cpu_memory')
+    # task.run('interface')
 
 
-    
 if __name__ == '__main__':
     main()
