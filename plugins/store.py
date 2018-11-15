@@ -50,8 +50,7 @@ device = {
         result: Dictionary 结果{'loss': float,'delay_avg': float}
 
 """
-line_name = 'asdasdsa'
-result = {'loss': '122','delay_avg': '345'}
+
 
 def ping(line_name, result):
     current_date = datetime.datetime.now().strftime("%Y-%m-%d")
@@ -101,7 +100,7 @@ def ping(line_name, result):
         result: Dictionary 结果{'in': float,'out': float}
 
 """
-ping(line_name,result)
+
 
 def flow(line_name, result):
     current_date = datetime.datetime.now().strftime("%Y-%m-%d")
