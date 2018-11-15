@@ -4,16 +4,10 @@
 # Author :  zlw dwk zly
 
 from apscheduler.schedulers.blocking import BlockingScheduler
-from plugins import task
 import plugins.task as task
 from plugins.log import log_instance
 import traceback
 from plugins.slack_bot import dn_say
-
-# from log import logmode
-
-# log_ap = logmode('daily-network').getlog()
-
 
 
 def job_ping():
@@ -50,7 +44,6 @@ scheduler.add_job(job_ping, 'cron', day_of_week='0-6', hour=8, minute=00)
 
 
 def main():
-<<<<<<< HEAD
     # try:
     #     scheduler.start()
     # except Exception as e:
@@ -58,27 +51,11 @@ def main():
     #     log_instance.error(e)
     #     dn_say(traceback.format_exc())
 
-    # task.run('flow')
-    # task.run('ping')
+    task.run('flow')
+    task.run('ping')
     task.run('cpu_memory')
-    # task.run('interface')
+    task.run('interface')
 
 
-=======
-    try:
-        scheduler.start()
-    except (KeyboardInterrupt, SystemExit):
-        scheduler.shutdown()
-    except Exception as e:
-        log_instance.error(e)
-
-    
-    # task.run('flow')
-    # task.run('ping')
-    # task.run('cpu_memory')
-    # task.run('interface')
-    
-
->>>>>>> 8c7a6f7998ee67790bb60367be684a2b1f95d9dc
 if __name__ == '__main__':
     main()

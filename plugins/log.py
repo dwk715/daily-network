@@ -29,7 +29,7 @@ class logmode(object):
         sh = logging.StreamHandler()
         sh.setLevel(logging.DEBUG)
         '''
-        formatter = logging.Formatter('[%(asctime)s] %(message)s')
+        formatter = logging.Formatter('[%(asctime)s] [%(levelname)s] %(message)s')
         fh.setFormatter(formatter)
         #sh.setFormatter(formatter)
         self.logger.addHandler(fh)
