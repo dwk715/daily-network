@@ -45,6 +45,7 @@ yapf = "==0.24.0"
 APScheduler = "==3.5.3"
 Pygments = "==2.2.0"
 PyYAML = "==3.13"
+slackclient = "*"
 
 [requires]
 python_version = "3.6"

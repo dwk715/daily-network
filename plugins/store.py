@@ -1,20 +1,26 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 # Date: 2018/11/9
-# Autor :  zlw dwk zly
+# Author :  zlw dwk zly
 
 import datetime
 from pymongo import MongoClient
 import copy
-Client = MongoClient('mongodb://127.0.0.1:27017/')
+from .slack_bot import dn_say
+import traceback 
+
+Client = MongoClient('mongodb://172.25.25.11:27017/')
+
 try:
-    db = Client['daily_network']
+    db = Client['daily_network_dev']
 except Exception as e:
     print(e)
+    dn_say(traceback.format_exc())
+
 collection_line = db['line']
 collection_device = db['device']
-current_date = datetime.datetime.now().strftime("%Y-%m-%d")
-hour = int(datetime.datetime.now().strftime("%H"))
+
+
 
 line = {
     "name": None,  # name --> string 线路名称
@@ -35,8 +41,19 @@ device = {
     "memory": [],  # memory --> [] 内存百分比
 }
 
+"""将ping的结果写入数据库.
+    
+    根据linename创建ping文档，增量更新
+
+    Args:
+        linename:  string 线路名称
+        result: Dictionary 结果{'loss': float,'delay_avg': float}
+
+"""
+
 
 def ping(line_name, result):
+    current_date = datetime.datetime.now().strftime("%Y-%m-%d")
     loss = result['loss']
     delay = result['delay_avg']
     ping_line = copy.deepcopy(line)
@@ -50,7 +67,7 @@ def ping(line_name, result):
         "flow_in_pm": [],
         "flow_out_pm": []
     })
-    if collection_line.find_one({'name': line_name}) is None:
+    if not collection_line.count_documents({'name': line_name}) :
         collection_line.find_one_and_update({
             'name': line_name
         }, {'$set': ping_line},
@@ -74,8 +91,20 @@ def ping(line_name, result):
         }
     }})
 
+"""将flow的结果写入数据库.
+    
+    根据linename创建flow文档，增量更新
+
+    Args:
+        linename:  string 线路名称
+        result: Dictionary 结果{'in': float,'out': float}
+
+"""
+
 
 def flow(line_name, result):
+    current_date = datetime.datetime.now().strftime("%Y-%m-%d")
+    hour = int(datetime.datetime.now().strftime("%H"))
     flow_line = copy.deepcopy(line)
     flow_line.update({
         "name": line_name,
@@ -87,7 +116,7 @@ def flow(line_name, result):
         "flow_in_pm": [],
         "flow_out_pm": []
     })
-    if collection_line.find_one({'name': line_name}) is None:
+    if not collection_line.count_documents({'name': line_name}) :
         collection_line.find_one_and_update({
             'name': line_name
         }, {'$set': flow_line},
@@ -140,8 +169,19 @@ def flow(line_name, result):
             }
         })
 
+"""将interface的结果写入数据库.
+    
+    根据linename创建interface文档，增量更新
+
+    Args:
+        linename:  string 线路名称
+        result: Dictionary 结果{'total': float,'aviable': float}
+
+"""
+
 
 def interface(device_name, result):
+    current_date = datetime.datetime.now().strftime("%Y-%m-%d")
     total = result['total']
     aviliable = result['aviable']
     interface_device = copy.deepcopy(device)
@@ -153,7 +193,7 @@ def interface(device_name, result):
         "memory": [],
     })
 
-    if collection_device.find_one({'name': device_name}) is None:
+    if not collection_device.count_documents({'name': device_name}):
         collection_device.find_one_and_update({
             'name': device_name
         }, {'$set': interface_device},
@@ -171,8 +211,18 @@ def interface(device_name, result):
         }
     })
 
+"""将cpu_mem的结果写入数据库.
+    
+    根据linename创建cpu_mem文档，增量更新
+
+    Args:
+        linename:  string 线路名称
+        result: Dictionary 结果{'cpu': float,'mem': float}
+
+"""
 
 def cpu_mem(device_name, result):
+    current_date = datetime.datetime.now().strftime("%Y-%m-%d")
     cpu = result['cpu']
     mem = result['mem']
     cpu_men_device = copy.deepcopy(device)
@@ -183,7 +233,7 @@ def cpu_mem(device_name, result):
         "cpu": [],
         "memory": [],
     })
-    if collection_device.find_one({'name': device_name}) is None:
+    if not collection_device.count_documents({'name': device_name}):
         collection_device.find_one_and_update({
             'name': device_name
         }, {'$set': cpu_men_device},

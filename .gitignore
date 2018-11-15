@@ -8,3 +8,4 @@ __pycache__/
 test/
 data/
 mongod.cfg
+slack_bot.py
