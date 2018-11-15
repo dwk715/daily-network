@@ -1,11 +1,9 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 # Date: 2018/11/5
-# Autor :  zlw dwk zly
+# Author :  zlw dwk zly
 
 from apscheduler.schedulers.blocking import BlockingScheduler
-<<<<<<< HEAD
-
 from plugins import task
 import plugins.task as task
 from plugins.log import log_instance
@@ -15,12 +13,7 @@ from plugins.slack_bot import dn_say
 # from log import logmode
 
 # log_ap = logmode('daily-network').getlog()
-=======
-import sys
-sys.path.append('plugins')
-import task
-from log import log_instance
->>>>>>> 8c7a6f7998ee67790bb60367be684a2b1f95d9dc
+
 
 
 def job_ping():

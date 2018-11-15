@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 # Date: 2018/11/5
-# Autor :  zlw dwk zly
+# Author :  zlw dwk zly
 
 import os
 import openpyxl
@@ -9,6 +9,8 @@ import time
 from .log import log_instance
 from .slack_bot import dn_say
 import traceback
+import pymongo
+
 '''
 此模块用于将数据保存在excel文件中
 读取excel/template.xlsx文件并另存为：

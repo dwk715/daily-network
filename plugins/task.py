@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 # Date: 2018/11/5
-# Autor :  zlw dwk zly
+# Author :  zlw dwk zly
 
 
 from netmiko import ConnectHandler

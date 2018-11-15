@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 # Date: 2018/11/9
-# Autor :  zlw dwk zly
+# Author :  zlw dwk zly
 
 import datetime
 from pymongo import MongoClient
@@ -9,7 +9,7 @@ import copy
 from .slack_bot import dn_say
 import traceback 
 
-Client = MongoClient('mongodb://127.0.0.1:27017/')
+Client = MongoClient('mongodb://172.25.25.11:27017/')
 
 try:
     db = Client['daily_network_dev']
