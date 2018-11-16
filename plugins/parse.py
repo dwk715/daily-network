@@ -4,6 +4,7 @@
 # Author :  zlw zly
 import re
 from .log import log_instance
+
 '''
 此模块用于解析网络设备执行命令后的返回结果
 '''
@@ -86,12 +87,12 @@ def cpu_mem(cpu_mem_raw):
 '''
 解析接口数
 interface_raw：list 原始接口信息
-return dict 解析后的数据 eg:{"total":40,"aviable":10}
+return dict 解析后的数据 eg:{"total":40,"available":10}
 '''
 
 
 def interface(interface_raw):
-    result = {"total": None, "aviable": None}
+    result = {"total": None, "available": None}
     if not interface_raw:
         log_instance.warning("raw interface is None!")
         return result
@@ -101,11 +102,11 @@ def interface(interface_raw):
         if "up" in raw:
             result["total"] = len(re.findall("Ethernet", raw))
         else:
-            result["aviable"] = len(re.findall("Ethernet", raw))
+            result["available"] = len(re.findall("Ethernet", raw))
     if not result["total"]:
         log_instance.warning("parse total interface error!")
-    if not result["aviable"]:
-        log_instance.warning("parse aviable interface error!")
+    if not result["available"]:
+        log_instance.warning("parse available interface error!")
     return result
 
 
