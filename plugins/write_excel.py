@@ -51,6 +51,7 @@ def open_excel():
     filename = 'excel/易盛上海分公司日常巡检表_' + time.strftime(
         '%Y-%m-%d', time.localtime()) + '.xlsx'
     open_file = filename if os.path.exists(filename) else 'excel/template.xlsx'
+    wb_info = {}
     try:
         wb = openpyxl.load_workbook(open_file)
         ws = wb.active
@@ -59,15 +60,16 @@ def open_excel():
                 row=2, column=1).value = time.strftime('日期: %Y 年 %m 月 %d 日',
                                                        time.localtime())
         max = ws.max_row
-        wb_info = {"filename": filename, "wb": wb, "ws": ws, "max_row": max}
-        return wb_info
+        wb_info.update({"filename": filename, "wb": wb, "ws": ws, "max_row": max})
     except IOError as e:
         log_instance.critical("open file error!", e)
         dn_say(traceback.format_exc())
+    return wb_info
 
 
 def read_db_to_write_excel():
     wb_info = open_excel()
+    print(wb_info['filename'])
     ws = wb_info['ws']
     max_row = wb_info['max_row']
     devices = collection_device.find({})
@@ -75,8 +77,19 @@ def read_db_to_write_excel():
     for row in range(5, max_row):
         device_name = ws.cell(row=row, column=1).value
         if collection_device.count_documents({'name': device_name}) == 1:
-            # device_interface =
-            pass
+            device_info = collection_device.find_one({'name': device_name})
+            if device_info['interface']:
+                # 剩余接口写入
+                ws.cell(row=row, column=3).value = str(device_info['interface'][-1]['available'])
+#               # cpu使用率写入
+                ws.cell(row=row, column=5).value = str(device_info['cpu'][-1]['use'])
+                # memory剩余写入
+                ws.cell(row=row, column=5).value = str(device_info['memory'][-1]['remain'])
+
+
+#
+
+
 
 
         
