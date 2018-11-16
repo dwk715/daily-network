@@ -9,7 +9,8 @@ import time
 from .log import log_instance
 from .slack_bot import dn_say
 import traceback
-import pymongo
+from pymongo import MongoClient
+import datetime
 
 '''
 此模块用于将数据保存在excel文件中
@@ -21,23 +22,65 @@ excel/易盛上海分公司日常巡检表_{日期}.xlsx
 return dict 包含需要保存的文件名，模板表格对象、表格最大行
 '''
 
+line_name_convert = {
+    "SH_CNTC": "上海电信",
+    "SH_CNUC": "上海联通",
+    "HK_CNTC": "香港电信",
+    "BJ_CNUC": "北京联通",
+    "HK_PCCW": "电讯盈科",
+    "HK_CNUC": "沪港联通",
+    "SZ_CMCC": "深圳移动",
+    "BJ_SX": "北京数讯",
+    "SH_CNTC_MASTER": "上海电信（主）",
+    "SH_CMCC_MASTER": "上海移动（主）",
+    "SH_CMCC_BACKUP": "上海移动（备）",
+    "SH_CNTC_BACKUP": "上海电信（备）",
+}
 
-def open_xlsx():
+try:
+    Client = MongoClient('mongodb://172.25.25.11:27017/')
+    db = Client['daily_network_dev']
+    collection_line = db['line']
+    collection_device = db['device']
+except Exception as e:
+    print(e)
+    dn_say(traceback.format_exc())
+
+
+def open_excel():
     filename = 'excel/易盛上海分公司日常巡检表_' + time.strftime(
         '%Y-%m-%d', time.localtime()) + '.xlsx'
     open_file = filename if os.path.exists(filename) else 'excel/template.xlsx'
     try:
         wb = openpyxl.load_workbook(open_file)
         ws = wb.active
+        if open_file == 'excel/template.xlsx':
+            ws.cell(
+                row=2, column=1).value = time.strftime('日期: %Y 年 %m 月 %d 日',
+                                                       time.localtime())
+        max = ws.max_row
+        wb_info = {"filename": filename, "wb": wb, "ws": ws, "max_row": max}
+        return wb_info
     except IOError as e:
         log_instance.critical("open file error!", e)
         dn_say(traceback.format_exc())
-    if open_file == 'excel/template.xlsx':
-        ws.cell(
-            row=2, column=1).value = time.strftime('日期: %Y 年 %m 月 %d 日',
-                                                   time.localtime())
-    max = ws.max_row
-    return ({"filename": filename, "wb": wb, "ws": ws, "max_raw": max})
+
+
+def read_db_to_write_excel():
+    wb_info = open_excel()
+    ws = wb_info['ws']
+    max_row = wb_info['max_row']
+    devices = collection_device.find({})
+    today = datetime.datetime.now().strftime("%Y-%m-%d")
+    for row in range(5, max_row):
+        device_name = ws.cell(row=row, column=1).value
+        if collection_device.count_documents({'name': device_name}) == 1:
+            # device_interface =
+            pass
+
+
+        
+
 
 
 '''
@@ -48,9 +91,9 @@ cpu_mem_result：dict eg:{"cpu":40,"mem":60}
 
 
 def cpu_mem(device, cpu_mem_result):
-    wb_info = open_xlsx()
+    wb_info = open_excel()
     ws = wb_info["ws"]
-    for work_row in range(5, wb_info['max_raw']):
+    for work_row in range(5, wb_info['max_row']):
         if (ws.cell(row=work_row, column=1).value == device):
             ws.cell(row=work_row, column=5).value = str(cpu_mem_result['cpu'])
             ws.cell(row=work_row, column=7).value = str(cpu_mem_result['mem'])
@@ -66,9 +109,9 @@ interface_result：dict eg:{"total":40,"aviable":10}
 
 
 def interface(device, interface_result):
-    wb_info = open_xlsx()
+    wb_info = open_excel()
     ws = wb_info["ws"]
-    for work_row in range(5, wb_info['max_raw']):
+    for work_row in range(5, wb_info['max_row']):
         if (ws.cell(row=work_row, column=1).value == device):
             ws.cell(
                 row=work_row,
@@ -87,9 +130,9 @@ flow_result：dict eg:{'in': '17.0', 'out': '51.0'}
 def flow(device, flow_result):
     hour = time.strftime('%H', time.localtime())
     col = 7 if (int(hour) < 12) else 8
-    wb_info = open_xlsx()
+    wb_info = open_excel()
     ws = wb_info["ws"]
-    for i in range(5, wb_info['max_raw']):
+    for i in range(5, wb_info['max_row']):
         if (ws.cell(row=i, column=4).value == device
                 and not ws.cell(row=i, column=col).value):
             ws.cell(row=i, column=(col + 2)).value = str(flow_result['in'])
@@ -106,7 +149,7 @@ ping_result：list 处理后的ping数据 eg {"loss":0,"avg":6}
 
 
 def ping(device, ping_result):
-    wb_info = open_xlsx()
+    wb_info = open_excel()
     ws = wb_info["ws"]
     for i in range(5, 32):
         if (ws.cell(row=i, column=4).value == device
@@ -116,6 +159,6 @@ def ping(device, ping_result):
             if (float(ping_result['loss']) > 0):
                 ws.cell(
                     row=i, column=5).fill = openpyxl.styles.PatternFill(
-                        "solid", fgColor="FFC125")
+                    "solid", fgColor="FFC125")
             wb_info["wb"].save(wb_info["filename"])
             return True
