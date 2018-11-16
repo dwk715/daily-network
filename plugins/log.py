@@ -1,4 +1,7 @@
-# -*- coding:utf-8 -*-
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+# Date: 2018/11/5
+# Author :  zlw zly
 import datetime
 import logging
 import logging.handlers
@@ -29,7 +32,7 @@ class logmode(object):
         sh = logging.StreamHandler()
         sh.setLevel(logging.DEBUG)
         '''
-        formatter = logging.Formatter('[%(asctime)s] %(message)s')
+        formatter = logging.Formatter('[%(asctime)s] [%(levelname)s] %(message)s')
         fh.setFormatter(formatter)
         #sh.setFormatter(formatter)
         self.logger.addHandler(fh)
