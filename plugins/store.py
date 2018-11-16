@@ -12,7 +12,7 @@ from .log import log_instance
 
 try:
     Client = MongoClient('mongodb://172.25.25.11:27017/')
-    db = Client['daily_network_dev']
+    db = Client['daily_network']
     collection_line = db['line']
     collection_device = db['device']
 except Exception as e:
