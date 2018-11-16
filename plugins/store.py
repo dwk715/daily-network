@@ -7,20 +7,17 @@ import datetime
 from pymongo import MongoClient
 import copy
 from .slack_bot import dn_say
-import traceback 
-
-Client = MongoClient('mongodb://172.25.25.11:27017/')
+import traceback
+from .log import log_instance
 
 try:
+    Client = MongoClient('mongodb://172.25.25.11:27017/')
     db = Client['daily_network_dev']
+    collection_line = db['line']
+    collection_device = db['device']
 except Exception as e:
     print(e)
     dn_say(traceback.format_exc())
-
-collection_line = db['line']
-collection_device = db['device']
-
-
 
 line = {
     "name": None,  # name --> string 线路名称
@@ -67,11 +64,11 @@ def ping(line_name, result):
         "flow_in_pm": [],
         "flow_out_pm": []
     })
-    if not collection_line.count_documents({'name': line_name}) :
+    if not collection_line.count_documents({'name': line_name}):
         collection_line.find_one_and_update({
             'name': line_name
         }, {'$set': ping_line},
-                                            upsert=True)
+            upsert=True)
 
     collection_line.find_one_and_update({
         'name': line_name
@@ -90,6 +87,7 @@ def ping(line_name, result):
             'delay': delay
         }
     }})
+
 
 """将flow的结果写入数据库.
     
@@ -116,11 +114,11 @@ def flow(line_name, result):
         "flow_in_pm": [],
         "flow_out_pm": []
     })
-    if not collection_line.count_documents({'name': line_name}) :
+    if not collection_line.count_documents({'name': line_name}):
         collection_line.find_one_and_update({
             'name': line_name
         }, {'$set': flow_line},
-                                            upsert=True)
+            upsert=True)
 
     if hour < 12:
         flow_in_am = result['in']
@@ -169,6 +167,7 @@ def flow(line_name, result):
             }
         })
 
+
 """将interface的结果写入数据库.
     
     根据linename创建interface文档，增量更新
@@ -197,7 +196,7 @@ def interface(device_name, result):
         collection_device.find_one_and_update({
             'name': device_name
         }, {'$set': interface_device},
-                                              upsert=True)
+            upsert=True)
 
     collection_device.find_one_and_update({
         'name': device_name
@@ -211,6 +210,7 @@ def interface(device_name, result):
         }
     })
 
+
 """将cpu_mem的结果写入数据库.
     
     根据linename创建cpu_mem文档，增量更新
@@ -220,6 +220,7 @@ def interface(device_name, result):
         result: Dictionary 结果{'cpu': float,'mem': float}
 
 """
+
 
 def cpu_mem(device_name, result):
     current_date = datetime.datetime.now().strftime("%Y-%m-%d")
@@ -237,14 +238,14 @@ def cpu_mem(device_name, result):
         collection_device.find_one_and_update({
             'name': device_name
         }, {'$set': cpu_men_device},
-                                              upsert=True)
+            upsert=True)
 
     collection_device.find_one_and_update({
         'name': device_name
     }, {'$push': {
         'cpu': {
             'date': current_date,
-            'cpu': cpu
+            'use': cpu
         }
     }})
     collection_device.find_one_and_update({
@@ -252,6 +253,6 @@ def cpu_mem(device_name, result):
     }, {'$push': {
         'memory': {
             'date': current_date,
-            'memory': mem
+            'remain': mem
         }
     }})

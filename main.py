@@ -8,6 +8,7 @@ import plugins.task as task
 from plugins.log import log_instance
 import traceback
 from plugins.slack_bot import dn_say
+from plugins.write_excel import read_db_to_write_excel
 
 
 def job_ping():
@@ -51,10 +52,11 @@ def main():
     #     log_instance.error(e)
     #     dn_say(traceback.format_exc())
 
-    task.run('flow')
-    task.run('ping')
-    task.run('cpu_memory')
-    task.run('interface')
+    # task.run('flow')
+    # task.run('ping')
+    # task.run('cpu_memory')
+    # task.run('interface')
+    read_db_to_write_excel()
 
 
 if __name__ == '__main__':
