@@ -174,7 +174,7 @@ def flow(line_name, result):
 
     Args:
         linename:  string 线路名称
-        result: Dictionary 结果{'total': float,'aviable': float}
+        result: Dictionary 结果{'total': float,'available': float}
 
 """
 
@@ -182,7 +182,7 @@ def flow(line_name, result):
 def interface(device_name, result):
     current_date = datetime.datetime.now().strftime("%Y-%m-%d")
     total = result['total']
-    available = result['aviable']
+    available = result['available']
     interface_device = copy.deepcopy(device)
     interface_device.update({
         "name": device_name,
