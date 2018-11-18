@@ -12,7 +12,7 @@ from .log import log_instance
 
 try:
     Client = MongoClient('mongodb://172.25.25.11:27017/')
-    db = Client['daily_network_dev']
+    db = Client['daily_network']
     collection_line = db['line']
     collection_device = db['device']
 except Exception as e:
@@ -75,7 +75,7 @@ def ping(line_name, result):
     }, {'$push': {
         'loss': {
             'date': current_date,
-            'loss': loss
+            'value': loss
         }
     }})
 
@@ -84,7 +84,7 @@ def ping(line_name, result):
     }, {'$push': {
         'delay': {
             'date': current_date,
-            'delay': delay
+            'value': delay
         }
     }})
 
@@ -129,7 +129,7 @@ def flow(line_name, result):
             '$push': {
                 'flow_in_am': {
                     'date': current_date,
-                    'flow_in_am': flow_in_am
+                    'value': flow_in_am
                 }
             }
         })
@@ -139,7 +139,7 @@ def flow(line_name, result):
             '$push': {
                 'flow_out_am': {
                     'date': current_date,
-                    'flow_out_am': flow_out_am
+                    'value': flow_out_am
                 }
             }
         })
@@ -152,7 +152,7 @@ def flow(line_name, result):
             '$push': {
                 'flow_in_pm': {
                     'date': current_date,
-                    'flow_in_pm': flow_in_pm
+                    'value': flow_in_pm
                 }
             }
         })
@@ -162,7 +162,7 @@ def flow(line_name, result):
             '$push': {
                 'flow_out_pm': {
                     'date': current_date,
-                    'flow_out_pm': flow_out_pm
+                    'value': flow_out_pm
                 }
             }
         })
@@ -174,7 +174,7 @@ def flow(line_name, result):
 
     Args:
         linename:  string 线路名称
-        result: Dictionary 结果{'total': float,'aviable': float}
+        result: Dictionary 结果{'total': float,'available': float}
 
 """
 
@@ -182,7 +182,7 @@ def flow(line_name, result):
 def interface(device_name, result):
     current_date = datetime.datetime.now().strftime("%Y-%m-%d")
     total = result['total']
-    aviliable = result['aviable']
+    available = result['available']
     interface_device = copy.deepcopy(device)
     interface_device.update({
         "name": device_name,
@@ -205,7 +205,7 @@ def interface(device_name, result):
             'interface': {
                 'date': current_date,
                 'total': total,
-                'aviliable': aviliable
+                'available': available
             }
         }
     })
