@@ -16,6 +16,7 @@ return dict 解析后的ping数据 eg {"loss":0,"avg":6}
 
 
 def ping(result):
+    ping_result = {}
     if result is None:
         log_instance.info("连接失败，请检查设备")
     else:
