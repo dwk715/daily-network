@@ -29,6 +29,7 @@ def job_interface():
 def job_write_excel():
     read_db_to_write_excel()
 
+
 '''
 实例化BlockingScheduler
 添加定时计划
@@ -47,18 +48,18 @@ scheduler.add_job(job_write_excel, 'cron', day_of_week='0-6', hour=23, minute=30
 
 
 def main():
-    # try:
-    #     scheduler.start()
-    # except Exception as e:
-    #     scheduler.shutdown()
-    #     log_instance.error(e)
-    #     dn_say(traceback.format_exc())
+    try:
+        scheduler.start()
+    except Exception as e:
+        scheduler.shutdown()
+        log_instance.error(e)
+        dn_say(traceback.format_exc())
 
     # task.run('flow')
     # task.run('ping')
     # task.run('cpu_memory')
     # task.run('interface')
-    read_db_to_write_excel()
+    # read_db_to_write_excel()
 
 
 if __name__ == '__main__':
