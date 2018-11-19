@@ -16,9 +16,10 @@ return dict 解析后的ping数据 eg {"loss":0,"avg":6}
 
 
 def ping(result):
-    ping_result = {}
+    ping_result = {'loss': None,
+                   'delay_avg': None}
     if result is None:
-        log_instance.info("连接失败，请检查设备")
+        log_instance.error("连接失败，请检查设备")
     else:
         for row in result:
             if row == '':
@@ -32,10 +33,10 @@ def ping(result):
                 percent = format((total - over) * 100 / total, "0.1f")
                 # print(percent)
                 avg = matchObj.group(5)
-                ping_result = {
+                ping_result.update({
                     'loss': percent,
                     'delay_avg': avg,
-                }
+                })
     return ping_result
 
 
