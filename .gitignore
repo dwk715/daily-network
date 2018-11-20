@@ -9,3 +9,4 @@ test/
 data/
 mongod.cfg
 slack_bot.py
+web/node_modules
