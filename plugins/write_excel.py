@@ -104,5 +104,5 @@ def read_db_to_write_excel():
                 # 早间流量下行写入
                 ws.cell(row=row, column=9).value = str(line_info['flow_in_am'][-1]['value'])
                 # 晚间流量下行写入
-                ws.cell(row=row, column=10).value = str(line_info['flow_in_am'][-1]['value'])
+                ws.cell(row=row, column=10).value = str(line_info['flow_in_pm'][-1]['value'])
     wb_info["wb"].save(wb_info["filename"])
