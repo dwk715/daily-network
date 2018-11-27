@@ -26,6 +26,7 @@ def job_cup_memory():
 def job_interface():
     task.run('interface')
 
+
 def job_write_excel():
     read_db_to_write_excel()
 

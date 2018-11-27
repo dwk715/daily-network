@@ -15,6 +15,7 @@ class logmode(object):
     logger： log实例
     log级别： info
     '''
+
     def __init__(self, log_file=None, logger=None):
         self.logger = logging.getLogger(logger)
         self.logger.setLevel(logging.DEBUG)
@@ -24,7 +25,7 @@ class logmode(object):
 
         fh = logging.handlers.TimedRotatingFileHandler(
             self.log_name, when='D', interval=1, backupCount=0)
-        #fh.suffix = datetime.datetime.now().strftime('-%Y-%m-%d') + '.log'
+        # fh.suffix = datetime.datetime.now().strftime('-%Y-%m-%d') + '.log'
         fh.suffix = "%Y-%m-%d.log"
         fh.setLevel(logging.INFO)
         '''
@@ -34,10 +35,12 @@ class logmode(object):
         '''
         formatter = logging.Formatter('[%(asctime)s] [%(levelname)s] %(message)s')
         fh.setFormatter(formatter)
-        #sh.setFormatter(formatter)
+        # sh.setFormatter(formatter)
         self.logger.addHandler(fh)
-        #self.logger.addHandler(sh)
+        # self.logger.addHandler(sh)
         fh.close()
-        #sh.close()
-#实例化一个log
+        # sh.close()
+
+
+# 实例化一个log
 log_instance = logmode('daily-network').logger
