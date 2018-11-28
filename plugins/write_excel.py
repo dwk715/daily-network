@@ -11,6 +11,7 @@ from .slack_bot import dn_say
 import traceback
 from pymongo import MongoClient
 
+
 '''
 此模块用于将数据保存在excel文件中
 读取excel/template.xlsx文件并另存为：
@@ -37,8 +38,8 @@ line_name_convert = {
 }
 
 try:
-    Client = MongoClient('mongodb://127.0.0.1:27017/')
-    db = Client['daily_network']
+    Client = MongoClient('mongodb://172.25.25.11:27017/')
+    db = Client['daily_network_dev']
     collection_line = db['line']
     collection_device = db['device']
 except Exception as e:

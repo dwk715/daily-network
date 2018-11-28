@@ -11,7 +11,7 @@ import traceback
 from .log import log_instance
 
 try:
-    Client = MongoClient('mongodb://127.0.0.1:27017/')
+    Client = MongoClient('mongodb://172.25.25.11:27017/')
     db = Client['daily_network']
     collection_line = db['line']
     collection_device = db['device']
