@@ -22,7 +22,6 @@ commonds: list yml中的commonds
 return :  list 返回设备输出的结果
 '''
 
-
 def connect(device_info, commands):
     ip = device_info[0]
     protocol = device_info[1]
@@ -55,15 +54,12 @@ def connect(device_info, commands):
     net_connect.disconnect()
     return result
 
-
 '''
 读取CSV设备信息文件，对比yml中的ip
 ip: string yml中的ip
 commonds: list yml中的commonds
 return :  list 返回设备输出的结果
 '''
-
-
 def read_csv(ip, commands):
     result = []
     with open('config.csv', mode='r') as f:
@@ -76,13 +72,10 @@ def read_csv(ip, commands):
                 pass
     return result
 
-
 '''
 读取yml文件，并执行解析，存储
 tables: string 配置文件的目录名
 '''
-
-
 def run(tables):
     path = "commands/" + tables
     files = os.listdir(path)
@@ -93,28 +86,28 @@ def run(tables):
             tmp = read_csv(y['ip'], y['commands'])
             if tables == 'ping':
                 try:
-                    parse_result = parse.ping(tmp)
+                    parse_result=parse.ping(tmp)
                     store.ping(y['line'], parse_result)
                 except Exception as e:
                     log_instance.error(e)
                     dn_say(traceback.format_exc())
             elif tables == 'cpu_memory':
                 try:
-                    parse_result = parse.cpu_mem(tmp)
+                    parse_result=parse.cpu_mem(tmp)
                     store.cpu_mem(y['device_name'], parse_result)
                 except Exception as e:
                     log_instance.error(e)
                     dn_say(traceback.format_exc())
             elif tables == 'flow':
                 try:
-                    parse_result = parse.flow(tmp)
+                    parse_result=parse.flow(tmp)
                     store.flow(y['line'], parse_result)
                 except Exception as e:
                     log_instance.error(e)
                     dn_say(traceback.format_exc())
             elif tables == 'interface':
                 try:
-                    parse_result = parse.interface(tmp)
+                    parse_result=parse.interface(tmp)
                     store.interface(y['device_name'], parse_result)
                 except Exception as e:
                     log_instance.error(e)
@@ -126,3 +119,4 @@ def run(tables):
             log_instance.error("不存在配置文件，请检查目录结构")
             dn_say(traceback.format_exc())
             pass
+            
