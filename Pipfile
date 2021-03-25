@@ -42,7 +42,7 @@ wcwidth = "==0.1.7"
 yapf = "==0.24.0"
 apscheduler = "==3.5.3"
 pygments = "==2.2.0"
-pyyaml = "==3.13"
+pyyaml = "==5.4"
 slackclient = "*"
 
 [requires]
