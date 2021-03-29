@@ -41,7 +41,7 @@ tzlocal = "==1.5.1"
 wcwidth = "==0.1.7"
 yapf = "==0.24.0"
 apscheduler = "==3.5.3"
-pygments = "==2.2.0"
+pygments = "==2.7.4"
 pyyaml = "==3.13"
 slackclient = "*"
 
